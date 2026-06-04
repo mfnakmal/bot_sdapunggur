@@ -1,0 +1,209 @@
+[
+  {
+    "kode": "BPU 9",
+    "nama": "BPU 9",
+    "sisi": ["ki", "ka", "ka.2"]
+  },
+  {
+    "kode": "BPU 10",
+    "nama": "BPU 10",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BPU 11",
+    "nama": "BPU 11",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BPU 12",
+    "nama": "BPU 12",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BPU 13",
+    "nama": "BPU 13",
+    "sisi": ["ki.1", "ki.2", "ka"]
+  },
+  {
+    "kode": "BPU 14",
+    "nama": "BPU 14",
+    "sisi": ["ki"]
+  },
+  {
+    "kode": "BPU 15",
+    "nama": "BPU 15",
+    "sisi": ["ka"]
+  },
+
+  {
+    "kode": "BE 1",
+    "nama": "BE 1",
+    "sisi": ["ki", "ka.1", "ka.2"]
+  },
+  {
+    "kode": "BE 2",
+    "nama": "BE 2",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BE 3",
+    "nama": "BE 3",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BE 4",
+    "nama": "BE 4",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BF 1",
+    "nama": "BF 1",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BF 2",
+    "nama": "BF 2",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BF 3",
+    "nama": "BF 3",
+    "sisi": ["ki"]
+  },
+  {
+    "kode": "BF 4",
+    "nama": "BF 4",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BF 5",
+    "nama": "BF 5",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BF 6",
+    "nama": "BF 6",
+    "sisi": ["ki"]
+  },
+  {
+    "kode": "BF 7",
+    "nama": "BF 7",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BG 1",
+    "nama": "BG 1",
+    "sisi": ["ki", "ka.1", "ka.2", "ka.3"]
+  },
+  {
+    "kode": "BG 2",
+    "nama": "BG 2",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BG 3",
+    "nama": "BG 3",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BG 4",
+    "nama": "BG 4",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BX 1",
+    "nama": "BX 1",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BX 2",
+    "nama": "BX 2",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BD 1",
+    "nama": "BD 1",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BD 2",
+    "nama": "BD 2",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BD 3",
+    "nama": "BD 3",
+    "sisi": ["ki.1", "ki.2", "ka"]
+  },
+  {
+    "kode": "BD 4",
+    "nama": "BD 4",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BD 5",
+    "nama": "BD 5",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BD 6",
+    "nama": "BD 6",
+    "sisi": ["ki", "ka.1", "ka.2"]
+  },
+  {
+    "kode": "BD 7",
+    "nama": "BD 7",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BD 8",
+    "nama": "BD 8",
+    "sisi": ["ki.1", "ki.2", "ka"]
+  },
+  {
+    "kode": "BD 9",
+    "nama": "BD 9",
+    "sisi": ["ka"]
+  },
+  {
+    "kode": "BD 10",
+    "nama": "BD 10",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BT 1",
+    "nama": "BT 1",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BT 1A",
+    "nama": "BT 1A",
+    "sisi": ["ka"]
+  },
+  {
+    "kode": "BT 2",
+    "nama": "BT 2",
+    "sisi": ["ki", "ka"]
+  },
+
+  {
+    "kode": "BS",
+    "nama": "BS",
+    "sisi": ["ki", "ka"]
+  },
+  {
+    "kode": "BU 1",
+    "nama": "BU 1",
+    "sisi": ["ki"]
+  },
+  {
+    "kode": "B SETENGAH",
+    "nama": "B Setengah",
+    "sisi": ["utama"]
+  }
+]

@@ -1,0 +1,158 @@
+{
+  "UPTD001": {
+    "nama": "WAHYU CAHYO WIBOWO, SE",
+    "jabatan": "Kepala UPTD",
+    "role": "kepala_uptd",
+    "telegramId": null,
+    "aktif": true
+  },
+
+  "STAFF001": {
+    "nama": "FREDY MARDIANTO",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF002": {
+    "nama": "HASANNUDIN",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF003": {
+    "nama": "JOHAN WAHYUDI",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF004": {
+    "nama": "APRIYANTO",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF005": {
+    "nama": "NUH RONI",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF006": {
+    "nama": "EDI SUSANTO",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF007": {
+    "nama": "MEGAWATI, S.AP",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF008": {
+    "nama": "WAHYU FITRIANY",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF009": {
+    "nama": "DEDY SULISDIYANTO",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF010": {
+    "nama": "ADE IRAWAN",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+
+  "PPA001": {
+    "nama": "S U W A N T O",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA002": {
+    "nama": "ANGGA ARISTA",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA003": {
+    "nama": "AGUS SETIAWAN",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA004": {
+    "nama": "RIBOWO",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA005": {
+    "nama": "WISHNU PRIBADI",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA006": {
+    "nama": "ESTHA RYANI",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA007": {
+    "nama": "DONNY KURNIAWAN",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA008": {
+    "nama": "DHARMA TRI SETIA",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA009": {
+    "nama": "WAHYU DWI RIAWAN R",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA010": {
+    "nama": "MUHAMMAD FAUZAN AKMAL",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA011": {
+    "nama": "NOVI INDRA SATRIA",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  }
+}

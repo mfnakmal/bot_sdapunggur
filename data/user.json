@@ -1,0 +1,30 @@
+{
+  "UPTD001": {
+    "nama": "WAHYU CAHYO WIBOWO, SE",
+    "jabatan": "Kepala UPTD",
+    "role": "kepala_uptd",
+    "telegramId": null,
+    "aktif": true
+  },
+  "STAFF001": {
+    "nama": "FREDY MARDIANTO",
+    "jabatan": "Staff",
+    "role": "staff",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA001": {
+    "nama": "ANGGA ARISTA",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  },
+  "PPA002": {
+    "nama": "AGUS SETIAWAN",
+    "jabatan": "PPA",
+    "role": "ppa",
+    "telegramId": null,
+    "aktif": true
+  }
+}
