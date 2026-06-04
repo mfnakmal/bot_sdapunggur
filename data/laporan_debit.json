@@ -135,5 +135,40 @@
     "keterangan": "-",
     "status": "tersimpan",
     "createdAt": "2026-06-04T17:42:01+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BU_1-ki-1780551631533",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "19:40",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BU 1",
+      "sisi": "ki",
+      "namaLengkap": "BU 1 ki"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 21,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "-",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T19:40:31+07:00"
   }
 ]
