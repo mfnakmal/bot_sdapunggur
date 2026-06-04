@@ -1,1 +1,9 @@
-{}
+{
+  "513402196": {
+    "step": "input_H",
+    "mode": "catat_debit",
+    "periode": "pagi",
+    "pintu": "BPU 11",
+    "sisi": "ka"
+  }
+}
