@@ -107,11 +107,70 @@ function konfirmasiKeyboard() {
   };
 }
 
+function jenisDokumentasiKeyboard() {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          { text: "📷 Foto Pintu", callback_data: "dok_jenis_pintu" },
+          { text: "🌊 Foto Saluran", callback_data: "dok_jenis_saluran" }
+        ],
+        [
+          { text: "🛠️ Kerusakan", callback_data: "dok_jenis_kerusakan" },
+          { text: "🧹 Pembersihan", callback_data: "dok_jenis_pembersihan" }
+        ],
+        [
+          { text: "📝 Lainnya", callback_data: "dok_jenis_lainnya" }
+        ],
+        [
+          { text: "❌ Batal", callback_data: "batal" }
+        ]
+      ]
+    }
+  };
+}
+
+function sisiDokumentasiKeyboard(pintu) {
+  const rows = [];
+
+  rows.push([
+    {
+      text: "📌 Umum / Semua Sisi",
+      callback_data: "dok_sisi_umum"
+    }
+  ]);
+
+  let row = [];
+
+  pintu.sisi.forEach((s, index) => {
+    row.push({
+      text: s.toUpperCase(),
+      callback_data: `dok_sisi_${s}`
+    });
+
+    if (row.length === 2 || index === pintu.sisi.length - 1) {
+      rows.push(row);
+      row = [];
+    }
+  });
+
+  rows.push([{ text: "⬅️ Kembali", callback_data: "dok_kembali_pilih_pintu" }]);
+  rows.push([{ text: "❌ Batal", callback_data: "batal" }]);
+
+  return {
+    reply_markup: {
+      inline_keyboard: rows
+    }
+  };
+}
+
 module.exports = {
   mainReplyKeyboard,
   removeKeyboard,
   pintuKeyboard,
   sisiKeyboard,
   konfirmasiKeyboard,
-  fotoOpsionalKeyboard
+  fotoOpsionalKeyboard,
+  jenisDokumentasiKeyboard,
+  sisiDokumentasiKeyboard
 };
