@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_11-ki-1780539455958",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "16:17",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "telegramFileId": "AgACAgUAAxkBAANHaiDgPXcJWIyAv1A_wTDksf85S58AAsoOaxuSLQABVaik-qkY9Ir8AQADAgADeQADOwQ",
+      "fotoLocalPath": "uploads/2026-06-04/pagi/2026-06-04_pagi_BPU_11_ki_1780539453916.jpg"
+    },
+    "keterangan": "-",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:17:35+07:00"
+  }
+]
