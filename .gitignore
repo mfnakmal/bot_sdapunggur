@@ -1,0 +1,8 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log
+
+# jangan ignore data karena mau ikut backup
+# jangan ignore uploads karena dokumentasi mau ikut backup
+# jangan ignore exports kalau hasil laporan mau disimpan
