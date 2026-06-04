@@ -1,8 +1,7 @@
 {
   "513402196": {
-    "step": "pilih_sisi",
+    "step": "pilih_pintu",
     "mode": "catat_debit",
-    "periode": "pagi",
-    "pintu": "BPU 9"
+    "periode": "pagi"
   }
 }
