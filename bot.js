@@ -18,7 +18,8 @@ const {
   removeKeyboard,
   pintuKeyboard,
   sisiKeyboard,
-  konfirmasiKeyboard
+  konfirmasiKeyboard,
+  fotoOpsionalKeyboard
 } = require("./utils/keyboard");
 
 const TOKEN = process.env.BOT_TOKEN;
@@ -177,6 +178,55 @@ function mulaiCatatDebit(chatId, periode) {
   );
 }
 
+function buatPreviewLaporan({ chatId, telegramId, user, session, fotoData = null }) {
+  const tanggal = getTodayDate();
+  const periode = session.periode;
+
+  const laporanId = `LAP-${tanggal}-${periode}-${sanitizeFileName(session.pintu)}-${sanitizeFileName(session.sisi)}-${Date.now()}`;
+
+  return {
+    id: laporanId,
+    jenisBlanko: "06-O",
+    tanggal,
+    tanggalDisplay: getTodayDisplay(),
+    periode,
+    waktuInput: getTimeNow(),
+    petugas: {
+      telegramId: String(telegramId),
+      nama: user.nama,
+      jabatan: user.jabatan,
+      role: user.role
+    },
+    lokasi: {
+      daerahIrigasi: "DI Punggur Utara",
+      saluran: "Saluran Sekunder",
+      pintu: session.pintu,
+      sisi: session.sisi,
+      namaLengkap: `${session.pintu} ${session.sisi}`
+    },
+    dataAir: {
+      H: session.H,
+      satuanH: "cm",
+      Q: session.Q,
+      satuanQ: "lt/dt"
+    },
+    dokumentasi: fotoData
+      ? {
+          adaFoto: true,
+          telegramFileId: fotoData.fileId,
+          fotoLocalPath: fotoData.localPath
+        }
+      : {
+          adaFoto: false,
+          telegramFileId: null,
+          fotoLocalPath: null
+        },
+    keterangan: "-",
+    status: "tersimpan",
+    createdAt: getTimestamp()
+  };
+}
+
 bot.on("callback_query", async (query) => {
   const chatId = query.message.chat.id;
   const telegramId = query.from.id;
@@ -274,6 +324,69 @@ Contoh:
       { parse_mode: "Markdown" }
     );
   }
+
+  if (data === "upload_foto_opsional") {
+  const session = getSession(chatId);
+
+  if (!session || session.step !== "pilih_foto_opsional") {
+    return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
+  }
+
+  setSession(chatId, {
+    ...session,
+    step: "upload_foto"
+  });
+
+  return bot.sendMessage(
+    chatId,
+    "📷 Silakan upload foto dokumentasi pintu/saluran."
+  );
+}
+
+if (data === "skip_foto") {
+  const session = getSession(chatId);
+
+  if (!session || session.step !== "pilih_foto_opsional") {
+    return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
+  }
+
+ const preview = buatPreviewLaporan({
+  chatId,
+  telegramId,
+  user,
+  session,
+  fotoData: {
+    fileId,
+    localPath
+  }
+});
+
+setSession(chatId, {
+  ...session,
+  step: "konfirmasi",
+  preview
+});
+
+return bot.sendMessage(
+  chatId,
+  `📋 *Konfirmasi Laporan Debit*
+
+Tanggal: *${preview.tanggalDisplay}*
+Periode: *${preview.periode.toUpperCase()}*
+Petugas: *${preview.petugas.nama}*
+Pintu: *${preview.lokasi.namaLengkap}*
+
+H: *${preview.dataAir.H} cm*
+Q: *${preview.dataAir.Q} lt/dt*
+Foto: *Ada*
+
+Simpan laporan ini?`,
+  {
+    parse_mode: "Markdown",
+    ...konfirmasiKeyboard()
+  }
+);
+}
 
   if (data === "simpan_laporan") {
     const session = getSession(chatId);
@@ -428,27 +541,32 @@ Contoh:
     );
   }
 
-  if (session.step === "input_Q") {
-    const Q = parseFloat(String(msg.text || "").replace(",", "."));
+if (session.step === "input_Q") {
+  const Q = parseFloat(String(msg.text || "").replace(",", "."));
 
-    if (isNaN(Q)) {
-      return bot.sendMessage(chatId, "Q harus berupa angka. Contoh: 120");
-    }
-
-    setSession(chatId, {
-      ...session,
-      step: "upload_foto",
-      Q
-    });
-
-    return bot.sendMessage(
-      chatId,
-      `Q tersimpan: *${Q} lt/dt*
-
-Sekarang upload foto dokumentasi pintu/saluran.`,
-      { parse_mode: "Markdown" }
-    );
+  if (isNaN(Q)) {
+    return bot.sendMessage(chatId, "Q harus berupa angka. Contoh: 120");
   }
+
+  setSession(chatId, {
+    ...session,
+    step: "pilih_foto_opsional",
+    Q
+  });
+
+  return bot.sendMessage(
+    chatId,
+    `Q tersimpan: *${Q} lt/dt*
+
+Apakah ingin upload foto dokumentasi?
+
+Kalau foto untuk pintu ini sudah diwakili foto sisi lain, klik *Lewati Foto*.`,
+    {
+      parse_mode: "Markdown",
+      ...fotoOpsionalKeyboard()
+    }
+  );
+}
 
   if (session.step === "upload_foto") {
     if (!msg.photo || msg.photo.length === 0) {
@@ -501,8 +619,9 @@ Sekarang upload foto dokumentasi pintu/saluran.`,
         satuanQ: "lt/dt"
       },
       dokumentasi: {
-        telegramFileId: fileId,
-        fotoLocalPath: localPath
+        adaFoto: true,
+        telegramFileId: "...",
+        fotoLocalPath: "uploads/..."
       },
       keterangan: "-",
       status: "tersimpan",
@@ -557,9 +676,12 @@ Tanggal: *${getTodayDisplay()}*
   text += `🌅 *PAGI* — ${pagi.length} laporan\n`;
 
   pagi.forEach((item, index) => {
-    text += `
+    const statusFoto = item.dokumentasi?.adaFoto ? "Ada" : "Tidak ada";
+
+text += `
 ${index + 1}. *${item.lokasi.namaLengkap}*
 H: ${item.dataAir.H} cm | Q: ${item.dataAir.Q} lt/dt
+Foto: ${statusFoto}
 Petugas: ${item.petugas.nama}
 `;
   });
@@ -567,9 +689,12 @@ Petugas: ${item.petugas.nama}
   text += `\n🌇 *SORE* — ${sore.length} laporan\n`;
 
   sore.forEach((item, index) => {
-    text += `
+   const statusFoto = item.dokumentasi?.adaFoto ? "Ada" : "Tidak ada";
+
+text += `
 ${index + 1}. *${item.lokasi.namaLengkap}*
 H: ${item.dataAir.H} cm | Q: ${item.dataAir.Q} lt/dt
+Foto: ${statusFoto}
 Petugas: ${item.petugas.nama}
 `;
   });

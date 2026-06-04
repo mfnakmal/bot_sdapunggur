@@ -75,6 +75,22 @@ function sisiKeyboard(pintu) {
   };
 }
 
+function fotoOpsionalKeyboard() {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          { text: "📷 Upload Foto", callback_data: "upload_foto_opsional" },
+          { text: "⏭️ Lewati Foto", callback_data: "skip_foto" }
+        ],
+        [
+          { text: "❌ Batal", callback_data: "batal" }
+        ]
+      ]
+    }
+  };
+}
+
 function konfirmasiKeyboard() {
   return {
     reply_markup: {
@@ -96,5 +112,6 @@ module.exports = {
   removeKeyboard,
   pintuKeyboard,
   sisiKeyboard,
-  konfirmasiKeyboard
+  konfirmasiKeyboard,
+  fotoOpsionalKeyboard
 };
