@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { scheduleBackup } = require("./gitBackup");
 
 function readJSON(filePath, defaultValue = null) {
   try {
@@ -22,10 +23,16 @@ function readJSON(filePath, defaultValue = null) {
   }
 }
 
-function writeJSON(filePath, data) {
+function writeJSON(filePath, data, backupReason = "update json") {
   try {
     const fullPath = path.join(__dirname, "..", filePath);
     fs.writeFileSync(fullPath, JSON.stringify(data, null, 2), "utf-8");
+
+    // backup otomatis hanya untuk folder data
+    if (filePath.startsWith("data/")) {
+      scheduleBackup(backupReason);
+    }
+
     return true;
   } catch (error) {
     console.error("Gagal menulis JSON:", filePath, error.message);

@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const { scheduleBackup } = require("./utils/gitBackup");
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
 const path = require("path");
@@ -465,6 +466,7 @@ Sekarang upload foto dokumentasi pintu/saluran.`,
 
     try {
       await downloadTelegramFile(fileId, fullLocalPath);
+      scheduleBackup("upload dokumentasi");
     } catch (error) {
       console.error(error);
       return bot.sendMessage(chatId, "Gagal menyimpan foto. Coba upload ulang.");
