@@ -1,9 +1,11 @@
 {
   "513402196": {
-    "step": "input_H",
+    "step": "upload_foto",
     "mode": "catat_debit",
     "periode": "pagi",
     "pintu": "BPU 11",
-    "sisi": "ka"
+    "sisi": "ka",
+    "H": 50,
+    "Q": 0
   }
 }
