@@ -262,54 +262,81 @@ Kode Login: *${user.kodeLogin}*`,
     );
   }
 
+  // PILIH JENIS DOKUMENTASI
+  if (data.startsWith("dok_jenis_")) {
+    const jenis = data.replace("dok_jenis_", "");
+    const pintuList = readJSON(PINTU_PATH, []);
 
+    setSession(chatId, {
+      step: "dok_pilih_pintu",
+      mode: "upload_dokumentasi",
+      jenisDokumentasi: jenis
+    });
 
-  if (data.startsWith("pintu_")) {
-  const kodePintu = data.replace("pintu_", "");
-  const pintuList = readJSON(PINTU_PATH, []);
-  const pintu = pintuList.find((p) => p.kode === kodePintu);
+    return bot.sendMessage(
+      chatId,
+      `🖼️ Jenis dokumentasi: *${jenis.toUpperCase()}*
 
-  if (!pintu) {
-    return bot.sendMessage(chatId, "Pintu tidak ditemukan.");
+Pilih pintu/bangunan:`,
+      {
+        parse_mode: "Markdown",
+        ...pintuKeyboard(pintuList)
+      }
+    );
   }
 
-  const session = getSession(chatId);
+  // PILIH PINTU, BISA UNTUK CATAT DEBIT ATAU DOKUMENTASI
+  if (data.startsWith("pintu_")) {
+    const kodePintu = data.replace("pintu_", "");
+    const pintuList = readJSON(PINTU_PATH, []);
+    const pintu = pintuList.find((p) => p.kode === kodePintu);
 
-  // MODE UPLOAD DOKUMENTASI
-  if (session.mode === "upload_dokumentasi") {
+    if (!pintu) {
+      return bot.sendMessage(chatId, "Pintu tidak ditemukan.");
+    }
+
+    const session = getSession(chatId);
+
+    // MODE UPLOAD DOKUMENTASI
+    if (session.mode === "upload_dokumentasi") {
+      setSession(chatId, {
+        ...session,
+        step: "dok_pilih_sisi",
+        pintu: pintu.kode
+      });
+
+      return bot.sendMessage(
+        chatId,
+        `Pintu dipilih: *${pintu.nama}*
+
+Pilih sisi dokumentasi:`,
+        {
+          parse_mode: "Markdown",
+          ...sisiDokumentasiKeyboard(pintu)
+        }
+      );
+    }
+
+    // MODE CATAT DEBIT
     setSession(chatId, {
       ...session,
-      step: "dok_pilih_sisi",
+      step: "pilih_sisi",
       pintu: pintu.kode
     });
 
     return bot.sendMessage(
       chatId,
-      `Pintu dipilih: *${pintu.nama}*\n\nPilih sisi dokumentasi:`,
+      `Pintu dipilih: *${pintu.nama}*
+
+Sekarang pilih sisi:`,
       {
         parse_mode: "Markdown",
-        ...sisiDokumentasiKeyboard(pintu)
+        ...sisiKeyboard(pintu)
       }
     );
   }
 
-  // MODE CATAT DEBIT
-  setSession(chatId, {
-    ...session,
-    step: "pilih_sisi",
-    pintu: pintu.kode
-  });
-
-  return bot.sendMessage(
-    chatId,
-    `Pintu dipilih: *${pintu.nama}*\n\nSekarang pilih sisi:`,
-    {
-      parse_mode: "Markdown",
-      ...sisiKeyboard(pintu)
-    }
-  );
-}
-
+  // KEMBALI KE PILIH PINTU UNTUK CATAT DEBIT
   if (data === "kembali_pilih_pintu") {
     const session = getSession(chatId);
     const pintuList = readJSON(PINTU_PATH, []);
@@ -324,6 +351,26 @@ Kode Login: *${user.kodeLogin}*`,
     return bot.sendMessage(chatId, "Silakan pilih pintu:", pintuKeyboard(pintuList));
   }
 
+  // KEMBALI KE PILIH PINTU UNTUK DOKUMENTASI
+  if (data === "dok_kembali_pilih_pintu") {
+    const session = getSession(chatId);
+    const pintuList = readJSON(PINTU_PATH, []);
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_pilih_pintu",
+      pintu: null,
+      sisi: null
+    });
+
+    return bot.sendMessage(
+      chatId,
+      "Silakan pilih pintu/bangunan:",
+      pintuKeyboard(pintuList)
+    );
+  }
+
+  // PILIH SISI UNTUK CATAT DEBIT
   if (data.startsWith("sisi_")) {
     const sisi = data.replace("sisi_", "");
     const session = getSession(chatId);
@@ -346,93 +393,77 @@ Contoh:
     );
   }
 
+  // PILIH SISI UNTUK DOKUMENTASI
   if (data === "dok_sisi_umum" || data.startsWith("dok_sisi_")) {
-  const session = getSession(chatId);
+    const session = getSession(chatId);
 
-  if (!session || session.mode !== "upload_dokumentasi") {
-    return bot.sendMessage(chatId, "Sesi dokumentasi tidak valid. Silakan ulangi.");
+    if (!session || session.mode !== "upload_dokumentasi") {
+      return bot.sendMessage(chatId, "Sesi dokumentasi tidak valid. Silakan ulangi.");
+    }
+
+    const sisi = data === "dok_sisi_umum"
+      ? "umum"
+      : data.replace("dok_sisi_", "");
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_upload_foto",
+      sisi
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `✅ Lokasi dokumentasi dipilih: *${session.pintu} ${sisi}*
+
+Sekarang kirim foto dokumentasi.`,
+      { parse_mode: "Markdown" }
+    );
   }
 
-  const sisi = data === "dok_sisi_umum"
-    ? "umum"
-    : data.replace("dok_sisi_", "");
-
-  setSession(chatId, {
-    ...session,
-    step: "dok_upload_foto",
-    sisi
-  });
-
-  return bot.sendMessage(
-    chatId,
-    `✅ Lokasi dokumentasi dipilih: *${session.pintu} ${sisi}*\n\nSekarang kirim foto dokumentasi.`,
-    { parse_mode: "Markdown" }
-  );
-}
-
-if (data === "dok_kembali_pilih_pintu") {
-  const session = getSession(chatId);
-  const pintuList = readJSON(PINTU_PATH, []);
-
-  setSession(chatId, {
-    ...session,
-    step: "dok_pilih_pintu",
-    pintu: null,
-    sisi: null
-  });
-
-  return bot.sendMessage(
-    chatId,
-    "Silakan pilih pintu/bangunan:",
-    pintuKeyboard(pintuList)
-  );
-}
-
+  // PILIH UPLOAD FOTO PADA CATAT DEBIT
   if (data === "upload_foto_opsional") {
-  const session = getSession(chatId);
+    const session = getSession(chatId);
 
-  if (!session || session.step !== "pilih_foto_opsional") {
-    return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
+    if (!session || session.step !== "pilih_foto_opsional") {
+      return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "upload_foto"
+    });
+
+    return bot.sendMessage(
+      chatId,
+      "📷 Silakan upload foto dokumentasi pintu/saluran."
+    );
   }
 
-  setSession(chatId, {
-    ...session,
-    step: "upload_foto"
-  });
+  // LEWATI FOTO PADA CATAT DEBIT
+  if (data === "skip_foto") {
+    const session = getSession(chatId);
 
-  return bot.sendMessage(
-    chatId,
-    "📷 Silakan upload foto dokumentasi pintu/saluran."
-  );
-}
+    if (!session || session.step !== "pilih_foto_opsional") {
+      return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
+    }
 
-if (data === "skip_foto") {
-  const session = getSession(chatId);
+    const preview = buatPreviewLaporan({
+      chatId,
+      telegramId,
+      user,
+      session,
+      fotoData: null
+    });
 
-  if (!session || session.step !== "pilih_foto_opsional") {
-    return bot.sendMessage(chatId, "Sesi tidak valid. Silakan ulangi input debit.");
-  }
+    setSession(chatId, {
+      ...session,
+      step: "konfirmasi",
+      preview
+    });
 
- const preview = buatPreviewLaporan({
-  chatId,
-  telegramId,
-  user,
-  session,
-  fotoData: {
-    fileId,
-    localPath
-  }
-});
-
-setSession(chatId, {
-  ...session,
-  step: "konfirmasi",
-  preview
-});
-
-return bot.sendMessage(
-  chatId,
-  `📋 *Konfirmasi Laporan Debit*
+    return bot.sendMessage(
+      chatId,
+      `📋 *Konfirmasi Laporan Debit*
 
 Tanggal: *${preview.tanggalDisplay}*
 Periode: *${preview.periode.toUpperCase()}*
@@ -441,36 +472,17 @@ Pintu: *${preview.lokasi.namaLengkap}*
 
 H: *${preview.dataAir.H} cm*
 Q: *${preview.dataAir.Q} lt/dt*
-Foto: *Ada*
+Foto: *Tidak ada / dilewati*
 
 Simpan laporan ini?`,
-  {
-    parse_mode: "Markdown",
-    ...konfirmasiKeyboard()
+      {
+        parse_mode: "Markdown",
+        ...konfirmasiKeyboard()
+      }
+    );
   }
-);
-}
 
-if (data.startsWith("dok_jenis_")) {
-  const jenis = data.replace("dok_jenis_", "");
-  const pintuList = readJSON(PINTU_PATH, []);
-
-  setSession(chatId, {
-    step: "dok_pilih_pintu",
-    mode: "upload_dokumentasi",
-    jenisDokumentasi: jenis
-  });
-
-  return bot.sendMessage(
-    chatId,
-    `🖼️ Jenis dokumentasi: *${jenis.toUpperCase()}*\n\nPilih pintu/bangunan:`,
-    {
-      parse_mode: "Markdown",
-      ...pintuKeyboard(pintuList)
-    }
-  );
-}
-
+  // SIMPAN LAPORAN DEBIT
   if (data === "simpan_laporan") {
     const session = getSession(chatId);
 
@@ -480,7 +492,7 @@ if (data.startsWith("dok_jenis_")) {
 
     const laporan = readJSON(LAPORAN_PATH, []);
     laporan.push(session.preview);
-    writeJSON(LAPORAN_PATH, laporan);
+    writeJSON(LAPORAN_PATH, laporan, "simpan laporan debit");
 
     clearSession(chatId);
 
@@ -515,68 +527,11 @@ bot.on("message", async (msg) => {
     return;
   }
 
-const text = String(msg.text || "").trim();
-
-if (text === "🌅 Catat Debit Pagi") {
-  return mulaiCatatDebit(chatId, "pagi");
-}
-
-if (text === "🌇 Catat Debit Sore") {
-  return mulaiCatatDebit(chatId, "sore");
-}
-
-if (text === "📌 Laporan Hari Ini") {
-  return tampilkanLaporanHariIni(chatId);
-}
-
-if (text === "🖼️ Upload Dokumentasi") {
-  setSession(chatId, {
-    step: "dok_pilih_jenis",
-    mode: "upload_dokumentasi"
-  });
-
-  return bot.sendMessage(
-    chatId,
-    "🖼️ *Upload Dokumentasi Tambahan*\n\nPilih jenis dokumentasi:",
-    {
-      parse_mode: "Markdown",
-      ...jenisDokumentasiKeyboard()
-    }
-  );
-}
-
-if (text === "📊 Rekap Harian") {
-  return bot.sendMessage(chatId, "📊 Fitur rekap harian kita buat di tahap berikutnya.");
-}
-
-if (text === "📆 Rekap Setengah Bulanan") {
-  return bot.sendMessage(chatId, "📆 Fitur rekap setengah bulanan kita buat di tahap berikutnya.");
-}
-
-if (text === "📤 Export Excel") {
-  return bot.sendMessage(chatId, "📤 Fitur export Excel kita buat setelah database laporan sudah aman.");
-}
-
-if (text === "📄 Export PDF") {
-  return bot.sendMessage(chatId, "📄 Fitur export PDF kita buat setelah export Excel selesai.");
-}
-
-if (text === "👤 Profil Saya") {
-  return bot.sendMessage(
-    chatId,
-    `👤 *Profil Saya*
-
-Nama: *${user.nama}*
-Jabatan: *${user.jabatan}*
-Role: *${user.role}*
-Kode Login: *${user.kodeLogin}*`,
-    { parse_mode: "Markdown" }
-  );
-}
-
   const session = getSession(chatId);
   const user = getUserByTelegramId(telegramId);
+  const text = String(msg.text || "").trim();
 
+  // PROSES LOGIN
   if (session.step === "menunggu_kode_login") {
     const kodeInput = String(msg.text || "").trim().toUpperCase();
     const users = readJSON(USERS_PATH, {});
@@ -591,7 +546,7 @@ Kode Login: *${user.kodeLogin}*`,
     }
 
     users[kodeInput].telegramId = String(telegramId);
-    writeJSON(USERS_PATH, users);
+    writeJSON(USERS_PATH, users, "login user");
 
     clearSession(chatId);
 
@@ -607,105 +562,172 @@ Ketik /menu untuk membuka menu.`,
     );
   }
 
+  // WAJIB LOGIN UNTUK SEMUA MENU
   if (!user) {
     return bot.sendMessage(chatId, "Kamu belum login. Ketik /start untuk login.");
   }
 
+  // MENU UTAMA REPLY KEYBOARD
+  if (text === "🌅 Catat Debit Pagi") {
+    return mulaiCatatDebit(chatId, "pagi");
+  }
+
+  if (text === "🌇 Catat Debit Sore") {
+    return mulaiCatatDebit(chatId, "sore");
+  }
+
+  if (text === "📌 Laporan Hari Ini") {
+    return tampilkanLaporanHariIni(chatId);
+  }
+
+  if (text === "🖼️ Upload Dokumentasi") {
+    setSession(chatId, {
+      step: "dok_pilih_jenis",
+      mode: "upload_dokumentasi"
+    });
+
+    return bot.sendMessage(
+      chatId,
+      "🖼️ *Upload Dokumentasi Tambahan*\n\nPilih jenis dokumentasi:",
+      {
+        parse_mode: "Markdown",
+        ...jenisDokumentasiKeyboard()
+      }
+    );
+  }
+
+  if (text === "📊 Rekap Harian") {
+    return bot.sendMessage(chatId, "📊 Fitur rekap harian kita buat di tahap berikutnya.");
+  }
+
+  if (text === "📆 Rekap Setengah Bulanan") {
+    return bot.sendMessage(chatId, "📆 Fitur rekap setengah bulanan kita buat di tahap berikutnya.");
+  }
+
+  if (text === "📤 Export Excel") {
+    return bot.sendMessage(chatId, "📤 Fitur export Excel kita buat setelah database laporan sudah aman.");
+  }
+
+  if (text === "📄 Export PDF") {
+    return bot.sendMessage(chatId, "📄 Fitur export PDF kita buat setelah export Excel selesai.");
+  }
+
+  if (text === "👤 Profil Saya") {
+    return bot.sendMessage(
+      chatId,
+      `👤 *Profil Saya*
+
+Nama: *${user.nama}*
+Jabatan: *${user.jabatan}*
+Role: *${user.role}*
+Kode Login: *${user.kodeLogin}*`,
+      { parse_mode: "Markdown" }
+    );
+  }
+
+  // UPLOAD FOTO DOKUMENTASI TAMBAHAN
   if (session.step === "dok_upload_foto") {
-  if (!msg.photo || msg.photo.length === 0) {
-    return bot.sendMessage(chatId, "Silakan kirim foto dokumentasi, bukan teks.");
-  }
-
-  const largestPhoto = msg.photo[msg.photo.length - 1];
-  const fileId = largestPhoto.file_id;
-
-  const tanggal = getTodayDate();
-  const jenis = session.jenisDokumentasi || "lainnya";
-
-  const namaFile = `${tanggal}_dok_${sanitizeFileName(jenis)}_${sanitizeFileName(session.pintu)}_${sanitizeFileName(session.sisi)}_${Date.now()}.jpg`;
-
-  const localPath = path.join("uploads", tanggal, "dokumentasi", namaFile);
-  const fullLocalPath = path.join(__dirname, localPath);
-
-  try {
-    await downloadTelegramFile(fileId, fullLocalPath);
-    scheduleBackup("upload dokumentasi tambahan");
-  } catch (error) {
-    console.error(error);
-    return bot.sendMessage(chatId, "Gagal menyimpan foto. Coba upload ulang.");
-  }
-
-  setSession(chatId, {
-    ...session,
-    step: "dok_input_keterangan",
-    foto: {
-      telegramFileId: fileId,
-      fotoLocalPath: localPath
+    if (!msg.photo || msg.photo.length === 0) {
+      return bot.sendMessage(chatId, "Silakan kirim foto dokumentasi, bukan teks.");
     }
-  });
 
-  return bot.sendMessage(
-    chatId,
-    `✅ Foto dokumentasi berhasil diterima.\n\nSekarang tulis keterangan singkat.\n\nContoh:\nFoto BPU 11 mewakili sisi ki dan ka`
-  );
-}
+    const largestPhoto = msg.photo[msg.photo.length - 1];
+    const fileId = largestPhoto.file_id;
 
-if (session.step === "dok_input_keterangan") {
-  const keterangan = String(msg.text || "").trim();
+    const tanggal = getTodayDate();
+    const jenis = session.jenisDokumentasi || "lainnya";
 
-  if (!keterangan) {
-    return bot.sendMessage(chatId, "Keterangan tidak boleh kosong. Tulis keterangan singkat.");
+    const namaFile = `${tanggal}_dok_${sanitizeFileName(jenis)}_${sanitizeFileName(session.pintu)}_${sanitizeFileName(session.sisi)}_${Date.now()}.jpg`;
+
+    const localPath = path.join("uploads", tanggal, "dokumentasi", namaFile);
+    const fullLocalPath = path.join(__dirname, localPath);
+
+    try {
+      await downloadTelegramFile(fileId, fullLocalPath);
+      scheduleBackup("upload dokumentasi tambahan");
+    } catch (error) {
+      console.error(error);
+      return bot.sendMessage(chatId, "Gagal menyimpan foto. Coba upload ulang.");
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_input_keterangan",
+      foto: {
+        telegramFileId: fileId,
+        fotoLocalPath: localPath
+      }
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `✅ Foto dokumentasi berhasil diterima.
+
+Sekarang tulis keterangan singkat.
+
+Contoh:
+Foto BPU 11 mewakili sisi ki dan ka`
+    );
   }
 
-  const dokumentasiList = readJSON(DOKUMENTASI_PATH, []);
+  // SIMPAN KETERANGAN DOKUMENTASI TAMBAHAN
+  if (session.step === "dok_input_keterangan") {
+    const keterangan = String(msg.text || "").trim();
 
-  const item = {
-    id: `DOK-${getTodayDate()}-${sanitizeFileName(session.pintu)}-${Date.now()}`,
-    tanggal: getTodayDate(),
-    tanggalDisplay: getTodayDisplay(),
-    waktuInput: getTimeNow(),
-    jenisDokumentasi: session.jenisDokumentasi || "lainnya",
-    petugas: {
-      telegramId: String(telegramId),
-      nama: user.nama,
-      jabatan: user.jabatan,
-      role: user.role
-    },
-    lokasi: {
-      daerahIrigasi: "DI Punggur Utara",
-      saluran: "Saluran Sekunder",
-      pintu: session.pintu,
-      sisi: session.sisi,
-      namaLengkap: `${session.pintu} ${session.sisi}`
-    },
-    dokumentasi: {
-      adaFoto: true,
-      telegramFileId: session.foto.telegramFileId,
-      fotoLocalPath: session.foto.fotoLocalPath
-    },
-    keterangan,
-    createdAt: getTimestamp()
-  };
+    if (!keterangan) {
+      return bot.sendMessage(chatId, "Keterangan tidak boleh kosong. Tulis keterangan singkat.");
+    }
 
-  dokumentasiList.push(item);
-  writeJSON(DOKUMENTASI_PATH, dokumentasiList, "simpan dokumentasi tambahan");
+    const dokumentasiList = readJSON(DOKUMENTASI_PATH, []);
 
-  clearSession(chatId);
+    const item = {
+      id: `DOK-${getTodayDate()}-${sanitizeFileName(session.pintu)}-${Date.now()}`,
+      tanggal: getTodayDate(),
+      tanggalDisplay: getTodayDisplay(),
+      waktuInput: getTimeNow(),
+      jenisDokumentasi: session.jenisDokumentasi || "lainnya",
+      petugas: {
+        telegramId: String(telegramId),
+        nama: user.nama,
+        jabatan: user.jabatan,
+        role: user.role
+      },
+      lokasi: {
+        daerahIrigasi: "DI Punggur Utara",
+        saluran: "Saluran Sekunder",
+        pintu: session.pintu,
+        sisi: session.sisi,
+        namaLengkap: `${session.pintu} ${session.sisi}`
+      },
+      dokumentasi: {
+        adaFoto: true,
+        telegramFileId: session.foto.telegramFileId,
+        fotoLocalPath: session.foto.fotoLocalPath
+      },
+      keterangan,
+      createdAt: getTimestamp()
+    };
 
-  return bot.sendMessage(
-    chatId,
-    `✅ *Dokumentasi berhasil disimpan.*
+    dokumentasiList.push(item);
+    writeJSON(DOKUMENTASI_PATH, dokumentasiList, "simpan dokumentasi tambahan");
+
+    clearSession(chatId);
+
+    return bot.sendMessage(
+      chatId,
+      `✅ *Dokumentasi berhasil disimpan.*
 
 Jenis: *${item.jenisDokumentasi.toUpperCase()}*
 Lokasi: *${item.lokasi.namaLengkap}*
 Keterangan: ${item.keterangan}`,
-    {
-      parse_mode: "Markdown",
-      ...mainReplyKeyboard(user.role)
-    }
-  );
-}
+      {
+        parse_mode: "Markdown",
+        ...mainReplyKeyboard(user.role)
+      }
+    );
+  }
 
+  // INPUT H
   if (session.step === "input_H") {
     const H = parseFloat(String(msg.text || "").replace(",", "."));
 
@@ -731,33 +753,35 @@ Contoh:
     );
   }
 
-if (session.step === "input_Q") {
-  const Q = parseFloat(String(msg.text || "").replace(",", "."));
+  // INPUT Q
+  if (session.step === "input_Q") {
+    const Q = parseFloat(String(msg.text || "").replace(",", "."));
 
-  if (isNaN(Q)) {
-    return bot.sendMessage(chatId, "Q harus berupa angka. Contoh: 120");
-  }
+    if (isNaN(Q)) {
+      return bot.sendMessage(chatId, "Q harus berupa angka. Contoh: 120");
+    }
 
-  setSession(chatId, {
-    ...session,
-    step: "pilih_foto_opsional",
-    Q
-  });
+    setSession(chatId, {
+      ...session,
+      step: "pilih_foto_opsional",
+      Q
+    });
 
-  return bot.sendMessage(
-    chatId,
-    `Q tersimpan: *${Q} lt/dt*
+    return bot.sendMessage(
+      chatId,
+      `Q tersimpan: *${Q} lt/dt*
 
 Apakah ingin upload foto dokumentasi?
 
 Kalau foto untuk pintu ini sudah diwakili foto sisi lain, klik *Lewati Foto*.`,
-    {
-      parse_mode: "Markdown",
-      ...fotoOpsionalKeyboard()
-    }
-  );
-}
+      {
+        parse_mode: "Markdown",
+        ...fotoOpsionalKeyboard()
+      }
+    );
+  }
 
+  // UPLOAD FOTO SAAT CATAT DEBIT
   if (session.step === "upload_foto") {
     if (!msg.photo || msg.photo.length === 0) {
       return bot.sendMessage(chatId, "Silakan kirim foto dokumentasi, bukan teks.");
@@ -780,43 +804,16 @@ Kalau foto untuk pintu ini sudah diwakili foto sisi lain, klik *Lewati Foto*.`,
       return bot.sendMessage(chatId, "Gagal menyimpan foto. Coba upload ulang.");
     }
 
-    const laporanId = `LAP-${tanggal}-${periode}-${sanitizeFileName(session.pintu)}-${sanitizeFileName(session.sisi)}-${Date.now()}`;
-
-    const preview = {
-      id: laporanId,
-      jenisBlanko: "06-O",
-      tanggal,
-      tanggalDisplay: getTodayDisplay(),
-      periode,
-      waktuInput: getTimeNow(),
-      petugas: {
-        telegramId: String(telegramId),
-        nama: user.nama,
-        jabatan: user.jabatan,
-        role: user.role
-      },
-      lokasi: {
-        daerahIrigasi: "DI Punggur Utara",
-        saluran: "Saluran Sekunder",
-        pintu: session.pintu,
-        sisi: session.sisi,
-        namaLengkap: `${session.pintu} ${session.sisi}`
-      },
-      dataAir: {
-        H: session.H,
-        satuanH: "cm",
-        Q: session.Q,
-        satuanQ: "lt/dt"
-      },
-      dokumentasi: {
-        adaFoto: true,
-        telegramFileId: "...",
-        fotoLocalPath: "uploads/..."
-      },
-      keterangan: "-",
-      status: "tersimpan",
-      createdAt: getTimestamp()
-    };
+    const preview = buatPreviewLaporan({
+      chatId,
+      telegramId,
+      user,
+      session,
+      fotoData: {
+        fileId,
+        localPath
+      }
+    });
 
     setSession(chatId, {
       ...session,
@@ -835,6 +832,7 @@ Pintu: *${preview.lokasi.namaLengkap}*
 
 H: *${preview.dataAir.H} cm*
 Q: *${preview.dataAir.Q} lt/dt*
+Foto: *Ada*
 
 Simpan laporan ini?`,
       {
@@ -868,7 +866,7 @@ Tanggal: *${getTodayDisplay()}*
   pagi.forEach((item, index) => {
     const statusFoto = item.dokumentasi?.adaFoto ? "Ada" : "Tidak ada";
 
-text += `
+    text += `
 ${index + 1}. *${item.lokasi.namaLengkap}*
 H: ${item.dataAir.H} cm | Q: ${item.dataAir.Q} lt/dt
 Foto: ${statusFoto}
@@ -879,9 +877,9 @@ Petugas: ${item.petugas.nama}
   text += `\n🌇 *SORE* — ${sore.length} laporan\n`;
 
   sore.forEach((item, index) => {
-   const statusFoto = item.dokumentasi?.adaFoto ? "Ada" : "Tidak ada";
+    const statusFoto = item.dokumentasi?.adaFoto ? "Ada" : "Tidak ada";
 
-text += `
+    text += `
 ${index + 1}. *${item.lokasi.namaLengkap}*
 H: ${item.dataAir.H} cm | Q: ${item.dataAir.Q} lt/dt
 Foto: ${statusFoto}
