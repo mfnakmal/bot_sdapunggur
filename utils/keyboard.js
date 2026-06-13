@@ -1,8 +1,9 @@
 function mainReplyKeyboard(role) {
   const keyboard = [
     ["🌅 Catat Debit Pagi", "🌇 Catat Debit Sore"],
-    ["📌 Laporan Hari Ini", "🖼️ Upload Dokumentasi"],
-    ["📊 Rekap Harian", "📆 Rekap Setengah Bulanan"],
+    ["📌 Laporan Hari Ini", "📊 Rekap Harian"],
+    ["🖼️ Upload Dokumentasi", "🗂️ Lihat Dokumentasi"],
+    ["📆 Rekap Setengah Bulanan"],
     ["📤 Export Excel", "📄 Export PDF"],
     ["👤 Profil Saya"]
   ];
@@ -107,6 +108,39 @@ function konfirmasiKeyboard() {
   };
 }
 
+function sumberDokumentasiKeyboard() {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: "🗂️ Semua Dokumentasi",
+            callback_data: "lihat_dok_semua"
+          }
+        ],
+        [
+          {
+            text: "📋 Foto Laporan Debit",
+            callback_data: "lihat_dok_laporan"
+          }
+        ],
+        [
+          {
+            text: "🖼️ Dokumentasi Tambahan",
+            callback_data: "lihat_dok_tambahan"
+          }
+        ],
+        [
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
+        ]
+      ]
+    }
+  };
+}
+
 function jenisDokumentasiKeyboard() {
   return {
     reply_markup: {
@@ -171,6 +205,7 @@ module.exports = {
   sisiKeyboard,
   konfirmasiKeyboard,
   fotoOpsionalKeyboard,
+  sumberDokumentasiKeyboard,
   jenisDokumentasiKeyboard,
   sisiDokumentasiKeyboard
 };

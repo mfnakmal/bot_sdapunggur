@@ -21,6 +21,7 @@ const {
   sisiKeyboard,
   konfirmasiKeyboard,
   fotoOpsionalKeyboard,
+  sumberDokumentasiKeyboard,
   jenisDokumentasiKeyboard,
   sisiDokumentasiKeyboard
 } = require("./utils/keyboard");
@@ -259,6 +260,44 @@ Jabatan: *${user.jabatan}*
 Role: *${user.role}*
 Kode Login: *${user.kodeLogin}*`,
       { parse_mode: "Markdown" }
+    );
+  }
+
+    // PILIH SUMBER FOTO YANG AKAN DITAMPILKAN
+  if (
+    data === "lihat_dok_semua" ||
+    data === "lihat_dok_laporan" ||
+    data === "lihat_dok_tambahan"
+  ) {
+    const session = getSession(chatId);
+
+    if (
+      !session ||
+      session.mode !== "lihat_dokumentasi" ||
+      session.step !== "lihat_dokumentasi_pilih_sumber" ||
+      !session.tanggalDokumentasi
+    ) {
+      return bot.sendMessage(
+        chatId,
+        "❌ Sesi lihat dokumentasi sudah tidak valid. Silakan pilih menu kembali."
+      );
+    }
+
+    const sumber = {
+      lihat_dok_semua: "semua",
+      lihat_dok_laporan: "laporan",
+      lihat_dok_tambahan: "tambahan"
+    }[data];
+
+    const tanggal = session.tanggalDokumentasi;
+
+    clearSession(chatId);
+
+    return tampilkanDokumentasiTanggal(
+      chatId,
+      tanggal,
+      sumber,
+      user
     );
   }
 
@@ -1037,6 +1076,30 @@ Ketik /menu untuk membuka menu.`,
     return tampilkanLaporanHariIni(chatId);
   }
 
+    if (text === "🗂️ Lihat Dokumentasi") {
+    setSession(chatId, {
+      step: "lihat_dokumentasi_input_tanggal",
+      mode: "lihat_dokumentasi"
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `🗂️ LIHAT DOKUMENTASI
+
+Masukkan tanggal dokumentasi yang ingin dilihat.
+
+Format yang dapat digunakan:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Tanggal hari ini: ${getTodayDisplay()}
+
+Ketik batal untuk membatalkan.`
+    );
+  }
+
   if (text === "🖼️ Upload Dokumentasi") {
     setSession(chatId, {
       step: "dok_pilih_jenis",
@@ -1079,6 +1142,54 @@ Jabatan: *${user.jabatan}*
 Role: *${user.role}*
 Kode Login: *${user.kodeLogin}*`,
       { parse_mode: "Markdown" }
+    );
+  }
+
+    // INPUT TANGGAL UNTUK MELIHAT DOKUMENTASI
+  if (session.step === "lihat_dokumentasi_input_tanggal") {
+    if (text.toLowerCase() === "batal") {
+      clearSession(chatId);
+
+      return bot.sendMessage(
+        chatId,
+        "❌ Lihat dokumentasi dibatalkan.",
+        mainReplyKeyboard(user.role)
+      );
+    }
+
+    const tanggalDokumentasi =
+      normalisasiTanggalRekap(text);
+
+    if (!tanggalDokumentasi) {
+      return bot.sendMessage(
+        chatId,
+        `❌ Format tanggal tidak valid.
+
+Gunakan salah satu format berikut:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Ketik batal untuk membatalkan.`
+      );
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "lihat_dokumentasi_pilih_sumber",
+      mode: "lihat_dokumentasi",
+      tanggalDokumentasi
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `🗂️ Tanggal dipilih: ${tanggalIsoKeDisplay(
+        tanggalDokumentasi
+      )}
+
+Pilih sumber dokumentasi yang ingin ditampilkan:`,
+      sumberDokumentasiKeyboard()
     );
   }
 
@@ -2135,6 +2246,320 @@ RINGKASAN
   hasil += "\n✅ Rekap selesai.";
 
   return kirimPesanPanjang(chatId, hasil);
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function potongCaption(value, maksimal = 350) {
+  const text = String(value || "-").trim();
+
+  if (text.length <= maksimal) {
+    return text;
+  }
+
+  return `${text.slice(0, maksimal - 3)}...`;
+}
+
+function resolveFotoLocalPath(fotoLocalPath) {
+  if (!fotoLocalPath) {
+    return null;
+  }
+
+  const nilaiPath = String(fotoLocalPath);
+
+  return path.isAbsolute(nilaiPath)
+    ? nilaiPath
+    : path.join(__dirname, nilaiPath);
+}
+
+function buatCaptionDokumentasi(item) {
+  const lokasi =
+    item.lokasi?.namaLengkap ||
+    `${item.lokasi?.pintu || "-"} ${
+      item.lokasi?.sisi || "-"
+    }`;
+
+  const petugas = item.petugas?.nama || "-";
+
+  const tanggal =
+    item.tanggalDisplay ||
+    tanggalIsoKeDisplay(item.tanggal);
+
+  const waktu = item.waktuInput || "-";
+
+  const keterangan = potongCaption(
+    item.keterangan || "-"
+  );
+
+  if (item.sumberDokumentasi === "laporan") {
+    const periode = String(
+      item.periode || "-"
+    ).toUpperCase();
+
+    return `<b>📋 FOTO LAPORAN DEBIT 06-O</b>
+
+<b>Tanggal:</b> ${escapeHtml(tanggal)}
+<b>Waktu:</b> ${escapeHtml(waktu)}
+<b>Periode:</b> ${escapeHtml(periode)}
+<b>Lokasi:</b> ${escapeHtml(lokasi)}
+<b>H:</b> ${escapeHtml(
+      formatAngka(item.dataAir?.H)
+    )} ${escapeHtml(
+      item.dataAir?.satuanH || "cm"
+    )}
+<b>Q:</b> ${escapeHtml(
+      formatAngka(item.dataAir?.Q)
+    )} ${escapeHtml(
+      item.dataAir?.satuanQ || "lt/dt"
+    )}
+<b>Petugas:</b> ${escapeHtml(petugas)}
+<b>Keterangan:</b> ${escapeHtml(keterangan)}`;
+  }
+
+  const jenis = String(
+    item.jenisDokumentasi || "lainnya"
+  ).toUpperCase();
+
+  return `<b>🖼️ DOKUMENTASI TAMBAHAN</b>
+
+<b>Tanggal:</b> ${escapeHtml(tanggal)}
+<b>Waktu:</b> ${escapeHtml(waktu)}
+<b>Jenis:</b> ${escapeHtml(jenis)}
+<b>Lokasi:</b> ${escapeHtml(lokasi)}
+<b>Petugas:</b> ${escapeHtml(petugas)}
+<b>Keterangan:</b> ${escapeHtml(keterangan)}`;
+}
+
+async function kirimFotoDokumentasi(
+  chatId,
+  item
+) {
+  const dokumentasi =
+    item.dokumentasi || {};
+
+  const telegramFileId =
+    dokumentasi.telegramFileId;
+
+  const fullLocalPath =
+    resolveFotoLocalPath(
+      dokumentasi.fotoLocalPath
+    );
+
+  const opsi = {
+    caption: buatCaptionDokumentasi(item),
+    parse_mode: "HTML"
+  };
+
+  // Coba kirim menggunakan Telegram file ID.
+  if (telegramFileId) {
+    try {
+      await bot.sendPhoto(
+        chatId,
+        telegramFileId,
+        opsi
+      );
+
+      return true;
+    } catch (error) {
+      console.error(
+        "Gagal mengirim foto dari Telegram file ID:",
+        item.id,
+        error.message
+      );
+    }
+  }
+
+  // Jika file ID gagal, coba file lokal VPS.
+  if (
+    fullLocalPath &&
+    fs.existsSync(fullLocalPath)
+  ) {
+    try {
+      await bot.sendPhoto(
+        chatId,
+        fullLocalPath,
+        opsi
+      );
+
+      return true;
+    } catch (error) {
+      console.error(
+        "Gagal mengirim foto lokal:",
+        item.id,
+        error.message
+      );
+    }
+  }
+
+  return false;
+}
+
+async function tampilkanDokumentasiTanggal(
+  chatId,
+  tanggal,
+  sumber = "semua",
+  user = null
+) {
+  const daftar = [];
+
+  // Ambil foto yang melekat pada laporan debit.
+  if (
+    sumber === "semua" ||
+    sumber === "laporan"
+  ) {
+    const laporan = readJSON(
+      LAPORAN_PATH,
+      []
+    );
+
+    if (Array.isArray(laporan)) {
+      laporan
+        .filter((item) => {
+          return (
+            item?.tanggal === tanggal &&
+            memilikiFoto(item)
+          );
+        })
+        .forEach((item) => {
+          daftar.push({
+            ...item,
+            sumberDokumentasi: "laporan"
+          });
+        });
+    }
+  }
+
+  // Ambil dokumentasi tambahan.
+  if (
+    sumber === "semua" ||
+    sumber === "tambahan"
+  ) {
+    const dokumentasiTambahan =
+      readJSON(
+        DOKUMENTASI_PATH,
+        []
+      );
+
+    if (
+      Array.isArray(
+        dokumentasiTambahan
+      )
+    ) {
+      dokumentasiTambahan
+        .filter((item) => {
+          return (
+            item?.tanggal === tanggal &&
+            memilikiFoto(item)
+          );
+        })
+        .forEach((item) => {
+          daftar.push({
+            ...item,
+            sumberDokumentasi:
+              "tambahan"
+          });
+        });
+    }
+  }
+
+  daftar.sort((a, b) => {
+    const hasilWaktu = String(
+      a.waktuInput || ""
+    ).localeCompare(
+      String(b.waktuInput || "")
+    );
+
+    if (hasilWaktu !== 0) {
+      return hasilWaktu;
+    }
+
+    return String(
+      a.lokasi?.namaLengkap || ""
+    ).localeCompare(
+      String(
+        b.lokasi?.namaLengkap || ""
+      ),
+      "id",
+      {
+        numeric: true,
+        sensitivity: "base"
+      }
+    );
+  });
+
+  const labelSumber = {
+    semua: "Semua dokumentasi",
+    laporan: "Foto laporan debit",
+    tambahan: "Dokumentasi tambahan"
+  }[sumber] || "Semua dokumentasi";
+
+  if (daftar.length === 0) {
+    return bot.sendMessage(
+      chatId,
+      `🗂️ Tidak ada ${labelSumber.toLowerCase()} pada tanggal ${tanggalIsoKeDisplay(
+        tanggal
+      )}.`,
+      user
+        ? mainReplyKeyboard(user.role)
+        : {}
+    );
+  }
+
+  await bot.sendMessage(
+    chatId,
+    `🗂️ ${labelSumber}
+Tanggal: ${tanggalIsoKeDisplay(tanggal)}
+Jumlah catatan foto: ${daftar.length}
+
+Foto akan dikirim satu per satu.`
+  );
+
+  let berhasil = 0;
+  let tidakTersedia = 0;
+
+  for (const item of daftar) {
+    const terkirim =
+      await kirimFotoDokumentasi(
+        chatId,
+        item
+      );
+
+    if (terkirim) {
+      berhasil += 1;
+
+      // Menghindari pengiriman terlalu cepat.
+      await new Promise((resolve) => {
+        setTimeout(resolve, 250);
+      });
+    } else {
+      tidakTersedia += 1;
+    }
+  }
+
+  let hasil =
+    `✅ Selesai menampilkan dokumentasi.
+
+Berhasil dikirim: ${berhasil}
+File tidak tersedia: ${tidakTersedia}`;
+
+  if (tidakTersedia > 0) {
+    hasil += `
+
+Catatan: beberapa data lama hanya memiliki penanda adaFoto, tetapi telegramFileId dan fotoLocalPath masih kosong, sehingga foto aslinya belum dapat ditampilkan.`;
+  }
+
+  return bot.sendMessage(
+    chatId,
+    hasil,
+    user
+      ? mainReplyKeyboard(user.role)
+      : {}
+  );
 }
 
 function tampilkanLaporanHariIni(chatId) {
