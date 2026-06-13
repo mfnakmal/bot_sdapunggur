@@ -37,7 +37,7 @@ const bot = new TelegramBot(TOKEN, { polling: true });
 const USERS_PATH = "data/users.json";
 const PINTU_PATH = "data/pintu.json";
 const LAPORAN_PATH = "data/laporan_debit.json";
-const SESSIONS_PATH = "data/sessions.json";
+const SESSIONS_PATH = "runtime/sessions.json";
 const DOKUMENTASI_PATH = "data/dokumentasi.json";
 
 function getUserByTelegramId(telegramId) {
@@ -506,6 +506,463 @@ ${session.preview.id}`,
     );
   }
 
+  // PILIH PERIODE REKAP SETENGAH BULANAN
+if (
+  data === "rekap_setengah_1" ||
+  data === "rekap_setengah_2"
+) {
+  const session = getSession(chatId);
+
+  if (
+    !session ||
+    session.mode !== "rekap_setengah_bulanan" ||
+    !session.bulanRekap
+  ) {
+    return bot.sendMessage(
+      chatId,
+      "❌ Sesi rekap sudah tidak valid. Silakan pilih menu kembali."
+    );
+  }
+
+  const bagianPeriode =
+    data === "rekap_setengah_1" ? 1 : 2;
+
+  const bulanRekap = session.bulanRekap;
+
+  clearSession(chatId);
+
+  return tampilkanRekapSetengahBulanan(
+    chatId,
+    bulanRekap,
+    bagianPeriode
+  );
+}
+
+  function mulaiRekapSetengahBulanan(chatId) {
+  setSession(chatId, {
+    step: "input_bulan_rekap_setengah_bulanan",
+    mode: "rekap_setengah_bulanan"
+  });
+
+  return bot.sendMessage(
+    chatId,
+    `📆 REKAP SETENGAH BULANAN DEBIT 06-O
+
+Masukkan bulan yang ingin direkap.
+
+Contoh:
+06-2026
+06/2026
+2026-06
+bulan ini
+
+Ketik batal untuk membatalkan.`
+  );
+}
+
+function normalisasiBulanRekap(input) {
+  const nilai = String(input || "")
+    .trim()
+    .toLowerCase();
+
+  if (
+    nilai === "bulan ini" ||
+    nilai === "bulanini"
+  ) {
+    return getTodayDate().slice(0, 7);
+  }
+
+  let tahun;
+  let bulan;
+
+  const formatIndonesia = nilai.match(
+    /^(\d{1,2})[-/](\d{4})$/
+  );
+
+  const formatIso = nilai.match(
+    /^(\d{4})-(\d{1,2})$/
+  );
+
+  if (formatIndonesia) {
+    bulan = Number(formatIndonesia[1]);
+    tahun = Number(formatIndonesia[2]);
+  } else if (formatIso) {
+    tahun = Number(formatIso[1]);
+    bulan = Number(formatIso[2]);
+  } else {
+    return null;
+  }
+
+  if (
+    !Number.isInteger(tahun) ||
+    !Number.isInteger(bulan) ||
+    tahun < 2000 ||
+    tahun > 2100 ||
+    bulan < 1 ||
+    bulan > 12
+  ) {
+    return null;
+  }
+
+  return `${String(tahun).padStart(4, "0")}-${String(bulan).padStart(2, "0")}`;
+}
+
+function formatBulanRekap(bulanIso) {
+  const namaBulan = [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember"
+  ];
+
+  const bagian = String(bulanIso || "").split("-");
+
+  if (bagian.length !== 2) {
+    return bulanIso;
+  }
+
+  const tahun = bagian[0];
+  const bulan = Number(bagian[1]);
+
+  return `${namaBulan[bulan - 1] || "-"} ${tahun}`;
+}
+
+function dapatkanRentangSetengahBulanan(
+  bulanIso,
+  bagianPeriode
+) {
+  const bagian = String(bulanIso || "").split("-");
+
+  if (bagian.length !== 2) {
+    return null;
+  }
+
+  const tahun = Number(bagian[0]);
+  const bulan = Number(bagian[1]);
+
+  const hariTerakhir = new Date(
+    Date.UTC(tahun, bulan, 0)
+  ).getUTCDate();
+
+  const hariAwal =
+    bagianPeriode === 1 ? 1 : 16;
+
+  const hariAkhir =
+    bagianPeriode === 1 ? 15 : hariTerakhir;
+
+  const bulanString = String(bulan).padStart(2, "0");
+
+  return {
+    hariAwal,
+    hariAkhir,
+    tanggalAwal:
+      `${tahun}-${bulanString}-${String(hariAwal).padStart(2, "0")}`,
+    tanggalAkhir:
+      `${tahun}-${bulanString}-${String(hariAkhir).padStart(2, "0")}`
+  };
+}
+
+function nilaiAngka(nilai) {
+  const angka = Number(nilai);
+
+  return Number.isFinite(angka)
+    ? angka
+    : 0;
+}
+
+async function tampilkanRekapSetengahBulanan(
+  chatId,
+  bulanIso,
+  bagianPeriode
+) {
+  const laporan = readJSON(LAPORAN_PATH, []);
+
+  if (!Array.isArray(laporan)) {
+    return bot.sendMessage(
+      chatId,
+      "❌ Format laporan_debit.json tidak valid."
+    );
+  }
+
+  const rentang = dapatkanRentangSetengahBulanan(
+    bulanIso,
+    bagianPeriode
+  );
+
+  if (!rentang) {
+    return bot.sendMessage(
+      chatId,
+      "❌ Bulan atau periode tidak valid."
+    );
+  }
+
+  const dataRekap = laporan
+    .filter((item) => {
+      if (!item || !item.tanggal) {
+        return false;
+      }
+
+      return (
+        item.tanggal >= rentang.tanggalAwal &&
+        item.tanggal <= rentang.tanggalAkhir
+      );
+    })
+    .sort((a, b) => {
+      const hasilTanggal = String(
+        a.tanggal || ""
+      ).localeCompare(
+        String(b.tanggal || "")
+      );
+
+      if (hasilTanggal !== 0) {
+        return hasilTanggal;
+      }
+
+      return urutkanDataRekap(a, b);
+    });
+
+  const namaPeriode =
+    bagianPeriode === 1
+      ? "Tanggal 1–15"
+      : `Tanggal 16–${rentang.hariAkhir}`;
+
+  if (dataRekap.length === 0) {
+    return bot.sendMessage(
+      chatId,
+      `📆 Tidak ada laporan debit.
+
+Bulan: ${formatBulanRekap(bulanIso)}
+Periode: ${namaPeriode}`
+    );
+  }
+
+  const jumlahPagi = dataRekap.filter(
+    (item) => item.periode === "pagi"
+  ).length;
+
+  const jumlahSore = dataRekap.filter(
+    (item) => item.periode === "sore"
+  ).length;
+
+  const jumlahDebitNol = dataRekap.filter(
+    (item) => nilaiAngka(item.dataAir?.Q) === 0
+  ).length;
+
+  const jumlahDebitMengalir = dataRekap.filter(
+    (item) => nilaiAngka(item.dataAir?.Q) > 0
+  ).length;
+
+  const jumlahFoto = dataRekap.filter(
+    (item) => memilikiFoto(item)
+  ).length;
+
+  const totalQ = dataRekap.reduce(
+    (total, item) => {
+      return total + nilaiAngka(item.dataAir?.Q);
+    },
+    0
+  );
+
+  const rataRataQ =
+    dataRekap.length > 0
+      ? totalQ / dataRekap.length
+      : 0;
+
+  const daftarTanggal = new Set(
+    dataRekap.map((item) => item.tanggal)
+  );
+
+  const daftarPetugas = new Set(
+    dataRekap
+      .map((item) => item.petugas?.nama)
+      .filter(Boolean)
+  );
+
+  const rekapTanggal = {};
+
+  dataRekap.forEach((item) => {
+    const tanggal = item.tanggal;
+    const q = nilaiAngka(item.dataAir?.Q);
+
+    if (!rekapTanggal[tanggal]) {
+      rekapTanggal[tanggal] = {
+        jumlah: 0,
+        pagi: 0,
+        sore: 0,
+        debitNol: 0,
+        debitMengalir: 0,
+        totalQ: 0
+      };
+    }
+
+    rekapTanggal[tanggal].jumlah += 1;
+    rekapTanggal[tanggal].totalQ += q;
+
+    if (item.periode === "pagi") {
+      rekapTanggal[tanggal].pagi += 1;
+    }
+
+    if (item.periode === "sore") {
+      rekapTanggal[tanggal].sore += 1;
+    }
+
+    if (q > 0) {
+      rekapTanggal[tanggal].debitMengalir += 1;
+    } else {
+      rekapTanggal[tanggal].debitNol += 1;
+    }
+  });
+
+  const rekapLokasi = {};
+
+  dataRekap.forEach((item) => {
+    const pintu = item.lokasi?.pintu || "-";
+    const sisi = item.lokasi?.sisi || "-";
+
+    const namaLengkap =
+      item.lokasi?.namaLengkap ||
+      `${pintu} ${sisi}`;
+
+    const key = `${pintu}_${sisi}`;
+
+    if (!rekapLokasi[key]) {
+      rekapLokasi[key] = {
+        pintu,
+        sisi,
+        namaLengkap,
+        jumlah: 0,
+        totalH: 0,
+        totalQ: 0,
+        minimumQ: null,
+        maksimumQ: null
+      };
+    }
+
+    const h = nilaiAngka(item.dataAir?.H);
+    const q = nilaiAngka(item.dataAir?.Q);
+
+    rekapLokasi[key].jumlah += 1;
+    rekapLokasi[key].totalH += h;
+    rekapLokasi[key].totalQ += q;
+
+    if (
+      rekapLokasi[key].minimumQ === null ||
+      q < rekapLokasi[key].minimumQ
+    ) {
+      rekapLokasi[key].minimumQ = q;
+    }
+
+    if (
+      rekapLokasi[key].maksimumQ === null ||
+      q > rekapLokasi[key].maksimumQ
+    ) {
+      rekapLokasi[key].maksimumQ = q;
+    }
+  });
+
+  let hasil = `📆 REKAP SETENGAH BULANAN DEBIT 06-O
+
+Bulan: ${formatBulanRekap(bulanIso)}
+Periode: ${namaPeriode}
+Rentang: ${tanggalIsoKeDisplay(rentang.tanggalAwal)} s.d. ${tanggalIsoKeDisplay(rentang.tanggalAkhir)}
+
+RINGKASAN
+• Jumlah laporan: ${dataRekap.length}
+• Hari memiliki data: ${daftarTanggal.size}
+• Pagi: ${jumlahPagi}
+• Sore: ${jumlahSore}
+• Debit mengalir: ${jumlahDebitMengalir}
+• Debit 0: ${jumlahDebitNol}
+• Total Q: ${formatAngka(totalQ)} lt/dt
+• Rata-rata Q: ${formatAngka(rataRataQ)} lt/dt
+• Memiliki foto: ${jumlahFoto}
+• Petugas terlibat: ${daftarPetugas.size}
+`;
+
+  hasil += "\n📅 REKAP PER TANGGAL\n";
+
+  Object.keys(rekapTanggal)
+    .sort()
+    .forEach((tanggal) => {
+      const item = rekapTanggal[tanggal];
+
+      const rataRata =
+        item.jumlah > 0
+          ? item.totalQ / item.jumlah
+          : 0;
+
+      hasil += `
+• ${tanggalIsoKeDisplay(tanggal)}
+  Laporan: ${item.jumlah}
+  Pagi: ${item.pagi} | Sore: ${item.sore}
+  Q > 0: ${item.debitMengalir}
+  Q = 0: ${item.debitNol}
+  Rata-rata Q: ${formatAngka(rataRata)} lt/dt
+`;
+    });
+
+  hasil += "\n📍 REKAP PER PINTU DAN SISI\n";
+
+  Object.values(rekapLokasi)
+    .sort((a, b) => {
+      const hasilPintu = a.pintu.localeCompare(
+        b.pintu,
+        "id",
+        {
+          numeric: true,
+          sensitivity: "base"
+        }
+      );
+
+      if (hasilPintu !== 0) {
+        return hasilPintu;
+      }
+
+      return a.sisi.localeCompare(
+        b.sisi,
+        "id",
+        {
+          numeric: true,
+          sensitivity: "base"
+        }
+      );
+    })
+    .forEach((item, index) => {
+      const rataRataH =
+        item.jumlah > 0
+          ? item.totalH / item.jumlah
+          : 0;
+
+      const rataRataQ =
+        item.jumlah > 0
+          ? item.totalQ / item.jumlah
+          : 0;
+
+      hasil += `
+${index + 1}. ${item.namaLengkap}
+   Jumlah catatan: ${item.jumlah}
+   Rata-rata H: ${formatAngka(rataRataH)} cm
+   Rata-rata Q: ${formatAngka(rataRataQ)} lt/dt
+   Q min–maks: ${formatAngka(item.minimumQ)}–${formatAngka(item.maksimumQ)} lt/dt
+`;
+    });
+
+  hasil += "\n✅ Rekap setengah bulanan selesai.";
+
+  return kirimPesanPanjang(
+    chatId,
+    hasil
+  );
+}
+
   if (data === "laporan_hari_ini") {
     return tampilkanLaporanHariIni(chatId);
   }
@@ -601,8 +1058,8 @@ Ketik /menu untuk membuka menu.`,
 }
 
   if (text === "📆 Rekap Setengah Bulanan") {
-    return bot.sendMessage(chatId, "📆 Fitur rekap setengah bulanan kita buat di tahap berikutnya.");
-  }
+  return mulaiRekapSetengahBulanan(chatId);
+}
 
   if (text === "📤 Export Excel") {
     return bot.sendMessage(chatId, "📤 Fitur export Excel kita buat setelah database laporan sudah aman.");
@@ -656,6 +1113,75 @@ Ketik batal untuk membatalkan.`
 
   clearSession(chatId);
   return tampilkanRekapHarian(chatId, tanggalRekap);
+}
+
+// INPUT BULAN REKAP SETENGAH BULANAN
+if (session.step === "input_bulan_rekap_setengah_bulanan") {
+  if (text.toLowerCase() === "batal") {
+    clearSession(chatId);
+
+    return bot.sendMessage(
+      chatId,
+      "❌ Rekap setengah bulanan dibatalkan.",
+      mainReplyKeyboard(user.role)
+    );
+  }
+
+  const bulanRekap = normalisasiBulanRekap(text);
+
+  if (!bulanRekap) {
+    return bot.sendMessage(
+      chatId,
+      `❌ Format bulan tidak valid.
+
+Gunakan salah satu format berikut:
+
+06-2026
+06/2026
+2026-06
+bulan ini
+
+Ketik batal untuk membatalkan.`
+    );
+  }
+
+  setSession(chatId, {
+    ...session,
+    step: "pilih_periode_rekap_setengah_bulanan",
+    mode: "rekap_setengah_bulanan",
+    bulanRekap
+  });
+
+  return bot.sendMessage(
+    chatId,
+    `📆 Bulan dipilih: ${formatBulanRekap(bulanRekap)}
+
+Silakan pilih periode:`,
+    {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            {
+              text: "📅 Tanggal 1–15",
+              callback_data: "rekap_setengah_1"
+            }
+          ],
+          [
+            {
+              text: "📅 Tanggal 16–Akhir Bulan",
+              callback_data: "rekap_setengah_2"
+            }
+          ],
+          [
+            {
+              text: "❌ Batal",
+              callback_data: "batal"
+            }
+          ]
+        ]
+      }
+    }
+  );
 }
 
   // UPLOAD FOTO DOKUMENTASI TAMBAHAN
