@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "DOK-2026-06-13-BPU_9-1781332078558",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "waktuInput": "20:27",
+    "jenisDokumentasi": "pintu",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "umum",
+      "namaLengkap": "BPU 9 umum"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": "AgACAgUAAxkBAAIBI2os5Vadtsfkt0ULHU4vaDVEGVbHAAJtEGsbFOJpVZi-noT7rr_oAQADAgADeQADPAQ",
+      "fotoLocalPath": "uploads/2026-06-13/dokumentasi/2026-06-13_dok_pintu_BPU_9_umum_1781332072019.jpg"
+    },
+    "keterangan": "FOTO BPU 9",
+    "createdAt": "2026-06-13T20:27:58+07:00"
+  }
+]
