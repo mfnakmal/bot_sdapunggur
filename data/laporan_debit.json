@@ -1,5 +1,6550 @@
 [
   {
+    "id": "LAP-2026-06-01-pagi-BPU_9-ka-129",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_9-ka_2-130",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_9-ki-131",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_10-ka-132",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 10,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_10-ki-133",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 5,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_11-ka-134",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_11-ki-135",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_12-ka-136",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_12-ki-137",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_13-ka-138",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_13-ki_1-139",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_13-ki_2-140",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_14-ka-141",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_14-ki-142",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_15-ka-143",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_15-ki_1-144",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-pagi-BPU_15-ki_2-145",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_9-ka-146",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_9-ka_2-147",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_9-ki-148",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_10-ka-149",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_10-ki-150",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 10,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_11-ka-151",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_11-ki-152",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_12-ka-153",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_12-ki-154",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_13-ka-155",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_13-ki_1-156",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_13-ki_2-157",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_14-ka-158",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_14-ki-159",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_15-ka-160",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_15-ki_1-161",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-01-sore-BPU_15-ki_2-162",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-01",
+    "tanggalDisplay": "01-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-01T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_9-ka-163",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_9-ka_2-164",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_9-ki-165",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_10-ka-166",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_10-ki-167",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 10,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_11-ka-168",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_11-ki-169",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_12-ka-170",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_12-ki-171",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_13-ka-172",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_13-ki_1-173",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_13-ki_2-174",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_14-ka-175",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_14-ki-176",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_15-ka-177",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_15-ki_1-178",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-pagi-BPU_15-ki_2-179",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_9-ka-180",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_9-ka_2-181",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_9-ki-182",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_10-ka-183",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_10-ki-184",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_11-ka-185",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_11-ki-186",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_12-ka-187",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_12-ki-188",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_13-ka-189",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_13-ki_1-190",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_13-ki_2-191",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_14-ka-192",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_14-ki-193",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_15-ka-194",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_15-ki_1-195",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-02-sore-BPU_15-ki_2-196",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-02",
+    "tanggalDisplay": "02-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-02T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_9-ka-197",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_9-ka_2-198",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_9-ki-199",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_10-ka-200",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_10-ki-201",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_11-ka-202",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_11-ki-203",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_12-ka-204",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_12-ki-205",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_13-ka-206",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_13-ki_1-207",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_13-ki_2-208",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_14-ka-209",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_14-ki-210",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_15-ka-211",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_15-ki_1-212",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-pagi-BPU_15-ki_2-213",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_9-ka-214",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_9-ka_2-215",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_9-ki-216",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_10-ka-217",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_10-ki-218",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_11-ka-219",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_11-ki-220",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_12-ka-221",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_12-ki-222",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_13-ka-223",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_13-ki_1-224",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_13-ki_2-225",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_14-ka-226",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_14-ki-227",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_15-ka-228",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_15-ki_1-229",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-03-sore-BPU_15-ki_2-230",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-03",
+    "tanggalDisplay": "03-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-03T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_9-ka-231",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_9-ka_2-232",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_9-ki-233",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_10-ka-234",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_10-ki-235",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 10,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_11-ka-236",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_11-ki-237",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_12-ka-238",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_12-ki-239",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_13-ka-240",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_13-ki_1-241",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_13-ki_2-242",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_14-ka-243",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_14-ki-244",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_15-ka-245",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_15-ki_1-246",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-pagi-BPU_15-ki_2-247",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T08:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_9-ka-248",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_9-ka_2-249",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_9-ki-250",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_10-ka-251",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_10-ki-252",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 15,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_11-ka-253",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_11-ki-254",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_12-ka-255",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_12-ki-256",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_13-ka-257",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_13-ki_1-258",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_13-ki_2-259",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_14-ka-260",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_14-ki-261",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_15-ka-262",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_15-ki_1-263",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-04-sore-BPU_15-ki_2-264",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-04",
+    "tanggalDisplay": "04-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-04T17:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_9-ka-265",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_9-ka_2-266",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_9-ki-267",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BD_4-ka-268",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:14",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 8,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; pembacaan H pada foto tertulis 8 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:14:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BD_4-ki-269",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:14",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 8,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; pembacaan H pada foto tertulis 8 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:14:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_11-ka-270",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:17",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 56 Ha; H pada foto 0,5 m dikonversi menjadi 50 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:17:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_11-ki-271",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:17",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 24 Ha; H pada foto 0,5 m dikonversi menjadi 50 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:17:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_12-ka-272",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_12-ki-273",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_13-ka-274",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 70 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_13-ki_1-275",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_13-ki_2-276",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 64 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BD_6-ka_1-277",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BD_6-ka_2-278",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BD_6-ki-279",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_15-ka-280",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 73 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_15-ki_1-281",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_15-ki_2-282",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 45 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_14-ka-283",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_14-ki-284",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_10-ka-285",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:20",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DHARMA TRI SETIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 125 Ha; H primer 200 cm; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:20:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BPU_10-ki-286",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:20",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DHARMA TRI SETIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 56 Ha; H primer 200 cm; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:20:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BG_1-ka_1-287",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.1",
+      "namaLengkap": "BG 1 ka.1"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BG_1-ka_2-288",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.2",
+      "namaLengkap": "BG 1 ka.2"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BG_1-ka_3-289",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.3",
+      "namaLengkap": "BG 1 ka.3"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-pagi-BG_1-ki-290",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ki",
+      "namaLengkap": "BG 1 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T08:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_15-ka-291",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:04",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 73 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:04:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_15-ki_1-292",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:04",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:04:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_15-ki_2-293",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:04",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 45 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:04:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_11-ka-294",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 56 Ha; H pada foto 0,5 m dikonversi menjadi 50 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_11-ki-295",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 24 Ha; H pada foto 0,5 m dikonversi menjadi 50 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_13-ka-296",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 70 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_13-ki_1-297",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_13-ki_2-298",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 64 Ha; jatah gilir bawah; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_10-ka-299",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 25,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_10-ki-300",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BD_6-ka_1-301",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:21",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 56,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:21:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BD_6-ka_2-302",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:21",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 33.4,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:21:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BD_6-ki-303",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:21",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 38.7,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:21:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BD_4-ka-304",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:22",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 72,
+      "satuanH": "cm",
+      "Q": 177.3,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:22:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BD_4-ki-305",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:22",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 72,
+      "satuanH": "cm",
+      "Q": 217.1,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:22:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_9-ka-306",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:26",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 140 Ha; jatah gilir bawah 1–5 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:26:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_9-ka_2-307",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:26",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 28 Ha; jatah gilir bawah 1–5 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:26:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_9-ki-308",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:26",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 65 Ha; jatah gilir bawah 1–5 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:26:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_12-ka-309",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_12-ki-310",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_14-ka-311",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-05-sore-BPU_14-ki-312",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-05",
+    "tanggalDisplay": "05-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DATA SIMULASI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi/estimasi untuk pengujian; Q ditetapkan 0 lt/dt; H merupakan nilai perkiraan, bukan hasil pengukuran lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-05T16:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-08-pagi-BD_6-ka_1-313",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-08",
+    "tanggalDisplay": "08-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:52",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 56,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-08T07:52:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-08-pagi-BD_6-ka_2-314",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-08",
+    "tanggalDisplay": "08-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:52",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 33.4,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-08T07:52:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-08-pagi-BD_6-ki-315",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-08",
+    "tanggalDisplay": "08-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:52",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 38.7,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-08T07:52:00+07:00"
+  },
+  {
     "id": "LAP-2026-06-08-sore-BPU_14-ka-128",
     "jenisBlanko": "06-O",
     "tanggal": "2026-06-08",
@@ -68,6 +6613,76 @@
     "keterangan": "F: 20 Ha; W: 20 cm; Data berdasarkan dokumentasi lapangan.",
     "status": "tersimpan",
     "createdAt": "2026-06-08T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_11-ka-316",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:17",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 49,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 56 Ha; H pada foto 0,4 m dikonversi menjadi 40 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:17:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_11-ki-317",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:17",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 21,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 24 Ha; H pada foto 0,4 m dikonversi menjadi 40 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:17:00+07:00"
   },
   {
     "id": "LAP-2026-06-09-pagi-BPU_15-ka-108",
@@ -278,6 +6893,111 @@
     "keterangan": "F: 64 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
     "status": "tersimpan",
     "createdAt": "2026-06-09T07:44:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BD_6-ka_1-318",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:49",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:49:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BD_6-ka_2-319",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:49",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:49:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BD_6-ki-320",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:49",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:49:00+07:00"
   },
   {
     "id": "LAP-2026-06-09-pagi-BD_4-ka-125",
