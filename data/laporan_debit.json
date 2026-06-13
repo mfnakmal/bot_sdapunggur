@@ -1,5 +1,1125 @@
 [
   {
+    "id": "LAP-2026-06-08-sore-BPU_14-ka-128",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-08",
+    "tanggalDisplay": "08-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ka",
+      "namaLengkap": "BPU 14 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 1085.3,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 240 Ha; W: 30 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-08T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-08-sore-BPU_14-ki-127",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-08",
+    "tanggalDisplay": "08-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 45.3,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 20 Ha; W: 20 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-08T16:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_15-ka-108",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 21,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 73 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_15-ki_1-109",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 120,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_15-ki_2-110",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 15,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 45 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_13-ka-122",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:44",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 64.5,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 70 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:44:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_13-ki_1-120",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:44",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 23.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:44:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_13-ki_2-121",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:44",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 57.6,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 64 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:44:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BD_4-ka-125",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:54",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 42,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:54:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BD_4-ki-126",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:54",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 42,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T07:54:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_9-ka-115",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:28",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 249.4,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 140 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:28:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_9-ka_2-116",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:28",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 70.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 28 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:28:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BPU_9-ki-114",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:28",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 209.2,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 65 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:28:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BG_1-ka_1-101",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:40",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.1",
+      "namaLengkap": "BG 1 ka.1"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 145,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:40:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BG_1-ka_2-102",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:40",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.2",
+      "namaLengkap": "BG 1 ka.2"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 235,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:40:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BG_1-ka_3-103",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:40",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.3",
+      "namaLengkap": "BG 1 ka.3"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 30,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:40:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-pagi-BG_1-ki-104",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:40",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ki",
+      "namaLengkap": "BG 1 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 30,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T08:40:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_13-ka-119",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 64.5,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 70 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_13-ki_1-117",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 23.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_13-ki_2-118",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:12",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 57.6,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 64 Ha; jatah gilir atas; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:12:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BD_4-ka-123",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:27",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 56,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:27:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BD_4-ki-124",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:27",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 56,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:27:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BG_1-ka_1-097",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:46",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.1",
+      "namaLengkap": "BG 1 ka.1"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 105,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:46:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BG_1-ka_2-098",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:46",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.2",
+      "namaLengkap": "BG 1 ka.2"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 135,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:46:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BG_1-ka_3-099",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:46",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.3",
+      "namaLengkap": "BG 1 ka.3"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 10,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:46:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BG_1-ki-100",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:46",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ki",
+      "namaLengkap": "BG 1 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 10,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T16:46:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_9-ka-112",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:07",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 197.2,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 140 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:07:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_9-ka_2-113",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:07",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 87.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 28 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:07:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_9-ki-111",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:07",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 70,
+      "satuanH": "cm",
+      "Q": 169.9,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 65 Ha; jatah gilir atas 6–9 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:07:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_15-ka-105",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 21,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 73 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_15-ki_1-106",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 120,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-09-sore-BPU_15-ki_2-107",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-09",
+    "tanggalDisplay": "09-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 15,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 45 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-09T17:25:00+07:00"
+  },
+  {
     "id": "LAP-2026-06-10-pagi-BPU_9-ki-001",
     "jenisBlanko": "06-O",
     "tanggal": "2026-06-10",
@@ -455,6 +1575,76 @@
     "createdAt": "2026-06-10T07:59:00+07:00"
   },
   {
+    "id": "LAP-2026-06-10-pagi-BD_4-ka-091",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:02",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 15.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T08:02:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BD_4-ki-092",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:02",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 15.8,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T08:02:00+07:00"
+  },
+  {
     "id": "LAP-2026-06-10-pagi-BPU_15-ka-014",
     "jenisBlanko": "06-O",
     "tanggal": "2026-06-10",
@@ -488,6 +1678,321 @@
     "keterangan": "Data simulasi PKL; debit 0 lt/dt",
     "status": "tersimpan",
     "createdAt": "2026-06-10T08:03:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BG_1-ka_1-093",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "09:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.1",
+      "namaLengkap": "BG 1 ka.1"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T09:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BG_1-ka_2-094",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "09:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.2",
+      "namaLengkap": "BG 1 ka.2"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T09:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BG_1-ka_3-095",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "09:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.3",
+      "namaLengkap": "BG 1 ka.3"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T09:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BG_1-ki-096",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "09:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ki",
+      "namaLengkap": "BG 1 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T09:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-sore-BD_4-ka-089",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 68,
+      "satuanH": "cm",
+      "Q": 16.4,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T16:38:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-sore-BD_4-ki-090",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "TIDAK TERCANTUM",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 68,
+      "satuanH": "cm",
+      "Q": 149.2,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T16:38:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-sore-BD_6-ka_1-087",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 56,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T16:38:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-sore-BD_6-ka_2-088",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 33.4,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T16:38:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-sore-BD_6-ki-086",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 38.7,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T16:38:00+07:00"
   },
   {
     "id": "LAP-2026-06-11-pagi-BPU_9-ki-015",
@@ -980,6 +2485,146 @@
     "createdAt": "2026-06-11T08:03:00+07:00"
   },
   {
+    "id": "LAP-2026-06-11-sore-BG_1-ka_1-082",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.1",
+      "namaLengkap": "BG 1 ka.1"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 105,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T16:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-sore-BG_1-ka_2-083",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.2",
+      "namaLengkap": "BG 1 ka.2"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 135,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T16:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-sore-BG_1-ka_3-084",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ka.3",
+      "namaLengkap": "BG 1 ka.3"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 10,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T16:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-sore-BG_1-ki-085",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BG 1",
+      "sisi": "ki",
+      "namaLengkap": "BG 1 ki"
+    },
+    "dataAir": {
+      "H": 65,
+      "satuanH": "cm",
+      "Q": 10,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 106 Ha; W: 14 cm; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T16:32:00+07:00"
+  },
+  {
     "id": "LAP-2026-06-12-pagi-BPU_9-ki-029",
     "jenisBlanko": "06-O",
     "tanggal": "2026-06-12",
@@ -1470,6 +3115,111 @@
     "createdAt": "2026-06-12T08:07:00+07:00"
   },
   {
+    "id": "LAP-2026-06-12-pagi-BD_6-ka_1-080",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.1",
+      "namaLengkap": "BD 6 ka.1"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 24.3,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 32 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:19:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BD_6-ka_2-081",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ka.2",
+      "namaLengkap": "BD 6 ka.2"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 29.5,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 62 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:19:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BD_6-ki-079",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 6",
+      "sisi": "ki",
+      "namaLengkap": "BD 6 ki"
+    },
+    "dataAir": {
+      "H": 30,
+      "satuanH": "cm",
+      "Q": 22.2,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 33 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:19:00+07:00"
+  },
+  {
     "id": "LAP-2026-06-12-pagi-BD_4-ka-043",
     "jenisBlanko": "06-O",
     "tanggal": "2026-06-12",
@@ -1538,6 +3288,216 @@
     "keterangan": "F: 36; data berdasarkan dokumentasi lapangan",
     "status": "tersimpan",
     "createdAt": "2026-06-12T08:29:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_15-ka-076",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:24",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 55,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 73 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T16:24:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_15-ki_1-077",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:24",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 15 ki.1"
+    },
+    "dataAir": {
+      "H": 35,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 25 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T16:24:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_15-ki_2-078",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "16:24",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 15 ki.2"
+    },
+    "dataAir": {
+      "H": 45,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 45 Ha; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T16:24:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_9-ka-074",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:13",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 140 Ha; jatah gilir bawah 10–14 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T17:13:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_9-ka_2-075",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:13",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 20,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 28 Ha; jatah gilir bawah 10–14 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T17:13:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-sore-BPU_9-ki-073",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "sore",
+    "waktuInput": "17:13",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 60,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 65 Ha; jatah gilir bawah 10–14 Juni 2026; Data berdasarkan dokumentasi lapangan.",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T17:13:00+07:00"
   },
   {
     "id": "LAP-2026-06-13-pagi-BPU_9-ki-045",
