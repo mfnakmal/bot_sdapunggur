@@ -181,6 +181,56 @@ function sumberDokumentasiKeyboard() {
   };
 }
 
+function modeUploadDokumentasiKeyboard() {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: "📷 Upload 1 Foto",
+            callback_data: "dok_upload_tunggal"
+          }
+        ],
+        [
+          {
+            text: "🖼️ Upload Banyak Foto",
+            callback_data: "dok_upload_bulk"
+          }
+        ],
+        [
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
+        ]
+      ]
+    }
+  };
+}
+
+function selesaiUploadBulkKeyboard(
+  jumlahFoto = 0
+) {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: `✅ Selesai Upload (${jumlahFoto})`,
+            callback_data: "dok_bulk_selesai"
+          }
+        ],
+        [
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
+        ]
+      ]
+    }
+  };
+}
+
 function jenisDokumentasiKeyboard() {
   return {
     reply_markup: {
@@ -278,6 +328,8 @@ module.exports = {
   konfirmasiKeyboard,
   fotoOpsionalKeyboard,
   sumberDokumentasiKeyboard,
+  modeUploadDokumentasiKeyboard,
+  selesaiUploadBulkKeyboard,
   jenisDokumentasiKeyboard,
   sisiDokumentasiKeyboard
 };

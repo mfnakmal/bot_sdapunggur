@@ -22,6 +22,8 @@ const {
   konfirmasiKeyboard,
   fotoOpsionalKeyboard,
   sumberDokumentasiKeyboard,
+  modeUploadDokumentasiKeyboard,
+  selesaiUploadBulkKeyboard,
   jenisDokumentasiKeyboard,
   sisiDokumentasiKeyboard
 } = require("./utils/keyboard");
@@ -40,6 +42,67 @@ const PINTU_PATH = "data/pintu.json";
 const LAPORAN_PATH = "data/laporan_debit.json";
 const SESSIONS_PATH = "runtime/sessions.json";
 const DOKUMENTASI_PATH = "data/dokumentasi.json";
+
+const bulkUploadQueues = new Map();
+
+function enqueueBulkUpload(
+  chatId,
+  task
+) {
+  const key = String(chatId);
+
+  const antreanSebelumnya =
+    bulkUploadQueues.get(key) ||
+    Promise.resolve();
+
+  const antreanSekarang =
+    antreanSebelumnya
+      .catch(() => {
+        // Antrean lama gagal, tetapi antrean
+        // berikutnya tetap dilanjutkan.
+      })
+      .then(task);
+
+  bulkUploadQueues.set(
+    key,
+    antreanSekarang
+  );
+
+  antreanSekarang.then(
+    () => {
+      if (
+        bulkUploadQueues.get(key) ===
+        antreanSekarang
+      ) {
+        bulkUploadQueues.delete(key);
+      }
+    },
+    () => {
+      if (
+        bulkUploadQueues.get(key) ===
+        antreanSekarang
+      ) {
+        bulkUploadQueues.delete(key);
+      }
+    }
+  );
+
+  return antreanSekarang;
+}
+
+async function tungguBulkUpload(chatId) {
+  const antrean =
+    bulkUploadQueues.get(
+      String(chatId)
+    );
+
+  if (antrean) {
+    await antrean.catch(() => {
+      // Kesalahan foto sudah ditangani
+      // pada proses upload masing-masing.
+    });
+  }
+}
 
 function getUserByTelegramId(telegramId) {
   const users = readJSON(USERS_PATH, {});
@@ -453,21 +516,34 @@ Contoh:
     );
   }
 
-  // PILIH SISI UNTUK DOKUMENTASI
-  if (data === "dok_sisi_umum" || data.startsWith("dok_sisi_")) {
+   // PILIH SISI UNTUK DOKUMENTASI
+  if (
+    data === "dok_sisi_umum" ||
+    data.startsWith("dok_sisi_")
+  ) {
     const session = getSession(chatId);
 
-    if (!session || session.mode !== "upload_dokumentasi") {
-      return bot.sendMessage(chatId, "Sesi dokumentasi tidak valid. Silakan ulangi.");
+    if (
+      !session ||
+      session.mode !== "upload_dokumentasi"
+    ) {
+      return bot.sendMessage(
+        chatId,
+        "Sesi dokumentasi tidak valid. Silakan ulangi."
+      );
     }
 
-    const sisi = data === "dok_sisi_umum"
-      ? "umum"
-      : data.replace("dok_sisi_", "");
+    const sisi =
+      data === "dok_sisi_umum"
+        ? "umum"
+        : data.replace(
+            "dok_sisi_",
+            ""
+          );
 
     setSession(chatId, {
       ...session,
-      step: "dok_upload_foto",
+      step: "dok_pilih_mode_upload",
       sisi
     });
 
@@ -475,8 +551,126 @@ Contoh:
       chatId,
       `✅ Lokasi dokumentasi dipilih: *${session.pintu} ${sisi}*
 
-Sekarang kirim foto dokumentasi.`,
-      { parse_mode: "Markdown" }
+Pilih cara upload dokumentasi:`,
+      {
+        parse_mode: "Markdown",
+        ...modeUploadDokumentasiKeyboard()
+      }
+    );
+  }
+
+    // UPLOAD DOKUMENTASI TUNGGAL
+  if (data === "dok_upload_tunggal") {
+    const session = getSession(chatId);
+
+    if (
+      !session ||
+      session.mode !== "upload_dokumentasi" ||
+      session.step !== "dok_pilih_mode_upload"
+    ) {
+      return bot.sendMessage(
+        chatId,
+        "❌ Sesi upload dokumentasi tidak valid."
+      );
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_upload_foto"
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `📷 Silakan kirim satu foto dokumentasi.
+
+Lokasi: ${session.pintu} ${session.sisi}`
+    );
+  }
+
+  // UPLOAD DOKUMENTASI BULK
+  if (data === "dok_upload_bulk") {
+    const session = getSession(chatId);
+
+    if (
+      !session ||
+      session.mode !== "upload_dokumentasi" ||
+      session.step !== "dok_pilih_mode_upload"
+    ) {
+      return bot.sendMessage(
+        chatId,
+        "❌ Sesi upload dokumentasi tidak valid."
+      );
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_bulk_input_tanggal",
+      fotoBulk: []
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `🖼️ UPLOAD DOKUMENTASI BULK
+
+Lokasi: ${session.pintu} ${session.sisi}
+
+Masukkan tanggal dokumentasi untuk seluruh foto dalam batch ini.
+
+Format:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Satu batch hanya boleh berisi foto dengan tanggal dan lokasi yang sama.
+
+Ketik batal untuk membatalkan.`
+    );
+  }
+
+  // SELESAI MENGIRIM FOTO BULK
+  if (data === "dok_bulk_selesai") {
+    await tungguBulkUpload(chatId);
+
+    const session = getSession(chatId);
+
+    if (
+      !session ||
+      session.mode !== "upload_dokumentasi" ||
+      session.step !== "dok_upload_foto_bulk"
+    ) {
+      return bot.sendMessage(
+        chatId,
+        "❌ Sesi upload bulk sudah tidak valid."
+      );
+    }
+
+    const fotoBulk =
+      Array.isArray(session.fotoBulk)
+        ? session.fotoBulk
+        : [];
+
+    if (fotoBulk.length === 0) {
+      return bot.sendMessage(
+        chatId,
+        "❌ Belum ada foto yang diterima. Kirim minimal satu foto.",
+        selesaiUploadBulkKeyboard(0)
+      );
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_bulk_input_keterangan"
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `✅ ${fotoBulk.length} foto berhasil diterima.
+
+Sekarang tulis satu keterangan yang akan digunakan untuk seluruh foto.
+
+Contoh:
+Dokumentasi lama kondisi BPU 9 seluruh sisi`
     );
   }
 
@@ -1269,6 +1463,246 @@ Silakan pilih periode:`,
   );
 }
 
+  // INPUT TANGGAL DOKUMENTASI BULK
+  if (
+    session.step ===
+    "dok_bulk_input_tanggal"
+  ) {
+    if (
+      text.toLowerCase() === "batal"
+    ) {
+      clearSession(chatId);
+
+      return bot.sendMessage(
+        chatId,
+        "❌ Upload dokumentasi bulk dibatalkan.",
+        mainReplyKeyboard(user.role)
+      );
+    }
+
+    const tanggalDokumentasi =
+      normalisasiTanggalRekap(text);
+
+    if (!tanggalDokumentasi) {
+      return bot.sendMessage(
+        chatId,
+        `❌ Format tanggal tidak valid.
+
+Gunakan:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Ketik batal untuk membatalkan.`
+      );
+    }
+
+    setSession(chatId, {
+      ...session,
+      step: "dok_upload_foto_bulk",
+      tanggalDokumentasi,
+      fotoBulk: []
+    });
+
+    return bot.sendMessage(
+      chatId,
+      `🖼️ Silakan kirim semua foto dokumentasi.
+
+Tanggal: ${tanggalIsoKeDisplay(
+        tanggalDokumentasi
+      )}
+Lokasi: ${session.pintu} ${session.sisi}
+
+Kamu boleh:
+• Mengirim beberapa foto sekaligus sebagai album.
+• Mengirim foto satu per satu.
+• Mengirim beberapa album.
+
+Setelah semua foto selesai dikirim, klik tombol Selesai Upload atau ketik selesai.`,
+      selesaiUploadBulkKeyboard(0)
+    );
+  }
+
+    // TERIMA FOTO DOKUMENTASI BULK
+  if (
+    session.step ===
+    "dok_upload_foto_bulk"
+  ) {
+    if (
+      text.toLowerCase() === "selesai"
+    ) {
+      await tungguBulkUpload(chatId);
+
+      const sessionTerbaru =
+        getSession(chatId);
+
+      const fotoBulk =
+        Array.isArray(
+          sessionTerbaru.fotoBulk
+        )
+          ? sessionTerbaru.fotoBulk
+          : [];
+
+      if (fotoBulk.length === 0) {
+        return bot.sendMessage(
+          chatId,
+          "❌ Belum ada foto yang diterima.",
+          selesaiUploadBulkKeyboard(0)
+        );
+      }
+
+      setSession(chatId, {
+        ...sessionTerbaru,
+        step: "dok_bulk_input_keterangan"
+      });
+
+      return bot.sendMessage(
+        chatId,
+        `✅ ${fotoBulk.length} foto berhasil diterima.
+
+Sekarang tulis satu keterangan yang akan digunakan untuk seluruh foto.`
+      );
+    }
+
+    if (
+      !msg.photo ||
+      msg.photo.length === 0
+    ) {
+      return bot.sendMessage(
+        chatId,
+        `Silakan kirim foto dokumentasi.
+
+Setelah selesai, klik tombol Selesai Upload atau ketik selesai.`,
+        selesaiUploadBulkKeyboard(
+          Array.isArray(session.fotoBulk)
+            ? session.fotoBulk.length
+            : 0
+        )
+      );
+    }
+
+    return enqueueBulkUpload(
+      chatId,
+      async () => {
+        const sessionTerbaru =
+          getSession(chatId);
+
+        if (
+          sessionTerbaru.step !==
+          "dok_upload_foto_bulk"
+        ) {
+          return;
+        }
+
+        const largestPhoto =
+          msg.photo[
+            msg.photo.length - 1
+          ];
+
+        const fileId =
+          largestPhoto.file_id;
+
+        const tanggalDokumentasi =
+          sessionTerbaru
+            .tanggalDokumentasi ||
+          getTodayDate();
+
+        const jenis =
+          sessionTerbaru
+            .jenisDokumentasi ||
+          "lainnya";
+
+        const nomorFoto =
+          Array.isArray(
+            sessionTerbaru.fotoBulk
+          )
+            ? sessionTerbaru
+                .fotoBulk.length + 1
+            : 1;
+
+        const namaFile =
+          `${tanggalDokumentasi}_bulk_` +
+          `${sanitizeFileName(jenis)}_` +
+          `${sanitizeFileName(
+            sessionTerbaru.pintu
+          )}_` +
+          `${sanitizeFileName(
+            sessionTerbaru.sisi
+          )}_` +
+          `${Date.now()}_` +
+          `${nomorFoto}.jpg`;
+
+        const localPath = path.join(
+          "uploads",
+          tanggalDokumentasi,
+          "dokumentasi",
+          "bulk",
+          namaFile
+        );
+
+        const fullLocalPath =
+          path.join(
+            __dirname,
+            localPath
+          );
+
+        try {
+          await downloadTelegramFile(
+            fileId,
+            fullLocalPath
+          );
+        } catch (error) {
+          console.error(
+            "Gagal menyimpan foto bulk:",
+            error
+          );
+
+          return bot.sendMessage(
+            chatId,
+            "❌ Salah satu foto gagal disimpan. Silakan kirim ulang foto tersebut."
+          );
+        }
+
+        const fotoBulk =
+          Array.isArray(
+            sessionTerbaru.fotoBulk
+          )
+            ? [
+                ...sessionTerbaru
+                  .fotoBulk
+              ]
+            : [];
+
+        fotoBulk.push({
+          telegramFileId: fileId,
+          fotoLocalPath: localPath,
+          mediaGroupId:
+            msg.media_group_id || null
+        });
+
+        setSession(chatId, {
+          ...sessionTerbaru,
+          fotoBulk
+        });
+
+        scheduleBackup(
+          "upload dokumentasi bulk"
+        );
+
+        return bot.sendMessage(
+          chatId,
+          `✅ Foto ke-${fotoBulk.length} berhasil diterima.
+
+Kirim foto berikutnya atau klik Selesai Upload.`,
+          selesaiUploadBulkKeyboard(
+            fotoBulk.length
+          )
+        );
+      }
+    );
+  }
+
   // UPLOAD FOTO DOKUMENTASI TAMBAHAN
   if (session.step === "dok_upload_foto") {
     if (!msg.photo || msg.photo.length === 0) {
@@ -1311,6 +1745,168 @@ Sekarang tulis keterangan singkat.
 
 Contoh:
 Foto BPU 11 mewakili sisi ki dan ka`
+    );
+  }
+
+    // SIMPAN KETERANGAN DOKUMENTASI BULK
+  if (
+    session.step ===
+    "dok_bulk_input_keterangan"
+  ) {
+    const keterangan =
+      String(
+        msg.text || ""
+      ).trim();
+
+    if (!keterangan) {
+      return bot.sendMessage(
+        chatId,
+        "Keterangan tidak boleh kosong."
+      );
+    }
+
+    const fotoBulk =
+      Array.isArray(session.fotoBulk)
+        ? session.fotoBulk
+        : [];
+
+    if (fotoBulk.length === 0) {
+      clearSession(chatId);
+
+      return bot.sendMessage(
+        chatId,
+        "❌ Data foto bulk kosong. Silakan ulangi upload.",
+        mainReplyKeyboard(user.role)
+      );
+    }
+
+    const tanggalDokumentasi =
+      session.tanggalDokumentasi ||
+      getTodayDate();
+
+    const dokumentasiList =
+      readJSON(
+        DOKUMENTASI_PATH,
+        []
+      );
+
+    const batchId =
+      `BULK-${Date.now()}`;
+
+    const tanggalUpload =
+      getTodayDate();
+
+    const waktuUpload =
+      getTimeNow();
+
+    const createdAt =
+      getTimestamp();
+
+    const daftarItem =
+      fotoBulk.map(
+        (foto, index) => {
+          return {
+            id:
+              `DOK-${tanggalDokumentasi}-` +
+              `${sanitizeFileName(
+                session.pintu
+              )}-` +
+              `${batchId}-` +
+              `${index + 1}`,
+
+            tanggal:
+              tanggalDokumentasi,
+
+            tanggalDisplay:
+              tanggalIsoKeDisplay(
+                tanggalDokumentasi
+              ),
+
+            // Waktu dokumentasi lama tidak
+            // diketahui, jadi tidak ditebak.
+            waktuInput: null,
+
+            jenisDokumentasi:
+              session.jenisDokumentasi ||
+              "lainnya",
+
+            petugas: {
+              telegramId:
+                String(telegramId),
+              nama: user.nama,
+              jabatan: user.jabatan,
+              role: user.role
+            },
+
+            lokasi: {
+              daerahIrigasi:
+                "DI Punggur Utara",
+              saluran:
+                "Saluran Sekunder",
+              pintu:
+                session.pintu,
+              sisi:
+                session.sisi,
+              namaLengkap:
+                `${session.pintu} ${session.sisi}`
+            },
+
+            dokumentasi: {
+              adaFoto: true,
+              telegramFileId:
+                foto.telegramFileId,
+              fotoLocalPath:
+                foto.fotoLocalPath
+            },
+
+            keterangan,
+
+            bulk: {
+              batchId,
+              urutan: index + 1,
+              jumlahFoto:
+                fotoBulk.length,
+              tanggalUpload,
+              waktuUpload
+            },
+
+            createdAt
+          };
+        }
+      );
+
+    dokumentasiList.push(
+      ...daftarItem
+    );
+
+    writeJSON(
+      DOKUMENTASI_PATH,
+      dokumentasiList,
+      `simpan ${fotoBulk.length} dokumentasi bulk`
+    );
+
+    clearSession(chatId);
+
+    return bot.sendMessage(
+      chatId,
+      `✅ *Dokumentasi bulk berhasil disimpan.*
+
+Tanggal dokumentasi: *${tanggalIsoKeDisplay(
+        tanggalDokumentasi
+      )}*
+Lokasi: *${session.pintu} ${session.sisi}*
+Jenis: *${String(
+        session.jenisDokumentasi ||
+        "lainnya"
+      ).toUpperCase()}*
+Jumlah foto: *${fotoBulk.length}*
+Keterangan: ${keterangan}`,
+      {
+        parse_mode: "Markdown",
+        ...mainReplyKeyboard(
+          user.role
+        )
+      }
     );
   }
 
@@ -2443,18 +3039,43 @@ async function tampilkanDokumentasiPintu(
   }
 
   // Urutkan dari dokumentasi terbaru
-  daftar.sort((a, b) => {
-    const waktuA = new Date(
-      a.createdAt ||
-      `${a.tanggal || "1970-01-01"}T${a.waktuInput || "00:00"}:00+07:00`
-    ).getTime();
+   daftar.sort((a, b) => {
+    const tanggalA =
+      String(
+        a.tanggal ||
+        "1970-01-01"
+      );
 
-    const waktuB = new Date(
-      b.createdAt ||
-      `${b.tanggal || "1970-01-01"}T${b.waktuInput || "00:00"}:00+07:00`
-    ).getTime();
+    const tanggalB =
+      String(
+        b.tanggal ||
+        "1970-01-01"
+      );
 
-    return waktuB - waktuA;
+    const hasilTanggal =
+      tanggalB.localeCompare(
+        tanggalA
+      );
+
+    if (hasilTanggal !== 0) {
+      return hasilTanggal;
+    }
+
+    const waktuA =
+      String(
+        a.waktuInput ||
+        "00:00"
+      );
+
+    const waktuB =
+      String(
+        b.waktuInput ||
+        "00:00"
+      );
+
+    return waktuB.localeCompare(
+      waktuA
+    );
   });
 
   const labelSumber = {
