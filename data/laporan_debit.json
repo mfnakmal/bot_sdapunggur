@@ -1,113 +1,11 @@
 [
   {
-    "id": "LAP-2026-06-04-pagi-BPU_11-ki-1780539455958",
+    "id": "LAP-2026-06-10-pagi-BPU_9-ki-001",
     "jenisBlanko": "06-O",
-    "tanggal": "2026-06-04",
-    "tanggalDisplay": "04-06-2026",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
     "periode": "pagi",
-    "waktuInput": "16:17",
-    "petugas": {
-      "telegramId": "513402196",
-      "nama": "MUHAMMAD FAUZAN AKMAL",
-      "jabatan": "PPA",
-      "role": "ppa"
-    },
-    "lokasi": {
-      "daerahIrigasi": "DI Punggur Utara",
-      "saluran": "Saluran Sekunder",
-      "pintu": "BPU 11",
-      "sisi": "ki",
-      "namaLengkap": "BPU 11 ki"
-    },
-    "dataAir": {
-      "H": 50,
-      "satuanH": "cm",
-      "Q": 0,
-      "satuanQ": "lt/dt"
-    },
-    "dokumentasi": {
-      "telegramFileId": "AgACAgUAAxkBAANHaiDgPXcJWIyAv1A_wTDksf85S58AAsoOaxuSLQABVaik-qkY9Ir8AQADAgADeQADOwQ",
-      "fotoLocalPath": "uploads/2026-06-04/pagi/2026-06-04_pagi_BPU_11_ki_1780539453916.jpg"
-    },
-    "keterangan": "-",
-    "status": "tersimpan",
-    "createdAt": "2026-06-04T16:17:35+07:00"
-  },
-  {
-    "id": "LAP-2026-06-04-pagi-BPU_11-ka-1780539679136",
-    "jenisBlanko": "06-O",
-    "tanggal": "2026-06-04",
-    "tanggalDisplay": "04-06-2026",
-    "periode": "pagi",
-    "waktuInput": "16:21",
-    "petugas": {
-      "telegramId": "513402196",
-      "nama": "MUHAMMAD FAUZAN AKMAL",
-      "jabatan": "PPA",
-      "role": "ppa"
-    },
-    "lokasi": {
-      "daerahIrigasi": "DI Punggur Utara",
-      "saluran": "Saluran Sekunder",
-      "pintu": "BPU 11",
-      "sisi": "ka",
-      "namaLengkap": "BPU 11 ka"
-    },
-    "dataAir": {
-      "H": 50,
-      "satuanH": "cm",
-      "Q": 0,
-      "satuanQ": "lt/dt"
-    },
-    "dokumentasi": {
-      "telegramFileId": "AgACAgUAAxkBAANHaiDgPXcJWIyAv1A_wTDksf85S58AAsoOaxuSLQABVaik-qkY9Ir8AQADAgADeQADOwQ",
-      "fotoLocalPath": "uploads/2026-06-04/pagi/2026-06-04_pagi_BPU_11_ka_1780539677871.jpg"
-    },
-    "keterangan": "-",
-    "status": "tersimpan",
-    "createdAt": "2026-06-04T16:21:19+07:00"
-  },
-  {
-    "id": "LAP-2026-06-04-pagi-BPU_10-ki-1780543176334",
-    "jenisBlanko": "06-O",
-    "tanggal": "2026-06-04",
-    "tanggalDisplay": "04-06-2026",
-    "periode": "pagi",
-    "waktuInput": "17:19",
-    "petugas": {
-      "telegramId": "513402196",
-      "nama": "MUHAMMAD FAUZAN AKMAL",
-      "jabatan": "PPA",
-      "role": "ppa"
-    },
-    "lokasi": {
-      "daerahIrigasi": "DI Punggur Utara",
-      "saluran": "Saluran Sekunder",
-      "pintu": "BPU 10",
-      "sisi": "ki",
-      "namaLengkap": "BPU 10 ki"
-    },
-    "dataAir": {
-      "H": 32,
-      "satuanH": "cm",
-      "Q": 0,
-      "satuanQ": "lt/dt"
-    },
-    "dokumentasi": {
-      "telegramFileId": "AgACAgUAAxkBAANoaiDuxenqMVD4KYzDDhgMLW06xQkAAuYQaxuSLQhV0vPjaa1-o00BAAMCAAN5AAM7BA",
-      "fotoLocalPath": "uploads/2026-06-04/pagi/2026-06-04_pagi_BPU_10_ki_1780543174090.jpg"
-    },
-    "keterangan": "-",
-    "status": "tersimpan",
-    "createdAt": "2026-06-04T17:19:36+07:00"
-  },
-  {
-    "id": "LAP-2026-06-04-pagi-BPU_9-ki-1780544521088",
-    "jenisBlanko": "06-O",
-    "tanggal": "2026-06-04",
-    "tanggalDisplay": "04-06-2026",
-    "periode": "pagi",
-    "waktuInput": "17:42",
+    "waktuInput": "07:05",
     "petugas": {
       "telegramId": "513402196",
       "nama": "MUHAMMAD FAUZAN AKMAL",
@@ -122,27 +20,867 @@
       "namaLengkap": "BPU 9 ki"
     },
     "dataAir": {
-      "H": 60,
+      "H": 0,
       "satuanH": "cm",
       "Q": 0,
       "satuanQ": "lt/dt"
     },
     "dokumentasi": {
-      "adaFoto": true,
-      "telegramFileId": "...",
-      "fotoLocalPath": "uploads/..."
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
     },
-    "keterangan": "-",
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
     "status": "tersimpan",
-    "createdAt": "2026-06-04T17:42:01+07:00"
+    "createdAt": "2026-06-10T07:05:00+07:00"
   },
   {
-    "id": "LAP-2026-06-04-pagi-BU_1-ki-1780551631533",
+    "id": "LAP-2026-06-10-pagi-BPU_9-ka-002",
     "jenisBlanko": "06-O",
-    "tanggal": "2026-06-04",
-    "tanggalDisplay": "04-06-2026",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
     "periode": "pagi",
-    "waktuInput": "19:40",
+    "waktuInput": "07:09",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:09:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_9-ka_2-003",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_10-ki-004",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:19:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_10-ka-005",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:23",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:23:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_11-ki-006",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:27",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:27:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_11-ka-007",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:31",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:31:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_12-ki-008",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:36",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:36:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_12-ka-009",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:41",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:41:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_13-ki_1-010",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:47",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:47:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_13-ki_2-011",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_13-ka-012",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_14-ki-013",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T07:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-10-pagi-BPU_15-ka-014",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-10",
+    "tanggalDisplay": "10-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:03",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-10T08:03:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_9-ki-015",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_9-ka-016",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:09",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:09:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_9-ka_2-017",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:13",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:13:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_10-ki-018",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:17",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DHARMA TRI SETIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:17:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_10-ka-019",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:21",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:21:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_11-ki-020",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:25",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:25:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_11-ka-021",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:30",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:30:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_12-ki-022",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:35",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:35:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_12-ka-023",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:39",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:39:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_13-ki_1-024",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:45",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:45:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_13-ki_2-025",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "S U W A N T O",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_13-ka-026",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
     "petugas": {
       "telegramId": "513402196",
       "nama": "MUHAMMAD FAUZAN AKMAL",
@@ -152,14 +890,14 @@
     "lokasi": {
       "daerahIrigasi": "DI Punggur Utara",
       "saluran": "Saluran Sekunder",
-      "pintu": "BU 1",
-      "sisi": "ki",
-      "namaLengkap": "BU 1 ki"
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
     },
     "dataAir": {
-      "H": 45,
+      "H": 0,
       "satuanH": "cm",
-      "Q": 21,
+      "Q": 0,
       "satuanQ": "lt/dt"
     },
     "dokumentasi": {
@@ -167,8 +905,1618 @@
       "telegramFileId": null,
       "fotoLocalPath": null
     },
-    "keterangan": "-",
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
     "status": "tersimpan",
-    "createdAt": "2026-06-04T19:40:31+07:00"
+    "createdAt": "2026-06-11T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_14-ki-027",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T07:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-11-pagi-BPU_15-ka-028",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-11",
+    "tanggalDisplay": "11-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:03",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-11T08:03:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_9-ki-029",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_9-ka-030",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:09",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:09:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_9-ka_2-031",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:15",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:15:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_10-ki-032",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:19:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_10-ka-033",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:23",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:23:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_11-ki-034",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:28",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DHARMA TRI SETIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:28:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_11-ka-035",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:32",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:32:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_12-ki-036",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:36",
+    "petugas": {
+      "telegramId": null,
+      "nama": "S U W A N T O",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:36:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_12-ka-037",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:41",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:41:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_13-ki_1-038",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:47",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:47:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_13-ki_2-039",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:52",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:52:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_13-ka-040",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:56",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T07:56:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_14-ki-041",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:01",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:01:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BPU_15-ka-042",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:07",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:07:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BD_4-ka-043",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:28",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ka",
+      "namaLengkap": "BD 4 ka"
+    },
+    "dataAir": {
+      "H": 46,
+      "satuanH": "cm",
+      "Q": 26.5,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 29; data berdasarkan dokumentasi lapangan",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:28:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-12-pagi-BD_4-ki-044",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-12",
+    "tanggalDisplay": "12-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:29",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ANGGA ARISTA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 4",
+      "sisi": "ki",
+      "namaLengkap": "BD 4 ki"
+    },
+    "dataAir": {
+      "H": 46,
+      "satuanH": "cm",
+      "Q": 13.6,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "F: 36; data berdasarkan dokumentasi lapangan",
+    "status": "tersimpan",
+    "createdAt": "2026-06-12T08:29:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_9-ki-045",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_9-ka-046",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:09",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:09:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_9-ka_2-047",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:14",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:14:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_10-ki-048",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:19",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:19:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_10-ka-049",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:24",
+    "petugas": {
+      "telegramId": null,
+      "nama": "S U W A N T O",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:24:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_11-ki-050",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:30",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:30:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_11-ka-051",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:34",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:34:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_12-ki-052",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:38",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:38:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_12-ka-053",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:42",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:42:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_13-ki_1-054",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:46",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:46:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_13-ki_2-055",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:51",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:51:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_13-ka-056",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:55",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:55:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_14-ki-057",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:59",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T07:59:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-13-pagi-BPU_15-ka-058",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-13",
+    "tanggalDisplay": "13-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:03",
+    "petugas": {
+      "telegramId": null,
+      "nama": "RIBOWO",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-13T08:03:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_9-ki-059",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:05",
+    "petugas": {
+      "telegramId": null,
+      "nama": "S U W A N T O",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ki",
+      "namaLengkap": "BPU 9 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:05:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_9-ka-060",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:10",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka",
+      "namaLengkap": "BPU 9 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:10:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_9-ka_2-061",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:14",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 9",
+      "sisi": "ka.2",
+      "namaLengkap": "BPU 9 ka.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:14:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_10-ki-062",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:18",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ki",
+      "namaLengkap": "BPU 10 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:18:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_10-ka-063",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:24",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 10",
+      "sisi": "ka",
+      "namaLengkap": "BPU 10 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:24:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_11-ki-064",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:29",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:29:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_11-ka-065",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:33",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WISHNU PRIBADI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:33:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_12-ki-066",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:37",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DONNY KURNIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ki",
+      "namaLengkap": "BPU 12 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:37:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_12-ka-067",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:43",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 12",
+      "sisi": "ka",
+      "namaLengkap": "BPU 12 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:43:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_13-ki_1-068",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:47",
+    "petugas": {
+      "telegramId": null,
+      "nama": "DHARMA TRI SETIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.1",
+      "namaLengkap": "BPU 13 ki.1"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:47:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_13-ki_2-069",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:53",
+    "petugas": {
+      "telegramId": null,
+      "nama": "AGUS SETIAWAN",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ki.2",
+      "namaLengkap": "BPU 13 ki.2"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:53:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_13-ka-070",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "07:57",
+    "petugas": {
+      "telegramId": null,
+      "nama": "WAHYU DWI RIAWAN R",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 13",
+      "sisi": "ka",
+      "namaLengkap": "BPU 13 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T07:57:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_14-ki-071",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:02",
+    "petugas": {
+      "telegramId": null,
+      "nama": "NOVI INDRA SATRIA",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 14",
+      "sisi": "ki",
+      "namaLengkap": "BPU 14 ki"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T08:02:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-14-pagi-BPU_15-ka-072",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-14",
+    "tanggalDisplay": "14-06-2026",
+    "periode": "pagi",
+    "waktuInput": "08:06",
+    "petugas": {
+      "telegramId": null,
+      "nama": "ESTHA RYANI",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 15",
+      "sisi": "ka",
+      "namaLengkap": "BPU 15 ka"
+    },
+    "dataAir": {
+      "H": 0,
+      "satuanH": "cm",
+      "Q": 0,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "Data simulasi PKL; debit 0 lt/dt",
+    "status": "tersimpan",
+    "createdAt": "2026-06-14T08:06:00+07:00"
   }
 ]

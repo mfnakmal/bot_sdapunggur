@@ -511,8 +511,8 @@ ${session.preview.id}`,
   }
 
   if (data === "rekap_harian") {
-    return bot.sendMessage(chatId, "📊 Fitur rekap harian kita buat di tahap berikutnya.");
-  }
+  return mulaiRekapHarian(chatId);
+}
 
   if (data === "export_menu") {
     return bot.sendMessage(chatId, "📤 Fitur export Excel/PDF kita buat di tahap berikutnya.");
@@ -597,8 +597,8 @@ Ketik /menu untuk membuka menu.`,
   }
 
   if (text === "📊 Rekap Harian") {
-    return bot.sendMessage(chatId, "📊 Fitur rekap harian kita buat di tahap berikutnya.");
-  }
+  return mulaiRekapHarian(chatId);
+}
 
   if (text === "📆 Rekap Setengah Bulanan") {
     return bot.sendMessage(chatId, "📆 Fitur rekap setengah bulanan kita buat di tahap berikutnya.");
@@ -624,6 +624,39 @@ Kode Login: *${user.kodeLogin}*`,
       { parse_mode: "Markdown" }
     );
   }
+
+  // INPUT TANGGAL REKAP HARIAN
+if (session.step === "input_tanggal_rekap_harian") {
+  if (text.toLowerCase() === "batal") {
+    clearSession(chatId);
+
+    return bot.sendMessage(
+      chatId,
+      "❌ Rekap harian dibatalkan.",
+      mainReplyKeyboard(user.role)
+    );
+  }
+
+  const tanggalRekap = normalisasiTanggalRekap(text);
+
+  if (!tanggalRekap) {
+    return bot.sendMessage(
+      chatId,
+      `❌ Format tanggal tidak valid.
+
+Masukkan tanggal dengan salah satu format berikut:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Ketik batal untuk membatalkan.`
+    );
+  }
+
+  clearSession(chatId);
+  return tampilkanRekapHarian(chatId, tanggalRekap);
+}
 
   // UPLOAD FOTO DOKUMENTASI TAMBAHAN
   if (session.step === "dok_upload_foto") {
@@ -842,6 +875,316 @@ Simpan laporan ini?`,
     );
   }
 });
+
+function mulaiRekapHarian(chatId) {
+  setSession(chatId, {
+    step: "input_tanggal_rekap_harian",
+    mode: "rekap_harian"
+  });
+
+  return bot.sendMessage(
+    chatId,
+    `📊 REKAP HARIAN DEBIT 06-O
+
+Masukkan tanggal yang ingin direkap.
+
+Format yang dapat digunakan:
+• 12-06-2026
+• 12/06/2026
+• 2026-06-12
+• hari ini
+
+Tanggal hari ini: ${getTodayDisplay()}
+
+Ketik batal untuk membatalkan.`
+  );
+}
+
+function normalisasiTanggalRekap(input) {
+  const nilai = String(input || "").trim().toLowerCase();
+
+  if (
+    nilai === "hari ini" ||
+    nilai === "hariini" ||
+    nilai === "today"
+  ) {
+    return getTodayDate();
+  }
+
+  let tahun;
+  let bulan;
+  let hari;
+
+  const formatIndonesia = nilai.match(
+    /^(\d{1,2})[-/](\d{1,2})[-/](\d{4})$/
+  );
+
+  const formatIso = nilai.match(
+    /^(\d{4})-(\d{1,2})-(\d{1,2})$/
+  );
+
+  if (formatIndonesia) {
+    hari = Number(formatIndonesia[1]);
+    bulan = Number(formatIndonesia[2]);
+    tahun = Number(formatIndonesia[3]);
+  } else if (formatIso) {
+    tahun = Number(formatIso[1]);
+    bulan = Number(formatIso[2]);
+    hari = Number(formatIso[3]);
+  } else {
+    return null;
+  }
+
+  const tanggal = new Date(Date.UTC(tahun, bulan - 1, hari));
+
+  if (
+    tanggal.getUTCFullYear() !== tahun ||
+    tanggal.getUTCMonth() + 1 !== bulan ||
+    tanggal.getUTCDate() !== hari
+  ) {
+    return null;
+  }
+
+  return `${String(tahun).padStart(4, "0")}-${String(bulan).padStart(2, "0")}-${String(hari).padStart(2, "0")}`;
+}
+
+function tanggalIsoKeDisplay(tanggalIso) {
+  const bagian = String(tanggalIso || "").split("-");
+
+  if (bagian.length !== 3) {
+    return tanggalIso;
+  }
+
+  return `${bagian[2]}-${bagian[1]}-${bagian[0]}`;
+}
+
+function formatAngka(nilai) {
+  const angka = Number(nilai);
+
+  if (!Number.isFinite(angka)) {
+    return "0";
+  }
+
+  return new Intl.NumberFormat("id-ID", {
+    maximumFractionDigits: 3
+  }).format(angka);
+}
+
+function memilikiFoto(item) {
+  return Boolean(
+    item?.dokumentasi?.adaFoto ||
+    item?.dokumentasi?.telegramFileId ||
+    item?.dokumentasi?.fotoLocalPath
+  );
+}
+
+function urutkanDataRekap(a, b) {
+  const urutanPeriode = {
+    pagi: 1,
+    sore: 2
+  };
+
+  const periodeA = urutanPeriode[a.periode] || 99;
+  const periodeB = urutanPeriode[b.periode] || 99;
+
+  if (periodeA !== periodeB) {
+    return periodeA - periodeB;
+  }
+
+  const pintuA = String(a.lokasi?.pintu || "");
+  const pintuB = String(b.lokasi?.pintu || "");
+
+  const hasilPintu = pintuA.localeCompare(pintuB, "id", {
+    numeric: true,
+    sensitivity: "base"
+  });
+
+  if (hasilPintu !== 0) {
+    return hasilPintu;
+  }
+
+  const sisiA = String(a.lokasi?.sisi || "");
+  const sisiB = String(b.lokasi?.sisi || "");
+
+  const hasilSisi = sisiA.localeCompare(sisiB, "id", {
+    numeric: true,
+    sensitivity: "base"
+  });
+
+  if (hasilSisi !== 0) {
+    return hasilSisi;
+  }
+
+  return String(a.waktuInput || "").localeCompare(
+    String(b.waktuInput || "")
+  );
+}
+
+async function kirimPesanPanjang(chatId, isiPesan) {
+  const batasKarakter = 3900;
+  const semuaBaris = String(isiPesan).split("\n");
+
+  const daftarPesan = [];
+  let pesanSekarang = "";
+
+  for (const baris of semuaBaris) {
+    const pesanPercobaan = pesanSekarang
+      ? `${pesanSekarang}\n${baris}`
+      : baris;
+
+    if (pesanPercobaan.length <= batasKarakter) {
+      pesanSekarang = pesanPercobaan;
+    } else {
+      if (pesanSekarang) {
+        daftarPesan.push(pesanSekarang);
+      }
+
+      pesanSekarang = baris;
+    }
+  }
+
+  if (pesanSekarang) {
+    daftarPesan.push(pesanSekarang);
+  }
+
+  for (let index = 0; index < daftarPesan.length; index += 1) {
+    let judulBagian = "";
+
+    if (daftarPesan.length > 1) {
+      judulBagian =
+        `Bagian ${index + 1}/${daftarPesan.length}\n\n`;
+    }
+
+    await bot.sendMessage(
+      chatId,
+      `${judulBagian}${daftarPesan[index]}`
+    );
+  }
+}
+
+async function tampilkanRekapHarian(chatId, tanggal) {
+  const laporan = readJSON(LAPORAN_PATH, []);
+
+  if (!Array.isArray(laporan)) {
+    return bot.sendMessage(
+      chatId,
+      "❌ Format laporan_debit.json tidak valid. Data utama harus berupa array."
+    );
+  }
+
+  const dataRekap = laporan
+    .filter((item) => item && item.tanggal === tanggal)
+    .sort(urutkanDataRekap);
+
+  if (dataRekap.length === 0) {
+    return bot.sendMessage(
+      chatId,
+      `📊 Tidak ada laporan debit pada tanggal ${tanggalIsoKeDisplay(tanggal)}.`
+    );
+  }
+
+  const dataPagi = dataRekap.filter(
+    (item) => item.periode === "pagi"
+  );
+
+  const dataSore = dataRekap.filter(
+    (item) => item.periode === "sore"
+  );
+
+  const dataPeriodeLain = dataRekap.filter(
+    (item) =>
+      item.periode !== "pagi" &&
+      item.periode !== "sore"
+  );
+
+  const jumlahDebitNol = dataRekap.filter(
+    (item) => Number(item.dataAir?.Q || 0) === 0
+  ).length;
+
+  const jumlahDebitMengalir = dataRekap.filter(
+    (item) => Number(item.dataAir?.Q || 0) > 0
+  ).length;
+
+  const akumulasiQ = dataRekap.reduce(
+    (total, item) => {
+      return total + Number(item.dataAir?.Q || 0);
+    },
+    0
+  );
+
+  const jumlahDenganFoto = dataRekap.filter(
+    (item) => memilikiFoto(item)
+  ).length;
+
+  let hasil = `📊 REKAP HARIAN DEBIT 06-O
+Tanggal: ${tanggalIsoKeDisplay(tanggal)}
+
+RINGKASAN
+• Jumlah laporan: ${dataRekap.length}
+• Pagi: ${dataPagi.length} laporan
+• Sore: ${dataSore.length} laporan
+• Debit mengalir (Q > 0): ${jumlahDebitMengalir} titik
+• Debit 0: ${jumlahDebitNol} titik
+• Akumulasi nilai Q: ${formatAngka(akumulasiQ)} lt/dt
+• Memiliki foto: ${jumlahDenganFoto} laporan
+`;
+
+  function tambahkanPeriode(judul, ikon, daftarData) {
+    hasil += `\n${ikon} ${judul} — ${daftarData.length} laporan\n`;
+
+    if (daftarData.length === 0) {
+      hasil += "Belum ada data.\n";
+      return;
+    }
+
+    daftarData.forEach((item, index) => {
+      const namaLokasi =
+        item.lokasi?.namaLengkap ||
+        `${item.lokasi?.pintu || "-"} ${item.lokasi?.sisi || "-"}`;
+
+      const nilaiH = formatAngka(item.dataAir?.H);
+      const nilaiQ = formatAngka(item.dataAir?.Q);
+
+      const satuanH = item.dataAir?.satuanH || "cm";
+      const satuanQ = item.dataAir?.satuanQ || "lt/dt";
+
+      const namaPetugas = item.petugas?.nama || "-";
+      const waktuInput = item.waktuInput || "-";
+
+      const statusFoto = memilikiFoto(item)
+        ? "Ada"
+        : "Tidak ada";
+
+      const keterangan = String(
+        item.keterangan || "-"
+      ).trim();
+
+      hasil += `\n${index + 1}. ${namaLokasi}\n`;
+      hasil += `   H: ${nilaiH} ${satuanH} | Q: ${nilaiQ} ${satuanQ}\n`;
+      hasil += `   Waktu: ${waktuInput} | Foto: ${statusFoto}\n`;
+      hasil += `   Petugas: ${namaPetugas}\n`;
+
+      if (keterangan && keterangan !== "-") {
+        hasil += `   Keterangan: ${keterangan}\n`;
+      }
+    });
+  }
+
+  tambahkanPeriode("PAGI", "🌅", dataPagi);
+  tambahkanPeriode("SORE", "🌇", dataSore);
+
+  if (dataPeriodeLain.length > 0) {
+    tambahkanPeriode(
+      "PERIODE LAIN",
+      "🕒",
+      dataPeriodeLain
+    );
+  }
+
+  hasil += "\n✅ Rekap selesai.";
+
+  return kirimPesanPanjang(chatId, hasil);
+}
 
 function tampilkanLaporanHariIni(chatId) {
   const laporan = readJSON(LAPORAN_PATH, []);
