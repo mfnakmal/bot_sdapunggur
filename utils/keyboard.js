@@ -35,13 +35,21 @@ function pintuKeyboard(pintuList) {
       callback_data: `pintu_${pintu.kode}`
     });
 
-    if (row.length === 2 || index === pintuList.length - 1) {
+    if (
+      row.length === 2 ||
+      index === pintuList.length - 1
+    ) {
       rows.push(row);
       row = [];
     }
   });
 
-  rows.push([{ text: "❌ Batal", callback_data: "batal" }]);
+  rows.push([
+    {
+      text: "❌ Batal",
+      callback_data: "batal"
+    }
+  ]);
 
   return {
     reply_markup: {
@@ -54,20 +62,34 @@ function sisiKeyboard(pintu) {
   const rows = [];
   let row = [];
 
-  pintu.sisi.forEach((s, index) => {
+  pintu.sisi.forEach((sisi, index) => {
     row.push({
-      text: s.toUpperCase(),
-      callback_data: `sisi_${s}`
+      text: sisi.toUpperCase(),
+      callback_data: `sisi_${sisi}`
     });
 
-    if (row.length === 2 || index === pintu.sisi.length - 1) {
+    if (
+      row.length === 2 ||
+      index === pintu.sisi.length - 1
+    ) {
       rows.push(row);
       row = [];
     }
   });
 
-  rows.push([{ text: "⬅️ Kembali", callback_data: "kembali_pilih_pintu" }]);
-  rows.push([{ text: "❌ Batal", callback_data: "batal" }]);
+  rows.push([
+    {
+      text: "⬅️ Kembali",
+      callback_data: "kembali_pilih_pintu"
+    }
+  ]);
+
+  rows.push([
+    {
+      text: "❌ Batal",
+      callback_data: "batal"
+    }
+  ]);
 
   return {
     reply_markup: {
@@ -81,11 +103,20 @@ function fotoOpsionalKeyboard() {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "📷 Upload Foto", callback_data: "upload_foto_opsional" },
-          { text: "⏭️ Lewati Foto", callback_data: "skip_foto" }
+          {
+            text: "📷 Upload Foto",
+            callback_data: "upload_foto_opsional"
+          },
+          {
+            text: "⏭️ Lewati Foto",
+            callback_data: "skip_foto"
+          }
         ],
         [
-          { text: "❌ Batal", callback_data: "batal" }
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
         ]
       ]
     }
@@ -97,11 +128,20 @@ function konfirmasiKeyboard() {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "✅ Simpan", callback_data: "simpan_laporan" },
-          { text: "✏️ Edit", callback_data: "edit_laporan" }
+          {
+            text: "✅ Simpan",
+            callback_data: "simpan_laporan"
+          },
+          {
+            text: "✏️ Edit",
+            callback_data: "edit_laporan"
+          }
         ],
         [
-          { text: "❌ Batal", callback_data: "batal" }
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
         ]
       ]
     }
@@ -146,18 +186,36 @@ function jenisDokumentasiKeyboard() {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "📷 Foto Pintu", callback_data: "dok_jenis_pintu" },
-          { text: "🌊 Foto Saluran", callback_data: "dok_jenis_saluran" }
+          {
+            text: "📷 Foto Pintu",
+            callback_data: "dok_jenis_pintu"
+          },
+          {
+            text: "🌊 Foto Saluran",
+            callback_data: "dok_jenis_saluran"
+          }
         ],
         [
-          { text: "🛠️ Kerusakan", callback_data: "dok_jenis_kerusakan" },
-          { text: "🧹 Pembersihan", callback_data: "dok_jenis_pembersihan" }
+          {
+            text: "🛠️ Kerusakan",
+            callback_data: "dok_jenis_kerusakan"
+          },
+          {
+            text: "🧹 Pembersihan",
+            callback_data: "dok_jenis_pembersihan"
+          }
         ],
         [
-          { text: "📝 Lainnya", callback_data: "dok_jenis_lainnya" }
+          {
+            text: "📝 Lainnya",
+            callback_data: "dok_jenis_lainnya"
+          }
         ],
         [
-          { text: "❌ Batal", callback_data: "batal" }
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
         ]
       ]
     }
@@ -176,20 +234,34 @@ function sisiDokumentasiKeyboard(pintu) {
 
   let row = [];
 
-  pintu.sisi.forEach((s, index) => {
+  pintu.sisi.forEach((sisi, index) => {
     row.push({
-      text: s.toUpperCase(),
-      callback_data: `dok_sisi_${s}`
+      text: sisi.toUpperCase(),
+      callback_data: `dok_sisi_${sisi}`
     });
 
-    if (row.length === 2 || index === pintu.sisi.length - 1) {
+    if (
+      row.length === 2 ||
+      index === pintu.sisi.length - 1
+    ) {
       rows.push(row);
       row = [];
     }
   });
 
-  rows.push([{ text: "⬅️ Kembali", callback_data: "dok_kembali_pilih_pintu" }]);
-  rows.push([{ text: "❌ Batal", callback_data: "batal" }]);
+  rows.push([
+    {
+      text: "⬅️ Kembali",
+      callback_data: "dok_kembali_pilih_pintu"
+    }
+  ]);
+
+  rows.push([
+    {
+      text: "❌ Batal",
+      callback_data: "batal"
+    }
+  ]);
 
   return {
     reply_markup: {

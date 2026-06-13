@@ -264,6 +264,7 @@ Kode Login: *${user.kodeLogin}*`,
   }
 
     // PILIH SUMBER FOTO YANG AKAN DITAMPILKAN
+    // PILIH SUMBER DOKUMENTASI BERDASARKAN PINTU
   if (
     data === "lihat_dok_semua" ||
     data === "lihat_dok_laporan" ||
@@ -275,11 +276,11 @@ Kode Login: *${user.kodeLogin}*`,
       !session ||
       session.mode !== "lihat_dokumentasi" ||
       session.step !== "lihat_dokumentasi_pilih_sumber" ||
-      !session.tanggalDokumentasi
+      !session.pintu
     ) {
       return bot.sendMessage(
         chatId,
-        "❌ Sesi lihat dokumentasi sudah tidak valid. Silakan pilih menu kembali."
+        "❌ Sesi lihat dokumentasi sudah tidak valid. Silakan ulangi dari menu utama."
       );
     }
 
@@ -289,13 +290,13 @@ Kode Login: *${user.kodeLogin}*`,
       lihat_dok_tambahan: "tambahan"
     }[data];
 
-    const tanggal = session.tanggalDokumentasi;
+    const kodePintu = session.pintu;
 
     clearSession(chatId);
 
-    return tampilkanDokumentasiTanggal(
+    return tampilkanDokumentasiPintu(
       chatId,
-      tanggal,
+      kodePintu,
       sumber,
       user
     );
@@ -334,7 +335,27 @@ Pilih pintu/bangunan:`,
       return bot.sendMessage(chatId, "Pintu tidak ditemukan.");
     }
 
-    const session = getSession(chatId);
+      const session = getSession(chatId);
+
+    // MODE LIHAT DOKUMENTASI BERDASARKAN PINTU
+    if (session.mode === "lihat_dokumentasi") {
+      setSession(chatId, {
+        ...session,
+        step: "lihat_dokumentasi_pilih_sumber",
+        pintu: pintu.kode
+      });
+
+      return bot.sendMessage(
+        chatId,
+        `✅ Pintu dipilih: *${pintu.nama}*
+
+Pilih sumber dokumentasi yang ingin ditampilkan:`,
+        {
+          parse_mode: "Markdown",
+          ...sumberDokumentasiKeyboard()
+        }
+      );
+    }
 
     // MODE UPLOAD DOKUMENTASI
     if (session.mode === "upload_dokumentasi") {
@@ -1076,27 +1097,26 @@ Ketik /menu untuk membuka menu.`,
     return tampilkanLaporanHariIni(chatId);
   }
 
-    if (text === "🗂️ Lihat Dokumentasi") {
+   if (text === "🗂️ Lihat Dokumentasi") {
+    const pintuList = readJSON(
+      PINTU_PATH,
+      []
+    );
+
     setSession(chatId, {
-      step: "lihat_dokumentasi_input_tanggal",
+      step: "lihat_dokumentasi_pilih_pintu",
       mode: "lihat_dokumentasi"
     });
 
     return bot.sendMessage(
       chatId,
-      `🗂️ LIHAT DOKUMENTASI
+      `🗂️ *LIHAT DOKUMENTASI*
 
-Masukkan tanggal dokumentasi yang ingin dilihat.
-
-Format yang dapat digunakan:
-• 12-06-2026
-• 12/06/2026
-• 2026-06-12
-• hari ini
-
-Tanggal hari ini: ${getTodayDisplay()}
-
-Ketik batal untuk membatalkan.`
+Pilih pintu atau bangunan yang ingin dilihat dokumentasinya:`,
+      {
+        parse_mode: "Markdown",
+        ...pintuKeyboard(pintuList)
+      }
     );
   }
 
@@ -1145,53 +1165,7 @@ Kode Login: *${user.kodeLogin}*`,
     );
   }
 
-    // INPUT TANGGAL UNTUK MELIHAT DOKUMENTASI
-  if (session.step === "lihat_dokumentasi_input_tanggal") {
-    if (text.toLowerCase() === "batal") {
-      clearSession(chatId);
-
-      return bot.sendMessage(
-        chatId,
-        "❌ Lihat dokumentasi dibatalkan.",
-        mainReplyKeyboard(user.role)
-      );
-    }
-
-    const tanggalDokumentasi =
-      normalisasiTanggalRekap(text);
-
-    if (!tanggalDokumentasi) {
-      return bot.sendMessage(
-        chatId,
-        `❌ Format tanggal tidak valid.
-
-Gunakan salah satu format berikut:
-• 12-06-2026
-• 12/06/2026
-• 2026-06-12
-• hari ini
-
-Ketik batal untuk membatalkan.`
-      );
-    }
-
-    setSession(chatId, {
-      ...session,
-      step: "lihat_dokumentasi_pilih_sumber",
-      mode: "lihat_dokumentasi",
-      tanggalDokumentasi
-    });
-
-    return bot.sendMessage(
-      chatId,
-      `🗂️ Tanggal dipilih: ${tanggalIsoKeDisplay(
-        tanggalDokumentasi
-      )}
-
-Pilih sumber dokumentasi yang ingin ditampilkan:`,
-      sumberDokumentasiKeyboard()
-    );
-  }
+  
 
   // INPUT TANGGAL REKAP HARIAN
 if (session.step === "input_tanggal_rekap_harian") {
@@ -2399,15 +2373,22 @@ async function kirimFotoDokumentasi(
   return false;
 }
 
-async function tampilkanDokumentasiTanggal(
+function fotoBisaDikirim(item) {
+  return Boolean(
+    item?.dokumentasi?.telegramFileId ||
+    item?.dokumentasi?.fotoLocalPath
+  );
+}
+
+async function tampilkanDokumentasiPintu(
   chatId,
-  tanggal,
+  kodePintu,
   sumber = "semua",
   user = null
 ) {
   const daftar = [];
 
-  // Ambil foto yang melekat pada laporan debit.
+  // Ambil foto yang melekat pada laporan debit
   if (
     sumber === "semua" ||
     sumber === "laporan"
@@ -2421,8 +2402,8 @@ async function tampilkanDokumentasiTanggal(
       laporan
         .filter((item) => {
           return (
-            item?.tanggal === tanggal &&
-            memilikiFoto(item)
+            item?.lokasi?.pintu === kodePintu &&
+            fotoBisaDikirim(item)
           );
         })
         .forEach((item) => {
@@ -2434,123 +2415,113 @@ async function tampilkanDokumentasiTanggal(
     }
   }
 
-  // Ambil dokumentasi tambahan.
+  // Ambil foto dari dokumentasi tambahan
   if (
     sumber === "semua" ||
     sumber === "tambahan"
   ) {
-    const dokumentasiTambahan =
-      readJSON(
-        DOKUMENTASI_PATH,
-        []
-      );
+    const dokumentasiTambahan = readJSON(
+      DOKUMENTASI_PATH,
+      []
+    );
 
-    if (
-      Array.isArray(
-        dokumentasiTambahan
-      )
-    ) {
+    if (Array.isArray(dokumentasiTambahan)) {
       dokumentasiTambahan
         .filter((item) => {
           return (
-            item?.tanggal === tanggal &&
-            memilikiFoto(item)
+            item?.lokasi?.pintu === kodePintu &&
+            fotoBisaDikirim(item)
           );
         })
         .forEach((item) => {
           daftar.push({
             ...item,
-            sumberDokumentasi:
-              "tambahan"
+            sumberDokumentasi: "tambahan"
           });
         });
     }
   }
 
+  // Urutkan dari dokumentasi terbaru
   daftar.sort((a, b) => {
-    const hasilWaktu = String(
-      a.waktuInput || ""
-    ).localeCompare(
-      String(b.waktuInput || "")
-    );
+    const waktuA = new Date(
+      a.createdAt ||
+      `${a.tanggal || "1970-01-01"}T${a.waktuInput || "00:00"}:00+07:00`
+    ).getTime();
 
-    if (hasilWaktu !== 0) {
-      return hasilWaktu;
-    }
+    const waktuB = new Date(
+      b.createdAt ||
+      `${b.tanggal || "1970-01-01"}T${b.waktuInput || "00:00"}:00+07:00`
+    ).getTime();
 
-    return String(
-      a.lokasi?.namaLengkap || ""
-    ).localeCompare(
-      String(
-        b.lokasi?.namaLengkap || ""
-      ),
-      "id",
-      {
-        numeric: true,
-        sensitivity: "base"
-      }
-    );
+    return waktuB - waktuA;
   });
 
   const labelSumber = {
-    semua: "Semua dokumentasi",
-    laporan: "Foto laporan debit",
-    tambahan: "Dokumentasi tambahan"
-  }[sumber] || "Semua dokumentasi";
+    semua: "Semua Dokumentasi",
+    laporan: "Foto Laporan Debit",
+    tambahan: "Dokumentasi Tambahan"
+  }[sumber] || "Semua Dokumentasi";
 
   if (daftar.length === 0) {
     return bot.sendMessage(
       chatId,
-      `🗂️ Tidak ada ${labelSumber.toLowerCase()} pada tanggal ${tanggalIsoKeDisplay(
-        tanggal
-      )}.`,
+      `🗂️ Tidak ada file dokumentasi yang dapat ditampilkan untuk ${kodePintu}.
+
+Data yang hanya mempunyai penanda adaFoto, tetapi tidak memiliki telegramFileId atau fotoLocalPath, belum dapat dikirim.`,
       user
         ? mainReplyKeyboard(user.role)
         : {}
     );
   }
 
+  const maksimalFoto = 10;
+
+  const daftarDitampilkan = daftar.slice(
+    0,
+    maksimalFoto
+  );
+
   await bot.sendMessage(
     chatId,
     `🗂️ ${labelSumber}
-Tanggal: ${tanggalIsoKeDisplay(tanggal)}
-Jumlah catatan foto: ${daftar.length}
 
-Foto akan dikirim satu per satu.`
+Pintu: ${kodePintu}
+Total dokumentasi tersedia: ${daftar.length}
+Ditampilkan: ${daftarDitampilkan.length} foto terbaru`
   );
 
   let berhasil = 0;
-  let tidakTersedia = 0;
+  let gagal = 0;
 
-  for (const item of daftar) {
-    const terkirim =
-      await kirimFotoDokumentasi(
-        chatId,
-        item
-      );
+  for (const item of daftarDitampilkan) {
+    const terkirim = await kirimFotoDokumentasi(
+      chatId,
+      item
+    );
 
     if (terkirim) {
       berhasil += 1;
-
-      // Menghindari pengiriman terlalu cepat.
-      await new Promise((resolve) => {
-        setTimeout(resolve, 250);
-      });
     } else {
-      tidakTersedia += 1;
+      gagal += 1;
     }
+
+    await new Promise((resolve) => {
+      setTimeout(resolve, 300);
+    });
   }
 
-  let hasil =
-    `✅ Selesai menampilkan dokumentasi.
+  let hasil = `✅ Selesai menampilkan dokumentasi ${kodePintu}.
 
 Berhasil dikirim: ${berhasil}
-File tidak tersedia: ${tidakTersedia}`;
+Gagal dikirim: ${gagal}`;
 
-  if (tidakTersedia > 0) {
+  if (daftar.length > maksimalFoto) {
     hasil += `
 
-Catatan: beberapa data lama hanya memiliki penanda adaFoto, tetapi telegramFileId dan fotoLocalPath masih kosong, sehingga foto aslinya belum dapat ditampilkan.`;
+ℹ️ Masih ada ${
+      daftar.length - maksimalFoto
+    } dokumentasi lama yang tidak ditampilkan.`;
   }
 
   return bot.sendMessage(
