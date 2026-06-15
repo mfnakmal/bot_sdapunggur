@@ -11198,5 +11198,40 @@
     "keterangan": "Data simulasi PKL; debit 0 lt/dt",
     "status": "tersimpan",
     "createdAt": "2026-06-14T08:06:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-15-pagi-BPU_11-ka-1781503456174",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-15",
+    "tanggalDisplay": "15-06-2026",
+    "periode": "pagi",
+    "waktuInput": "13:04",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ka",
+      "namaLengkap": "BPU 11 ka"
+    },
+    "dataAir": {
+      "H": 10,
+      "satuanH": "cm",
+      "Q": 49,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": "AgACAgUAAxkBAAIB5movld3fT7n1vSg0qP0aicclpRdpAAIKEWsbaUWAVcjJGilfFteXAQADAgADeQADPAQ",
+      "fotoLocalPath": "uploads/2026-06-15/pagi/2026-06-15_pagi_BPU_11_ka_1781503453999.jpg"
+    },
+    "keterangan": "-",
+    "status": "tersimpan",
+    "createdAt": "2026-06-15T13:04:16+07:00"
   }
 ]
