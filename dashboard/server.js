@@ -23,7 +23,7 @@ function startDashboard(port = 3000) {
     console.log(`🚀 Web Dashboard berjalan di lokal port ${port}`);
     try {
       // Create a tunnel to bypass NAT VPS Firewalls
-      const tunnel = await localtunnel({ port: port });
+      const tunnel = await localtunnel({ port: port, local_host: '127.0.0.1' });
       publicUrl = tunnel.url;
       console.log(`🌐 Public URL tersedia di: ${publicUrl}`);
       
