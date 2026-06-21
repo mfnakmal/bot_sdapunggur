@@ -14,7 +14,13 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-xl font-semibold mb-4">Grafik Debit (Total Q Harian)</h2>
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                    <h2 class="text-xl font-semibold">Grafik Debit</h2>
+                    <select id="chartTipe" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2">
+                        <option value="harian">Harian (Per Tanggal)</option>
+                        <option value="bulanan">Bulanan (Akumulasi Bulan)</option>
+                    </select>
+                </div>
                 <canvas id="debitChart"></canvas>
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
@@ -56,64 +62,108 @@
     </div>
 
     <script>
+        let globalData = [];
+        let debitChart = null;
+
         async function loadData() {
             try {
                 const res = await fetch('/api/data');
-                const data = await res.json();
+                globalData = await res.json();
                 
-                // Update Stats
-                document.getElementById('totalLaporan').innerText = data.length;
-                let totalH = 0, totalQ = 0;
-                data.forEach(d => {
-                    totalH += Number(d.dataAir.H) || 0;
-                    totalQ += Number(d.dataAir.Q) || 0;
+                updateStats(globalData);
+                updateTable(globalData);
+                renderChart('harian'); // default
+
+                document.getElementById('chartTipe').addEventListener('change', (e) => {
+                    renderChart(e.target.value);
                 });
-                if(data.length > 0) {
-                    document.getElementById('avgH').innerText = (totalH / data.length).toFixed(2) + ' cm';
-                    document.getElementById('avgQ').innerText = (totalQ / data.length).toFixed(2) + ' lt/dt';
-                }
-
-                // Update Table (Top 10)
-                const tbody = document.getElementById('tableBody');
-                const last10 = data.slice(-10).reverse();
-                tbody.innerHTML = last10.map(d => `
-                    <tr class="border-b hover:bg-gray-50">
-                        <td class="px-6 py-4">${d.tanggalDisplay} - ${d.periode.toUpperCase()}</td>
-                        <td class="px-6 py-4">${d.lokasi.namaLengkap}</td>
-                        <td class="px-6 py-4 font-medium text-green-600">${d.dataAir.H}</td>
-                        <td class="px-6 py-4 font-medium text-blue-600">${d.dataAir.Q}</td>
-                        <td class="px-6 py-4">${d.petugas.nama}</td>
-                    </tr>
-                `).join('');
-
-                // Update Chart
-                const chartDataMap = {};
-                data.forEach(d => {
-                    if(!chartDataMap[d.tanggal]) chartDataMap[d.tanggal] = 0;
-                    chartDataMap[d.tanggal] += Number(d.dataAir.Q) || 0;
-                });
-                const labels = Object.keys(chartDataMap).sort();
-                const chartData = labels.map(l => chartDataMap[l]);
-
-                new Chart(document.getElementById('debitChart'), {
-                    type: 'line',
-                    data: {
-                        labels,
-                        datasets: [{
-                            label: 'Total Q (lt/dt)',
-                            data: chartData,
-                            borderColor: '#3b82f6',
-                            tension: 0.1,
-                            fill: true,
-                            backgroundColor: 'rgba(59, 130, 246, 0.1)'
-                        }]
-                    }
-                });
-
             } catch (err) {
                 console.error("Failed to load data", err);
             }
         }
+
+        function updateStats(data) {
+            document.getElementById('totalLaporan').innerText = data.length;
+            let totalH = 0, totalQ = 0;
+            data.forEach(d => {
+                totalH += Number(d.dataAir.H) || 0;
+                totalQ += Number(d.dataAir.Q) || 0;
+            });
+            if(data.length > 0) {
+                document.getElementById('avgH').innerText = (totalH / data.length).toFixed(2) + ' cm';
+                document.getElementById('avgQ').innerText = (totalQ / data.length).toFixed(2) + ' lt/dt';
+            }
+        }
+
+        function updateTable(data) {
+            const tbody = document.getElementById('tableBody');
+            const last10 = data.slice(-10).reverse();
+            tbody.innerHTML = last10.map(d => `
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="px-6 py-4">${d.tanggalDisplay} - ${d.periode.toUpperCase()}</td>
+                    <td class="px-6 py-4">${d.lokasi.namaLengkap}</td>
+                    <td class="px-6 py-4 font-medium text-green-600">${d.dataAir.H}</td>
+                    <td class="px-6 py-4 font-medium text-blue-600">${d.dataAir.Q}</td>
+                    <td class="px-6 py-4">${d.petugas.nama}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderChart(tipe) {
+            const chartDataMap = {};
+            
+            globalData.forEach(d => {
+                let key = d.tanggal; // Default: YYYY-MM-DD
+                
+                if (tipe === 'bulanan') {
+                    // Ambil YYYY-MM (contoh: 2026-06)
+                    key = d.tanggal.substring(0, 7);
+                }
+                
+                if(!chartDataMap[key]) chartDataMap[key] = 0;
+                chartDataMap[key] += Number(d.dataAir.Q) || 0;
+            });
+
+            const labels = Object.keys(chartDataMap).sort();
+            
+            // Format label jika bulanan biar lebih cantik
+            const displayLabels = labels.map(l => {
+                if (tipe === 'bulanan') {
+                    const [y, m] = l.split('-');
+                    const months = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep", "Okt", "Nov", "Des"];
+                    return `${months[parseInt(m)-1]} ${y}`;
+                }
+                return l;
+            });
+
+            const chartData = labels.map(l => chartDataMap[l]);
+
+            if (debitChart) {
+                debitChart.destroy();
+            }
+
+            debitChart = new Chart(document.getElementById('debitChart'), {
+                type: tipe === 'bulanan' ? 'bar' : 'line',
+                data: {
+                    labels: displayLabels,
+                    datasets: [{
+                        label: 'Total Q (lt/dt)',
+                        data: chartData,
+                        borderColor: tipe === 'bulanan' ? '#8b5cf6' : '#3b82f6',
+                        backgroundColor: tipe === 'bulanan' ? 'rgba(139, 92, 246, 0.5)' : 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.1,
+                        fill: true,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' }
+                    }
+                }
+            });
+        }
+
         loadData();
     </script>
 </body>
