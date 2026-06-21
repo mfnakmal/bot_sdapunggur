@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Debit Air Punggur</title>
+    <!-- TailwindCSS from CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 p-6">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Dashboard Debit Air Harian</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-semibold mb-4">Grafik Debit (Total Q Harian)</h2>
+                <canvas id="debitChart"></canvas>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-semibold mb-4">Statistik Laporan</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center p-4 bg-blue-50 rounded">
+                        <span class="text-gray-600">Total Laporan</span>
+                        <span id="totalLaporan" class="text-2xl font-bold text-blue-600">0</span>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-green-50 rounded">
+                        <span class="text-gray-600">Rata-rata H</span>
+                        <span id="avgH" class="text-2xl font-bold text-green-600">0 cm</span>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-purple-50 rounded">
+                        <span class="text-gray-600">Rata-rata Q</span>
+                        <span id="avgQ" class="text-2xl font-bold text-purple-600">0 lt/dt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow overflow-x-auto">
+            <h2 class="text-xl font-semibold mb-4">10 Laporan Terakhir</h2>
+            <table class="min-w-full text-left text-sm whitespace-nowrap">
+                <thead class="uppercase tracking-wider border-b-2">
+                    <tr>
+                        <th class="px-6 py-4">Tanggal</th>
+                        <th class="px-6 py-4">Pintu</th>
+                        <th class="px-6 py-4">H (cm)</th>
+                        <th class="px-6 py-4">Q (lt/dt)</th>
+                        <th class="px-6 py-4">Petugas</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const res = await fetch('/api/data');
+                const data = await res.json();
+                
+                // Update Stats
+                document.getElementById('totalLaporan').innerText = data.length;
+                let totalH = 0, totalQ = 0;
+                data.forEach(d => {
+                    totalH += Number(d.dataAir.H) || 0;
+                    totalQ += Number(d.dataAir.Q) || 0;
+                });
+                if(data.length > 0) {
+                    document.getElementById('avgH').innerText = (totalH / data.length).toFixed(2) + ' cm';
+                    document.getElementById('avgQ').innerText = (totalQ / data.length).toFixed(2) + ' lt/dt';
+                }
+
+                // Update Table (Top 10)
+                const tbody = document.getElementById('tableBody');
+                const last10 = data.slice(-10).reverse();
+                tbody.innerHTML = last10.map(d => `
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="px-6 py-4">${d.tanggalDisplay} - ${d.periode.toUpperCase()}</td>
+                        <td class="px-6 py-4">${d.lokasi.namaLengkap}</td>
+                        <td class="px-6 py-4 font-medium text-green-600">${d.dataAir.H}</td>
+                        <td class="px-6 py-4 font-medium text-blue-600">${d.dataAir.Q}</td>
+                        <td class="px-6 py-4">${d.petugas.nama}</td>
+                    </tr>
+                `).join('');
+
+                // Update Chart
+                const chartDataMap = {};
+                data.forEach(d => {
+                    if(!chartDataMap[d.tanggal]) chartDataMap[d.tanggal] = 0;
+                    chartDataMap[d.tanggal] += Number(d.dataAir.Q) || 0;
+                });
+                const labels = Object.keys(chartDataMap).sort();
+                const chartData = labels.map(l => chartDataMap[l]);
+
+                new Chart(document.getElementById('debitChart'), {
+                    type: 'line',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: 'Total Q (lt/dt)',
+                            data: chartData,
+                            borderColor: '#3b82f6',
+                            tension: 0.1,
+                            fill: true,
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)'
+                        }]
+                    }
+                });
+
+            } catch (err) {
+                console.error("Failed to load data", err);
+            }
+        }
+        loadData();
+    </script>
+</body>
+</html>

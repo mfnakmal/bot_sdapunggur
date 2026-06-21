@@ -1,6 +1,11 @@
 require("dotenv").config();
 
+const { generateExcel, generatePDF } = require("./utils/export");
+const { generateChartUrl } = require("./utils/chart");
+
 const { scheduleBackup } = require("./utils/gitBackup");
+const { initCronJobs } = require("./utils/cron");
+const { startDashboard } = require("./dashboard/server");
 
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
@@ -25,7 +30,8 @@ const {
   modeUploadDokumentasiKeyboard,
   selesaiUploadBulkKeyboard,
   jenisDokumentasiKeyboard,
-  sisiDokumentasiKeyboard
+  sisiDokumentasiKeyboard,
+  exportBulanKeyboard
 } = require("./utils/keyboard");
 
 const TOKEN = process.env.BOT_TOKEN;
@@ -36,6 +42,13 @@ if (!TOKEN) {
 }
 
 const bot = new TelegramBot(TOKEN, { polling: true });
+
+// Initialize Cron Jobs
+initCronJobs(bot);
+
+// Start Web Dashboard
+const DASHBOARD_PORT = process.env.PORT || 3000;
+startDashboard(DASHBOARD_PORT);
 
 const USERS_PATH = "data/users.json";
 const PINTU_PATH = "data/pintu.json";
@@ -1211,6 +1224,18 @@ ${index + 1}. ${item.namaLengkap}
 
   hasil += "\n✅ Rekap setengah bulanan selesai.";
 
+  const chartData = Object.keys(rekapTanggal).sort().map(tgl => ({
+    tanggal: tgl.slice(-2),
+    totalQ: rekapTanggal[tgl].totalQ
+  }));
+
+  try {
+    const chartUrl = generateChartUrl(chartData, namaPeriode);
+    await bot.sendPhoto(chatId, chartUrl, { caption: "📊 Grafik Pergerakan Debit (Total Q per Hari)" });
+  } catch(e) {
+    console.error("Gagal mengirim grafik:", e);
+  }
+
   return kirimPesanPanjang(
     chatId,
     hasil
@@ -1225,8 +1250,58 @@ ${index + 1}. ${item.namaLengkap}
   return mulaiRekapHarian(chatId);
 }
 
-  if (data === "export_menu") {
-    return bot.sendMessage(chatId, "📤 Fitur export Excel/PDF kita buat di tahap berikutnya.");
+  if (data.startsWith("export_")) {
+    const parts = data.split("_"); // e.g. export_excel_bulanini
+    if (parts.length < 3) return;
+
+    const tipe = parts[1]; // excel atau pdf
+    const rentang = parts[2]; // bulanini atau semua
+
+    bot.sendMessage(chatId, `Memproses export ${tipe.toUpperCase()}... Mohon tunggu ⏳`);
+
+    try {
+      const laporan = readJSON(LAPORAN_PATH, []);
+      let dataToExport = laporan;
+
+      if (rentang === "bulanini") {
+        const bulanIni = getTodayDate().slice(0, 7); // e.g. "2026-06"
+        dataToExport = laporan.filter(item => item.tanggal && item.tanggal.startsWith(bulanIni));
+      }
+
+      if (dataToExport.length === 0) {
+        return bot.sendMessage(chatId, "❌ Tidak ada data untuk periode ini.");
+      }
+
+      // Sort data by date
+      dataToExport.sort((a, b) => String(a.tanggal || "").localeCompare(String(b.tanggal || "")));
+
+      const fileName = `Export_Debit_${rentang === "bulanini" ? "BulanIni" : "Semua"}_${Date.now()}.${tipe === 'excel' ? 'xlsx' : 'pdf'}`;
+      const exportDir = path.join(__dirname, "exports");
+      if (!fs.existsSync(exportDir)) {
+        fs.mkdirSync(exportDir, { recursive: true });
+      }
+      const filePath = path.join(exportDir, fileName);
+
+      if (tipe === "excel") {
+        await generateExcel(dataToExport, filePath);
+      } else if (tipe === "pdf") {
+        await generatePDF(dataToExport, filePath);
+      }
+
+      await bot.sendDocument(chatId, filePath, {
+        caption: `✅ Berhasil export ${dataToExport.length} data ke ${tipe.toUpperCase()}`
+      });
+
+      // Cleanup
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath);
+      }
+
+    } catch (error) {
+      console.error("Export Error:", error);
+      bot.sendMessage(chatId, "❌ Terjadi kesalahan saat meng-export data.");
+    }
+    return;
   }
 });
 
@@ -1339,11 +1414,19 @@ Pilih pintu atau bangunan yang ingin dilihat dokumentasinya:`,
 }
 
   if (text === "📤 Export Excel") {
-    return bot.sendMessage(chatId, "📤 Fitur export Excel kita buat setelah database laporan sudah aman.");
+    return bot.sendMessage(
+      chatId,
+      "📤 Pilih periode data yang ingin di-export ke Excel:",
+      exportBulanKeyboard("excel")
+    );
   }
 
   if (text === "📄 Export PDF") {
-    return bot.sendMessage(chatId, "📄 Fitur export PDF kita buat setelah export Excel selesai.");
+    return bot.sendMessage(
+      chatId,
+      "📄 Pilih periode data yang ingin di-export ke PDF:",
+      exportBulanKeyboard("pdf")
+    );
   }
 
   if (text === "👤 Profil Saya") {

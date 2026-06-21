@@ -320,6 +320,33 @@ function sisiDokumentasiKeyboard(pintu) {
   };
 }
 
+function exportBulanKeyboard(tipe) {
+  return {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: "📅 Bulan Ini",
+            callback_data: `export_${tipe}_bulanini`
+          }
+        ],
+        [
+          {
+            text: "🗂️ Semua Data",
+            callback_data: `export_${tipe}_semua`
+          }
+        ],
+        [
+          {
+            text: "❌ Batal",
+            callback_data: "batal"
+          }
+        ]
+      ]
+    }
+  };
+}
+
 module.exports = {
   mainReplyKeyboard,
   removeKeyboard,
@@ -331,5 +358,6 @@ module.exports = {
   modeUploadDokumentasiKeyboard,
   selesaiUploadBulkKeyboard,
   jenisDokumentasiKeyboard,
-  sisiDokumentasiKeyboard
+  sisiDokumentasiKeyboard,
+  exportBulanKeyboard
 };
