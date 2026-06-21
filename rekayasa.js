@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('./data/laporan_debit.json'); // We will read directly
 
 function generateRekayasa() {
     const file = './data/laporan_debit.json';
@@ -86,7 +85,6 @@ function generateRekayasa() {
                 });
                 generatedCount++;
             }
-        }
         }
     }
 
