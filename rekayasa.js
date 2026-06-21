@@ -6,8 +6,8 @@ function generateRekayasa() {
     try {
         data = JSON.parse(fs.readFileSync(file, 'utf8'));
     } catch(e) {
-        console.error("Gagal membaca laporan_debit.json");
-        return;
+        console.warn("⚠️ File laporan_debit.json rusak atau gagal dibaca. Mereset ke file baru...");
+        data = [];
     }
 
     const pintuData = JSON.parse(fs.readFileSync('./data/pintu.json', 'utf8'));
