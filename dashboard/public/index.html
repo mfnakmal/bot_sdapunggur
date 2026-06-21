@@ -20,7 +20,7 @@
                     <span class="text-2xl font-bold tracking-tight">SDA Punggur Analytics</span>
                 </div>
                 <div class="text-sm font-medium text-blue-200 bg-blue-800 px-3 py-1 rounded-full">
-                    UPTD SDA Punggur Utara
+                    UPTD SDA Punggur
                 </div>
             </div>
         </div>
@@ -141,7 +141,13 @@
                 // Show loading state
                 document.getElementById('totalLaporan').innerText = "Loading...";
                 
-                const res = await fetch('/api/data');
+                // Tambahkan cache-buster dan header bypass localtunnel
+                const res = await fetch('/api/data?t=' + new Date().getTime(), {
+                    headers: {
+                        'Bypass-Tunnel-Reminder': 'true',
+                        'Cache-Control': 'no-cache'
+                    }
+                });
                 globalData = await res.json();
                 
                 populateDropdowns();
