@@ -1429,6 +1429,20 @@ Pilih pintu atau bangunan yang ingin dilihat dokumentasinya:`,
     );
   }
 
+  if (text === "🌐 Web Dashboard") {
+    return bot.sendMessage(
+      chatId,
+      `🌐 *Akses Mini Web Dashboard*
+      
+Untuk memantau grafik dan rekap data secara real-time dari browser (HP atau Laptop), silakan buka link berikut:
+
+🔗 http://143.14.13.10:3000
+
+*(Catatan: Pastikan kamu terhubung ke internet untuk membukanya. Jika tidak bisa dibuka, kemungkinan firewall VPS belum mengizinkan port 3000)*`,
+      { parse_mode: "Markdown" }
+    );
+  }
+
   if (text === "👤 Profil Saya") {
     return bot.sendMessage(
       chatId,
