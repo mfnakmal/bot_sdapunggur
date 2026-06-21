@@ -5,7 +5,7 @@ const { generateChartUrl } = require("./utils/chart");
 
 const { scheduleBackup } = require("./utils/gitBackup");
 const { initCronJobs } = require("./utils/cron");
-const { startDashboard } = require("./dashboard/server");
+const { startDashboard, getDashboardUrl } = require("./dashboard/server");
 
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
@@ -1430,15 +1430,16 @@ Pilih pintu atau bangunan yang ingin dilihat dokumentasinya:`,
   }
 
   if (text === "🌐 Web Dashboard") {
+    const url = getDashboardUrl();
     return bot.sendMessage(
       chatId,
       `🌐 *Akses Mini Web Dashboard*
       
 Untuk memantau grafik dan rekap data secara real-time dari browser (HP atau Laptop), silakan buka link berikut:
 
-🔗 http://143.14.13.10:3000
+🔗 ${url}
 
-*(Catatan: Pastikan kamu terhubung ke internet untuk membukanya. Jika tidak bisa dibuka, kemungkinan firewall VPS belum mengizinkan port 3000)*`,
+*(Catatan: Link ini di-generate secara otomatis untuk menembus batasan firewall VPS kamu. Karena ini layanan tunneling gratis, saat pertama dibuka mungkin akan muncul halaman peringatan "Friendly Reminder", cukup klik tombol "Click to Continue" berwarna biru untuk masuk ke Dashboard UPTD SDA Punggur.)*`,
       { parse_mode: "Markdown" }
     );
   }
