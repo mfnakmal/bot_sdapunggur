@@ -3,137 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Debit Air Punggur</title>
-    <!-- TailwindCSS from CDN for quick styling -->
+    <title>Sistem Informasi Debit Air Punggur</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 p-6">
-    <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Dashboard Debit Air Harian</h1>
+<body class="bg-gray-50 min-h-screen pb-12">
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold tracking-tight">SDA Punggur Analytics</span>
+                </div>
+                <div class="text-sm font-medium text-blue-200 bg-blue-800 px-3 py-1 rounded-full">
+                    UPTD SDA Punggur Utara
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
-                    <h2 class="text-xl font-semibold">Grafik Debit</h2>
-                    <select id="chartTipe" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2">
-                        <option value="harian">Harian (Per Tanggal)</option>
-                        <option value="bulanan">Bulanan (Akumulasi Bulan)</option>
+        <!-- Filter Section -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Filter Data Laporan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Waktu Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Rentang Waktu</label>
+                    <select id="filterWaktu" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none transition-colors">
+                        <option value="all">Semua Waktu</option>
+                        <option value="7">7 Hari Terakhir</option>
+                        <option value="15">15 Hari Terakhir</option>
+                        <option value="30" selected>30 Hari Terakhir</option>
                     </select>
                 </div>
-                <canvas id="debitChart"></canvas>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-xl font-semibold mb-4">Statistik Laporan</h2>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center p-4 bg-blue-50 rounded">
-                        <span class="text-gray-600">Total Laporan</span>
-                        <span id="totalLaporan" class="text-2xl font-bold text-blue-600">0</span>
-                    </div>
-                    <div class="flex justify-between items-center p-4 bg-green-50 rounded">
-                        <span class="text-gray-600">Rata-rata H</span>
-                        <span id="avgH" class="text-2xl font-bold text-green-600">0 cm</span>
-                    </div>
-                    <div class="flex justify-between items-center p-4 bg-purple-50 rounded">
-                        <span class="text-gray-600">Rata-rata Q</span>
-                        <span id="avgQ" class="text-2xl font-bold text-purple-600">0 lt/dt</span>
-                    </div>
+
+                <!-- Tampilan Grafik -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Pengelompokan Grafik</label>
+                    <select id="chartTipe" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none transition-colors">
+                        <option value="harian">Harian (Per Tanggal)</option>
+                        <option value="15hari">Per 15 Hari</option>
+                        <option value="bulanan">Bulanan (Per Bulan)</option>
+                    </select>
                 </div>
+
+                <!-- Petugas Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Petugas (PPA)</label>
+                    <select id="filterPetugas" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none transition-colors">
+                        <option value="all">Semua Petugas</option>
+                    </select>
+                </div>
+
+                <!-- Bangunan Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Bangunan / Pintu</label>
+                    <select id="filterLokasi" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none transition-colors">
+                        <option value="all">Semua Bangunan</option>
+                    </select>
+                </div>
+
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow overflow-x-auto">
-            <h2 class="text-xl font-semibold mb-4">10 Laporan Terakhir</h2>
-            <table class="min-w-full text-left text-sm whitespace-nowrap">
-                <thead class="uppercase tracking-wider border-b-2">
-                    <tr>
-                        <th class="px-6 py-4">Tanggal</th>
-                        <th class="px-6 py-4">Pintu</th>
-                        <th class="px-6 py-4">H (cm)</th>
-                        <th class="px-6 py-4">Q (lt/dt)</th>
-                        <th class="px-6 py-4">Petugas</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <!-- Data will be inserted here -->
-                </tbody>
-            </table>
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm p-6 text-white transform transition hover:-translate-y-1">
+                <p class="text-blue-100 text-sm font-medium mb-1">Total Laporan Tersaring</p>
+                <p id="totalLaporan" class="text-4xl font-bold">0</p>
+            </div>
+            <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-sm p-6 text-white transform transition hover:-translate-y-1">
+                <p class="text-green-100 text-sm font-medium mb-1">Rata-rata H (cm)</p>
+                <p id="avgH" class="text-4xl font-bold">0</p>
+            </div>
+            <div class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl shadow-sm p-6 text-white transform transition hover:-translate-y-1">
+                <p class="text-purple-100 text-sm font-medium mb-1">Rata-rata Q (lt/dt)</p>
+                <p id="avgQ" class="text-4xl font-bold">0</p>
+            </div>
         </div>
+
+        <!-- Chart Section -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Visualisasi Akumulasi Debit Air</h2>
+            </div>
+            <div class="relative h-96 w-full">
+                <canvas id="debitChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="px-6 py-5 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
+                <h2 class="text-xl font-bold text-gray-800">Detail Laporan (Berdasarkan Filter)</h2>
+                <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Max 500 baris terbaru</span>
+            </div>
+            <div class="overflow-x-auto max-h-96">
+                <table class="min-w-full text-left text-sm whitespace-nowrap">
+                    <thead class="uppercase tracking-wider text-gray-500 bg-white sticky top-0 shadow-sm">
+                        <tr>
+                            <th class="px-6 py-4 font-semibold">Tanggal / Waktu</th>
+                            <th class="px-6 py-4 font-semibold">Petugas</th>
+                            <th class="px-6 py-4 font-semibold">Bangunan / Pintu</th>
+                            <th class="px-6 py-4 font-semibold">H (cm)</th>
+                            <th class="px-6 py-4 font-semibold">Q (lt/dt)</th>
+                            <th class="px-6 py-4 font-semibold">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody" class="divide-y divide-gray-100 text-gray-700">
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 
     <script>
         let globalData = [];
+        let filteredData = [];
         let debitChart = null;
+
+        const filterWaktuEl = document.getElementById('filterWaktu');
+        const chartTipeEl = document.getElementById('chartTipe');
+        const filterPetugasEl = document.getElementById('filterPetugas');
+        const filterLokasiEl = document.getElementById('filterLokasi');
 
         async function loadData() {
             try {
+                // Show loading state
+                document.getElementById('totalLaporan').innerText = "Loading...";
+                
                 const res = await fetch('/api/data');
                 globalData = await res.json();
                 
-                updateStats(globalData);
-                updateTable(globalData);
-                renderChart('harian'); // default
+                populateDropdowns();
+                applyFilters();
 
-                document.getElementById('chartTipe').addEventListener('change', (e) => {
-                    renderChart(e.target.value);
+                // Event Listeners
+                [filterWaktuEl, chartTipeEl, filterPetugasEl, filterLokasiEl].forEach(el => {
+                    el.addEventListener('change', applyFilters);
                 });
             } catch (err) {
                 console.error("Failed to load data", err);
+                document.getElementById('totalLaporan').innerText = "Error";
             }
         }
 
-        function updateStats(data) {
-            document.getElementById('totalLaporan').innerText = data.length;
+        function populateDropdowns() {
+            const petugasSet = new Set();
+            const lokasiSet = new Set();
+
+            globalData.forEach(d => {
+                if (d.petugas && d.petugas.nama) petugasSet.add(d.petugas.nama);
+                if (d.lokasi && d.lokasi.namaLengkap) lokasiSet.add(d.lokasi.namaLengkap);
+            });
+
+            // Populate Petugas
+            Array.from(petugasSet).sort().forEach(p => {
+                const opt = document.createElement('option');
+                opt.value = p;
+                opt.text = p;
+                filterPetugasEl.appendChild(opt);
+            });
+
+            // Populate Lokasi
+            Array.from(lokasiSet).sort().forEach(l => {
+                const opt = document.createElement('option');
+                opt.value = l;
+                opt.text = l;
+                filterLokasiEl.appendChild(opt);
+            });
+        }
+
+        function applyFilters() {
+            const waktu = filterWaktuEl.value;
+            const petugas = filterPetugasEl.value;
+            const lokasi = filterLokasiEl.value;
+
+            // Hitung tanggal batas bawah jika difilter berdasarkan hari
+            let cutoffDate = new Date('1970-01-01');
+            if (waktu !== 'all') {
+                const days = parseInt(waktu);
+                cutoffDate = new Date();
+                cutoffDate.setDate(cutoffDate.getDate() - days);
+            }
+
+            filteredData = globalData.filter(d => {
+                // Filter Waktu
+                const dDate = new Date(d.tanggal);
+                if (waktu !== 'all' && dDate < cutoffDate) return false;
+
+                // Filter Petugas
+                if (petugas !== 'all' && d.petugas.nama !== petugas) return false;
+
+                // Filter Lokasi
+                if (lokasi !== 'all' && d.lokasi.namaLengkap !== lokasi) return false;
+
+                return true;
+            });
+
+            updateStats();
+            updateTable();
+            renderChart();
+        }
+        
+        function updateStats() {
+            document.getElementById('totalLaporan').innerText = filteredData.length.toLocaleString('id-ID');
             let totalH = 0, totalQ = 0;
-            data.forEach(d => {
+            filteredData.forEach(d => {
                 totalH += Number(d.dataAir.H) || 0;
                 totalQ += Number(d.dataAir.Q) || 0;
             });
-            if(data.length > 0) {
-                document.getElementById('avgH').innerText = (totalH / data.length).toFixed(2) + ' cm';
-                document.getElementById('avgQ').innerText = (totalQ / data.length).toFixed(2) + ' lt/dt';
+            if(filteredData.length > 0) {
+                document.getElementById('avgH').innerText = (totalH / filteredData.length).toFixed(2);
+                document.getElementById('avgQ').innerText = (totalQ / filteredData.length).toFixed(2);
+            } else {
+                document.getElementById('avgH').innerText = "0";
+                document.getElementById('avgQ').innerText = "0";
             }
         }
 
-        function updateTable(data) {
+        function updateTable() {
             const tbody = document.getElementById('tableBody');
-            const last10 = data.slice(-10).reverse();
-            tbody.innerHTML = last10.map(d => `
-                <tr class="border-b hover:bg-gray-50">
-                    <td class="px-6 py-4">${d.tanggalDisplay} - ${d.periode.toUpperCase()}</td>
+            if (filteredData.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" class="px-6 py-8 text-center text-gray-500">Tidak ada data yang sesuai dengan filter</td></tr>`;
+                return;
+            }
+
+            // Batasi render maksimal 500 baris agar browser tidak nge-lag
+            const displayData = [...filteredData].reverse().slice(0, 500);
+
+            tbody.innerHTML = displayData.map(d => `
+                <tr class="hover:bg-blue-50 transition-colors">
+                    <td class="px-6 py-4">${d.tanggalDisplay} <span class="text-xs font-semibold px-2 py-1 bg-gray-200 rounded text-gray-700 ml-2">${d.periode.toUpperCase()}</span></td>
+                    <td class="px-6 py-4 font-medium">${d.petugas.nama}</td>
                     <td class="px-6 py-4">${d.lokasi.namaLengkap}</td>
-                    <td class="px-6 py-4 font-medium text-green-600">${d.dataAir.H}</td>
-                    <td class="px-6 py-4 font-medium text-blue-600">${d.dataAir.Q}</td>
-                    <td class="px-6 py-4">${d.petugas.nama}</td>
+                    <td class="px-6 py-4 font-semibold text-green-600">${d.dataAir.H}</td>
+                    <td class="px-6 py-4 font-semibold text-purple-600">${d.dataAir.Q}</td>
+                    <td class="px-6 py-4 text-xs text-gray-500 max-w-xs truncate" title="${d.keterangan || '-'}">${d.keterangan || '-'}</td>
                 </tr>
             `).join('');
         }
 
-        function renderChart(tipe) {
+        function renderChart() {
+            const tipe = chartTipeEl.value;
             const chartDataMap = {};
             
-            globalData.forEach(d => {
+            filteredData.forEach(d => {
                 let key = d.tanggal; // Default: YYYY-MM-DD
                 
                 if (tipe === 'bulanan') {
-                    // Ambil YYYY-MM (contoh: 2026-06)
+                    // YYYY-MM
                     key = d.tanggal.substring(0, 7);
+                } else if (tipe === '15hari') {
+                    // Group by 1-15 and 16-31
+                    const [y, m, day] = d.tanggal.split('-');
+                    const period = parseInt(day) <= 15 ? 'Awal' : 'Akhir';
+                    key = `${y}-${m} (${period})`;
                 }
                 
                 if(!chartDataMap[key]) chartDataMap[key] = 0;
                 chartDataMap[key] += Number(d.dataAir.Q) || 0;
             });
 
+            // Urutkan key
             const labels = Object.keys(chartDataMap).sort();
             
-            // Format label jika bulanan biar lebih cantik
+            // Format label untuk display
             const displayLabels = labels.map(l => {
                 if (tipe === 'bulanan') {
                     const [y, m] = l.split('-');
                     const months = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep", "Okt", "Nov", "Des"];
                     return `${months[parseInt(m)-1]} ${y}`;
+                } else if (tipe === '15hari') {
+                    const parts = l.split(' '); // "2026-06 (Awal)"
+                    const [y, m] = parts[0].split('-');
+                    const months = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep", "Okt", "Nov", "Des"];
+                    return `${parts[1]} ${months[parseInt(m)-1]} ${y}`; // "(Awal) Jun 2026"
                 }
-                return l;
+                return l; // harian
             });
 
             const chartData = labels.map(l => chartDataMap[l]);
@@ -142,23 +298,52 @@
                 debitChart.destroy();
             }
 
+            const isBar = tipe === 'bulanan' || tipe === '15hari';
+
             debitChart = new Chart(document.getElementById('debitChart'), {
-                type: tipe === 'bulanan' ? 'bar' : 'line',
+                type: isBar ? 'bar' : 'line',
                 data: {
                     labels: displayLabels,
                     datasets: [{
-                        label: 'Total Q (lt/dt)',
+                        label: 'Total Akumulasi Q (lt/dt)',
                         data: chartData,
-                        borderColor: tipe === 'bulanan' ? '#8b5cf6' : '#3b82f6',
-                        backgroundColor: tipe === 'bulanan' ? 'rgba(139, 92, 246, 0.5)' : 'rgba(59, 130, 246, 0.1)',
-                        tension: 0.1,
+                        borderColor: isBar ? '#4f46e5' : '#2563eb',
+                        backgroundColor: isBar ? 'rgba(79, 70, 229, 0.7)' : 'rgba(37, 99, 235, 0.15)',
+                        borderWidth: isBar ? 0 : 2,
+                        tension: 0.3,
                         fill: true,
+                        pointBackgroundColor: '#2563eb',
+                        pointRadius: 4,
+                        borderRadius: isBar ? 4 : 0
                     }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'top' }
+                        legend: { position: 'top' },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: 'rgba(17, 24, 39, 0.9)',
+                            titleFont: { size: 14 },
+                            bodyFont: { size: 14 },
+                            padding: 12
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(0,0,0,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    },
+                    interaction: {
+                        mode: 'nearest',
+                        axis: 'x',
+                        intersect: false
                     }
                 }
             });
