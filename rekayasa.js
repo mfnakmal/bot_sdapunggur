@@ -35,6 +35,9 @@ function generateRekayasa() {
         }
     }
 
+    const usersData = JSON.parse(fs.readFileSync('./data/users.json', 'utf8'));
+    const ppaList = Object.values(usersData).filter(u => u.role === 'ppa' && !u.nama.includes('ESTHA'));
+
     let generatedCount = 0;
     let modifiedCount = 0;
 
@@ -52,11 +55,20 @@ function generateRekayasa() {
                 const H = isFlowing ? Math.floor(Math.random() * 50) + 30 : Math.floor(Math.random() * 20) + 5;
                 const Q = isFlowing ? Math.floor(Math.random() * 400) + 100 : 0;
                 const ket = `Data rekayasa magang - Debit ${isFlowing ? 'Mengalir' : 'Mati'}`;
+                
+                // Pilih petugas random dari ppaList
+                const randomPpa = ppaList[Math.floor(Math.random() * ppaList.length)];
 
                 if (existingIndex !== -1) {
                     data[existingIndex].dataAir.H = H;
                     data[existingIndex].dataAir.Q = Q;
                     data[existingIndex].keterangan = ket;
+                    data[existingIndex].petugas = {
+                        telegramId: randomPpa.telegramId,
+                        nama: randomPpa.nama,
+                        jabatan: randomPpa.jabatan,
+                        role: randomPpa.role
+                    };
                     modifiedCount++;
                 } else {
                     const id = `LAP-${tgl}-${periode}-${loc.pintu.replace(/ /g, '_')}-${loc.sisi.replace(/\./g, '_')}-REK`;
@@ -67,7 +79,12 @@ function generateRekayasa() {
                         tanggalDisplay: tglDisplay,
                         periode: periode,
                         waktuInput: waktu,
-                        petugas: { telegramId: null, nama: "DATA SIMULASI", jabatan: "PPA", role: "ppa" },
+                        petugas: {
+                            telegramId: randomPpa.telegramId,
+                            nama: randomPpa.nama,
+                            jabatan: randomPpa.jabatan,
+                            role: randomPpa.role
+                        },
                         lokasi: loc,
                         dataAir: { H, satuanH: "cm", Q, satuanQ: "lt/dt" },
                         dokumentasi: { adaFoto: false, telegramFileId: null, fotoLocalPath: null },
