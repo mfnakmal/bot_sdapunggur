@@ -19,27 +19,33 @@ function generateRekayasa() {
     
     // Flatten locations
     const locations = [];
-    for (const di in pintuData) {
-        for (const saluran in pintuData[di]) {
-            for (const namaPintu in pintuData[di][saluran]) {
-                for (const sisi of pintuData[di][saluran][namaPintu]) {
-                    locations.push({
-                        daerahIrigasi: di,
-                        saluran: saluran,
-                        pintu: namaPintu,
-                        sisi: sisi,
-                        namaLengkap: `${namaPintu} ${sisi}`
-                    });
-                }
-            }
+    for (const pintu of pintuData) {
+        for (const sisi of pintu.sisi) {
+            locations.push({
+                daerahIrigasi: "DI Punggur Utara",
+                saluran: "Saluran Sekunder",
+                pintu: pintu.nama,
+                sisi: sisi,
+                namaLengkap: `${pintu.nama} ${sisi}`
+            });
         }
     }
+
+    // Bersihkan data simulasi / rekayasa lama untuk tanggal 1-19 Juni
+    let initialLength = data.length;
+    data = data.filter(d => {
+        const isRekayasa = d.keterangan.includes('rekayasa') || d.petugas.nama === "DATA SIMULASI" || d.id.includes('REKAYASA') || d.id.includes('-REK') || d.keterangan.includes('simulasi');
+        if (d.tanggal >= "2026-06-01" && d.tanggal <= "2026-06-19" && isRekayasa) {
+            return false;
+        }
+        return true;
+    });
+    console.log(`Menghapus ${initialLength - data.length} data rekayasa/simulasi lama...`);
 
     const usersData = JSON.parse(fs.readFileSync('./data/users.json', 'utf8'));
     const ppaList = Object.values(usersData).filter(u => u.role === 'ppa' && !u.nama.includes('ESTHA'));
 
     let generatedCount = 0;
-    let modifiedCount = 0;
 
     for (const tgl of dates) {
         const isFlowing = flowing.includes(tgl);
@@ -50,8 +56,6 @@ function generateRekayasa() {
             const waktu = periode === 'pagi' ? '08:00' : '17:00';
 
             for (const loc of locations) {
-                const existingIndex = data.findIndex(d => d.tanggal === tgl && d.periode === periode && d.lokasi.namaLengkap === loc.namaLengkap);
-                
                 const H = isFlowing ? Math.floor(Math.random() * 50) + 30 : Math.floor(Math.random() * 20) + 5;
                 const Q = isFlowing ? Math.floor(Math.random() * 400) + 100 : 0;
                 const ket = `Data rekayasa magang - Debit ${isFlowing ? 'Mengalir' : 'Mati'}`;
@@ -59,42 +63,30 @@ function generateRekayasa() {
                 // Pilih petugas random dari ppaList
                 const randomPpa = ppaList[Math.floor(Math.random() * ppaList.length)];
 
-                if (existingIndex !== -1) {
-                    data[existingIndex].dataAir.H = H;
-                    data[existingIndex].dataAir.Q = Q;
-                    data[existingIndex].keterangan = ket;
-                    data[existingIndex].petugas = {
+                const id = `LAP-${tgl}-${periode}-${loc.pintu.replace(/ /g, '_')}-${loc.sisi.replace(/\./g, '_')}-REK`;
+                data.push({
+                    id,
+                    jenisBlanko: "06-O",
+                    tanggal: tgl,
+                    tanggalDisplay: tglDisplay,
+                    periode: periode,
+                    waktuInput: waktu,
+                    petugas: {
                         telegramId: randomPpa.telegramId,
                         nama: randomPpa.nama,
                         jabatan: randomPpa.jabatan,
                         role: randomPpa.role
-                    };
-                    modifiedCount++;
-                } else {
-                    const id = `LAP-${tgl}-${periode}-${loc.pintu.replace(/ /g, '_')}-${loc.sisi.replace(/\./g, '_')}-REK`;
-                    data.push({
-                        id,
-                        jenisBlanko: "06-O",
-                        tanggal: tgl,
-                        tanggalDisplay: tglDisplay,
-                        periode: periode,
-                        waktuInput: waktu,
-                        petugas: {
-                            telegramId: randomPpa.telegramId,
-                            nama: randomPpa.nama,
-                            jabatan: randomPpa.jabatan,
-                            role: randomPpa.role
-                        },
-                        lokasi: loc,
-                        dataAir: { H, satuanH: "cm", Q, satuanQ: "lt/dt" },
-                        dokumentasi: { adaFoto: false, telegramFileId: null, fotoLocalPath: null },
-                        keterangan: ket,
-                        status: "tersimpan",
-                        createdAt: `${tgl}T${waktu}:00+07:00`
-                    });
-                    generatedCount++;
-                }
+                    },
+                    lokasi: loc,
+                    dataAir: { H, satuanH: "cm", Q, satuanQ: "lt/dt" },
+                    dokumentasi: { adaFoto: false, telegramFileId: null, fotoLocalPath: null },
+                    keterangan: ket,
+                    status: "tersimpan",
+                    createdAt: `${tgl}T${waktu}:00+07:00`
+                });
+                generatedCount++;
             }
+        }
         }
     }
 
@@ -103,7 +95,6 @@ function generateRekayasa() {
 
     fs.writeFileSync(file, JSON.stringify(data, null, 2));
     console.log(`✅ Rekayasa selesai!`);
-    console.log(`- Dimodifikasi: ${modifiedCount} laporan`);
     console.log(`- Dibuat baru: ${generatedCount} laporan`);
 }
 
