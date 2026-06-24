@@ -109933,5 +109933,40 @@
     "keterangan": "Data rekayasa magang - Debit Mengalir",
     "status": "tersimpan",
     "createdAt": "2026-06-19T17:00:00+07:00"
+  },
+  {
+    "id": "LAP-2026-06-24-pagi-BPU_11-ki-1782284472028",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-24",
+    "tanggalDisplay": "24-06-2026",
+    "periode": "pagi",
+    "waktuInput": "14:01",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "MUHAMMAD FAUZAN AKMAL",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BPU 11",
+      "sisi": "ki",
+      "namaLengkap": "BPU 11 ki"
+    },
+    "dataAir": {
+      "H": 50,
+      "satuanH": "cm",
+      "Q": 21,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": true,
+      "telegramFileId": "AgACAgUAAxkBAAICmmo7gLUc5qnF7ZFR3eao0bbsUVEnAALjD2sb9WzZVUz-tV19xR74AQADAgADeQADPAQ",
+      "fotoLocalPath": "uploads/2026-06-24/pagi/2026-06-24_pagi_BPU_11_ki_1782284469740.jpg"
+    },
+    "keterangan": "-",
+    "status": "tersimpan",
+    "createdAt": "2026-06-24T14:01:12+07:00"
   }
 ]
