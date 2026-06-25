@@ -57,7 +57,7 @@ function generateRekayasa() {
             for (const loc of locations) {
                 const H = isFlowing ? Math.floor(Math.random() * 50) + 30 : Math.floor(Math.random() * 20) + 5;
                 const Q = isFlowing ? Math.floor(Math.random() * 400) + 100 : 0;
-                const ket = `Data rekayasa magang - Debit ${isFlowing ? 'Mengalir' : 'Mati'}`;
+                const ket = "-";
                 
                 // Pilih petugas random dari ppaList
                 const randomPpa = ppaList[Math.floor(Math.random() * ppaList.length)];
