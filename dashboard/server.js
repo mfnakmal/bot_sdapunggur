@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path');
 const { readJSON } = require('../utils/db');
-const localtunnel = require('localtunnel');
 
-let publicUrl = "Sedang menghubungkan ke server...";
+// Menggunakan Public IP yang telah dikonfigurasi
+let publicUrl = "http://143.14.13.10:50120";
 
 function getDashboardUrl() {
   return publicUrl;
@@ -19,24 +19,12 @@ function startDashboard(port = 3000) {
     res.json(data);
   });
   
-  app.listen(port, '127.0.0.1', async () => {
-    console.log(`🚀 Web Dashboard berjalan di lokal port ${port}`);
-    try {
-      // Create a tunnel to bypass NAT VPS Firewalls
-      const tunnel = await localtunnel({ port: port, local_host: '127.0.0.1' });
-      publicUrl = tunnel.url;
-      console.log(`🌐 Public URL tersedia di: ${publicUrl}`);
-      
-      tunnel.on('close', () => {
-        console.log('Terputus dari localtunnel');
-      });
-      tunnel.on('error', (err) => {
-        console.error('Localtunnel error:', err);
-      });
-    } catch (e) {
-      console.error("Gagal membuat tunnel:", e);
-      publicUrl = "Gagal membuat public link. Coba restart bot.";
-    }
+  // Gunakan port 50120 secara langsung, dengarkan pada 0.0.0.0 untuk mengizinkan akses dari 10.10.10.55
+  const dashboardPort = 50120;
+  
+  app.listen(dashboardPort, '0.0.0.0', () => {
+    console.log(`🚀 Web Dashboard berjalan di port ${dashboardPort} (0.0.0.0)`);
+    console.log(`🌐 Public URL (via NAT) tersedia di: ${publicUrl}`);
   });
 }
 

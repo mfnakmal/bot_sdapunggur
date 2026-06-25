@@ -339,6 +339,62 @@ Kode Login: *${user.kodeLogin}*`,
     );
   }
 
+  if (data === "rekap_harian_today" || data === "rekap_harian_yesterday") {
+    const session = getSession(chatId);
+    if (!session || session.mode !== "rekap_harian") {
+      return bot.sendMessage(chatId, "❌ Sesi rekap sudah tidak valid.");
+    }
+    const targetDate = data === "rekap_harian_today" ? getTodayDate() : (() => {
+      const d = new Date();
+      d.setDate(d.getDate() - 1);
+      return d.toISOString().split('T')[0];
+    })();
+    clearSession(chatId);
+    return tampilkanRekapHarian(chatId, targetDate, user);
+  }
+
+  if (data === "rekap_harian_manual") {
+    const session = getSession(chatId);
+    setSession(chatId, { ...session, step: "input_tanggal_rekap_harian" });
+    return bot.sendMessage(chatId, "Masukkan tanggal yang ingin direkap.\n\nFormat: 12-06-2026 atau hari ini");
+  }
+
+  if (data === "rekap_setengah_bulan_ini" || data === "rekap_setengah_bulan_lalu") {
+    const session = getSession(chatId);
+    if (!session || session.mode !== "rekap_setengah_bulanan") {
+      return bot.sendMessage(chatId, "❌ Sesi rekap sudah tidak valid.");
+    }
+    const d = new Date();
+    if (data === "rekap_setengah_bulan_lalu") {
+      d.setMonth(d.getMonth() - 1);
+    }
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const y = d.getFullYear();
+    const bulanIso = `${y}-${m}`;
+    
+    setSession(chatId, { ...session, bulanRekap: bulanIso, step: "pilih_periode_setengah_bulanan" });
+    
+    return bot.sendMessage(
+      chatId,
+      `✅ Bulan dipilih: *${bulanIso}*\n\nPilih periode setengah bulan:`,
+      {
+        parse_mode: "Markdown",
+        reply_markup: {
+          inline_keyboard: [
+            [{ text: "Tanggal 1 - 15", callback_data: "rekap_setengah_1" }],
+            [{ text: "Tanggal 16 - 31", callback_data: "rekap_setengah_2" }],
+          ],
+        },
+      }
+    );
+  }
+
+  if (data === "rekap_setengah_manual") {
+    const session = getSession(chatId);
+    setSession(chatId, { ...session, step: "input_bulan_rekap_setengah_bulanan" });
+    return bot.sendMessage(chatId, "Masukkan bulan yang ingin direkap.\n\nFormat: 06-2026");
+  }
+
     // PILIH SUMBER FOTO YANG AKAN DITAMPILKAN
     // PILIH SUMBER DOKUMENTASI BERDASARKAN PINTU
   if (
@@ -807,23 +863,26 @@ if (
 
   function mulaiRekapSetengahBulanan(chatId) {
   setSession(chatId, {
-    step: "input_bulan_rekap_setengah_bulanan",
+    step: "pilih_opsi_rekap_setengah_bulanan",
     mode: "rekap_setengah_bulanan"
   });
 
+  const opts = {
+    parse_mode: 'Markdown',
+    reply_markup: {
+      inline_keyboard: [
+        [{ text: 'Bulan Ini', callback_data: 'rekap_setengah_bulan_ini' }],
+        [{ text: 'Bulan Lalu', callback_data: 'rekap_setengah_bulan_lalu' }],
+        [{ text: '🗓️ Ketik Manual', callback_data: 'rekap_setengah_manual' }],
+        [{ text: '❌ Batal', callback_data: 'batal' }]
+      ]
+    }
+  };
+
   return bot.sendMessage(
     chatId,
-    `📆 REKAP SETENGAH BULANAN DEBIT 06-O
-
-Masukkan bulan yang ingin direkap.
-
-Contoh:
-06-2026
-06/2026
-2026-06
-bulan ini
-
-Ketik batal untuk membatalkan.`
+    `📆 *REKAP SETENGAH BULANAN DEBIT 06-O*\n\nSilakan pilih bulan yang ingin direkap:`,
+    opts
   );
 }
 
@@ -1437,9 +1496,7 @@ Pilih pintu atau bangunan yang ingin dilihat dokumentasinya:`,
       
 Untuk memantau grafik dan rekap data secara real-time dari browser (HP atau Laptop), silakan buka link berikut:
 
-🔗 ${url}
-
-*(Catatan: Link ini di-generate secara otomatis untuk menembus batasan firewall VPS kamu. Karena ini layanan tunneling gratis, saat pertama dibuka mungkin akan muncul halaman peringatan "Friendly Reminder", cukup klik tombol "Click to Continue" berwarna biru untuk masuk ke Dashboard UPTD SDA Punggur.)*`,
+🔗 ${url}`,
       { parse_mode: "Markdown" }
     );
   }
@@ -2608,25 +2665,26 @@ ${index + 1}. ${item.namaLengkap}
 
 function mulaiRekapHarian(chatId) {
   setSession(chatId, {
-    step: "input_tanggal_rekap_harian",
+    step: "pilih_opsi_rekap_harian",
     mode: "rekap_harian"
   });
 
+  const opts = {
+    parse_mode: 'Markdown',
+    reply_markup: {
+      inline_keyboard: [
+        [{ text: '📅 Hari Ini', callback_data: 'rekap_harian_today' }],
+        [{ text: '⏮️ Kemarin', callback_data: 'rekap_harian_yesterday' }],
+        [{ text: '🗓️ Ketik Manual', callback_data: 'rekap_harian_manual' }],
+        [{ text: '❌ Batal', callback_data: 'batal' }]
+      ]
+    }
+  };
+
   return bot.sendMessage(
     chatId,
-    `📊 REKAP HARIAN DEBIT 06-O
-
-Masukkan tanggal yang ingin direkap.
-
-Format yang dapat digunakan:
-• 12-06-2026
-• 12/06/2026
-• 2026-06-12
-• hari ini
-
-Tanggal hari ini: ${getTodayDisplay()}
-
-Ketik batal untuk membatalkan.`
+    `📊 *REKAP HARIAN DEBIT 06-O*\n\nSilakan pilih tanggal yang ingin direkap:`,
+    opts
   );
 }
 
