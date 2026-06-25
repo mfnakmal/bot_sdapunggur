@@ -56,7 +56,7 @@ function generateRekayasa() {
 
             for (const loc of locations) {
                 const H = isFlowing ? Math.floor(Math.random() * 50) + 30 : Math.floor(Math.random() * 20) + 5;
-                const Q = isFlowing ? Math.floor(Math.random() * 400) + 100 : 0;
+                const Q = isFlowing ? Math.floor(Math.random() * 100) + 40 : 0;
                 const ket = "-";
                 
                 // Pilih petugas random dari ppaList
