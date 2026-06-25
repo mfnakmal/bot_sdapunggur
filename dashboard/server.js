@@ -15,7 +15,7 @@ function startDashboard(port = 3000) {
   app.use(express.static(path.join(__dirname, 'public')));
   
   app.get('/api/data', (req, res) => {
-    const data = readJSON(path.join(__dirname, '../data/laporan_debit.json'), []);
+    const data = readJSON('data/laporan_debit.json', []);
     res.json(data);
   });
   
