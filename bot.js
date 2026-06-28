@@ -240,6 +240,34 @@ bot.onText(/^\/menu$/, (msg) => {
   showMainMenu(chatId, user);
 });
 
+bot.onText(/^\/logout$/, (msg) => {
+  const chatId = msg.chat.id;
+  const telegramId = msg.from.id;
+
+  const user = getUserByTelegramId(telegramId);
+
+  if (!user) {
+    return bot.sendMessage(chatId, "Kamu belum login.");
+  }
+
+  const users = readJSON(USERS_PATH, {});
+  if (users[user.kodeLogin]) {
+    users[user.kodeLogin].telegramId = null;
+    writeJSON(USERS_PATH, users, "logout user");
+  }
+
+  clearSession(chatId);
+
+  bot.sendMessage(
+    chatId,
+    `✅ Logout berhasil.\n\nKamu telah keluar dari akun *${user.nama}*.\nKetik /start untuk login kembali.`,
+    {
+      parse_mode: "Markdown",
+      ...removeKeyboard()
+    }
+  );
+});
+
 function mulaiCatatDebit(chatId, periode) {
   const pintuList = readJSON(PINTU_PATH, []);
 
@@ -1511,6 +1539,25 @@ Jabatan: *${user.jabatan}*
 Role: *${user.role}*
 Kode Login: *${user.kodeLogin}*`,
       { parse_mode: "Markdown" }
+    );
+  }
+
+  if (text === "🚪 Logout") {
+    const users = readJSON(USERS_PATH, {});
+    if (users[user.kodeLogin]) {
+      users[user.kodeLogin].telegramId = null;
+      writeJSON(USERS_PATH, users, "logout user");
+    }
+
+    clearSession(chatId);
+
+    return bot.sendMessage(
+      chatId,
+      `✅ Logout berhasil.\n\nKamu telah keluar dari akun *${user.nama}*.\nKetik /start untuk login kembali.`,
+      {
+        parse_mode: "Markdown",
+        ...removeKeyboard()
+      }
     );
   }
 

@@ -5,7 +5,8 @@ function mainReplyKeyboard(role) {
     ["🖼️ Upload Dokumentasi", "🗂️ Lihat Dokumentasi"],
     ["📆 Rekap Setengah Bulanan"],
     ["📤 Export Excel", "📄 Export PDF"],
-    ["🌐 Web Dashboard", "👤 Profil Saya"]
+    ["🌐 Web Dashboard", "👤 Profil Saya"],
+    ["🚪 Logout"]
   ];
 
   return {
