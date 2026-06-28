@@ -109968,5 +109968,40 @@
     "keterangan": "-",
     "status": "tersimpan",
     "createdAt": "2026-06-24T14:01:12+07:00"
+  },
+  {
+    "id": "LAP-2026-06-28-sore-BD_1-ka-1782659255674",
+    "jenisBlanko": "06-O",
+    "tanggal": "2026-06-28",
+    "tanggalDisplay": "28-06-2026",
+    "periode": "sore",
+    "waktuInput": "22:07",
+    "petugas": {
+      "telegramId": "513402196",
+      "nama": "S U W A N T O",
+      "jabatan": "PPA",
+      "role": "ppa"
+    },
+    "lokasi": {
+      "daerahIrigasi": "DI Punggur Utara",
+      "saluran": "Saluran Sekunder",
+      "pintu": "BD 1",
+      "sisi": "ka",
+      "namaLengkap": "BD 1 ka"
+    },
+    "dataAir": {
+      "H": 40,
+      "satuanH": "cm",
+      "Q": 15,
+      "satuanQ": "lt/dt"
+    },
+    "dokumentasi": {
+      "adaFoto": false,
+      "telegramFileId": null,
+      "fotoLocalPath": null
+    },
+    "keterangan": "-",
+    "status": "tersimpan",
+    "createdAt": "2026-06-28T22:07:35+07:00"
   }
 ]
