@@ -1,13 +1,21 @@
 function mainReplyKeyboard(role) {
-  const keyboard = [
-    ["🌅 Catat Debit Pagi", "🌇 Catat Debit Sore"],
-    ["📌 Laporan Hari Ini", "📊 Rekap Harian"],
-    ["🖼️ Upload Dokumentasi", "🗂️ Lihat Dokumentasi"],
-    ["📆 Rekap Setengah Bulanan"],
-    ["📤 Export Excel", "📄 Export PDF"],
-    ["🌐 Web Dashboard", "👤 Profil Saya"],
-    ["🚪 Logout"]
-  ];
+  let keyboard = [];
+
+  if (role === "ppa") {
+    keyboard = [
+      ["🌅 Catat Debit Pagi", "🌇 Catat Debit Sore"],
+      ["🖼️ Upload Dokumentasi", "📌 Laporan Hari Ini"],
+      ["👤 Profil Saya", "🚪 Logout"]
+    ];
+  } else {
+    keyboard = [
+      ["📌 Laporan Hari Ini", "📊 Rekap Harian"],
+      ["📆 Rekap Setengah Bulanan", "🗂️ Lihat Dokumentasi"],
+      ["📤 Export Excel", "📄 Export PDF"],
+      ["🌐 Web Dashboard", "👤 Profil Saya"],
+      ["🚪 Logout"]
+    ];
+  }
 
   return {
     reply_markup: {

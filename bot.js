@@ -1440,6 +1440,43 @@ Ketik /menu untuk membuka menu.`,
     return bot.sendMessage(chatId, "Kamu belum login. Ketik /start untuk login.");
   }
 
+  // VALIDASI HAK AKSES MENU
+  const ppaMenus = [
+    "🌅 Catat Debit Pagi",
+    "🌇 Catat Debit Sore",
+    "🖼️ Upload Dokumentasi",
+    "📌 Laporan Hari Ini",
+    "👤 Profil Saya",
+    "🚪 Logout"
+  ];
+
+  const staffMenus = [
+    "📌 Laporan Hari Ini",
+    "📊 Rekap Harian",
+    "📆 Rekap Setengah Bulanan",
+    "🗂️ Lihat Dokumentasi",
+    "📤 Export Excel",
+    "📄 Export PDF",
+    "🌐 Web Dashboard",
+    "👤 Profil Saya",
+    "🚪 Logout"
+  ];
+
+  const allMenus = [...new Set([...ppaMenus, ...staffMenus])];
+
+  if (allMenus.includes(text)) {
+    let hasAccess = false;
+    if (user.role === "ppa" && ppaMenus.includes(text)) {
+      hasAccess = true;
+    } else if ((user.role === "staff" || user.role === "kepala_uptd") && staffMenus.includes(text)) {
+      hasAccess = true;
+    }
+
+    if (!hasAccess) {
+      return bot.sendMessage(chatId, "⛔ Maaf, Anda tidak memiliki akses ke menu ini.");
+    }
+  }
+
   // MENU UTAMA REPLY KEYBOARD
   if (text === "🌅 Catat Debit Pagi") {
     return mulaiCatatDebit(chatId, "pagi");
