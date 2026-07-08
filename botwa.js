@@ -1,6 +1,33 @@
 require('dotenv').config();
 console.log('[BOOT]', __filename, new Date().toISOString());
 
+// ========================================================
+// AUTO GITHUB STARTUP SYNC (UNTUK PM2 DIRECT RUN)
+// ========================================================
+try {
+  const enabledSync = (process.env.GITHUB_STARTUP_SYNC || 'true').toLowerCase() === 'true';
+  if (enabledSync && !process.env.BYPASS_STARTUP_SYNC) {
+    const { execSync } = require('child_process');
+    let beforeHash = null;
+    try { beforeHash = execSync('git rev-parse HEAD', { cwd: __dirname, encoding: 'utf8' }).trim(); } catch (_) {}
+
+    console.log('[BOOT] Mengecek dan menarik update terbaru dari GitHub...');
+    const { restoreFilesFromGithub } = require('./backup/githubSync');
+    restoreFilesFromGithub();
+
+    let afterHash = null;
+    try { afterHash = execSync('git rev-parse HEAD', { cwd: __dirname, encoding: 'utf8' }).trim(); } catch (_) {}
+
+    if (beforeHash && afterHash && beforeHash !== afterHash) {
+      console.log(`[BOOT] 🔄 Update baru terdeteksi (${beforeHash.slice(0,7)} -> ${afterHash.slice(0,7)}). Me-restart proses agar menggunakan kode baru...`);
+      process.exit(0);
+    }
+    console.log('[BOOT] GitHub sync selesai.');
+  }
+} catch (e) {
+  console.log('[BOOT] GitHub sync dilewatkan:', e?.message || e);
+}
+
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
